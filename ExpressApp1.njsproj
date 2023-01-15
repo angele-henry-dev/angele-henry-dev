@@ -34,7 +34,6 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="index.js" />
-    <Content Include="client\home.js" />
     <Content Include="routes\routes.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
@@ -45,12 +44,10 @@
     <Content Include="views\partials\header.pug" />
     <Content Include="views\partials\mixins.pug" />
     <Content Include="views\partials\user.pug" />
-    <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
     <Folder Include="public\images\" />
-    <Folder Include="client\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
