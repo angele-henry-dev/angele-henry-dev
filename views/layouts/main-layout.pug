@@ -1,0 +1,16 @@
+include ../partials/mixins
+<!DOCTYPE html>
+html(lang="en")
+    head
+        title Home Page
+    body
+        include ../partials/header
+        block content
+
+        section
+            h2 This h2 is also from the layout
+            for user in userNames
+                include ../partials/user.pug
+        block more_content
+
+//script(src="/js/home.bundle.js")
