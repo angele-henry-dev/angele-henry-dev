@@ -15,9 +15,9 @@ router.get('/', function (req, res) {
         licensedToKill
     });
 });
-// GET about page
-router.get('/about', function (req, res) {
-    res.render('about', {userNames});
+// GET contact page
+router.get('/contact', function (req, res) {
+    res.render('contact', {userNames});
 });
 
 module.exports = router;
