@@ -4,7 +4,7 @@ html(lang="en")
         title Meldocia
     body
         include partials/header
-        case panelNumber
+        case plop
             when 0
                 include partials/description
             when 1
@@ -13,4 +13,19 @@ html(lang="en")
                 include partials/portfolio
             when 3
                 include partials/contact
+            default
+                p oh oh
+        p= plop
+        button.roue_button(type="button" onclick="display(0)") description
+        button.roue_button(type="button" onclick="display(1)") skills
+        button.roue_button(type="button" onclick="display(2)") portfolio
+        button.roue_button(type="button" onclick="display(3)") contact
         include partials/footer
+
+        script.
+            var plop = 2;
+            console.log(plop);
+            function display(number) {
+                plop = number;
+                console.log(plop);
+            }
