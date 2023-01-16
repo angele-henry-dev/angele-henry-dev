@@ -38,10 +38,13 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
-    <Content Include="views\contact.pug" />
+    <Content Include="views\partials\contact.pug" />
     <Content Include="views\index.pug" />
-    <Content Include="views\layouts\main-layout.pug" />
+    <Content Include="views\partials\description.pug" />
+    <Content Include="views\partials\footer.pug" />
     <Content Include="views\partials\header.pug" />
+    <Content Include="views\partials\portfolio.pug" />
+    <Content Include="views\partials\skills.pug" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
@@ -49,7 +52,6 @@
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
-    <Folder Include="views\layouts\" />
     <Folder Include="views\partials\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />

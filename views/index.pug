@@ -1,13 +1,16 @@
-extends layouts/main-layout.pug
-
-block content
-    p Fullstack and AWS developer
-    p Phrase d'accroche
-    p Petit paragraphe d'introduction et de présentation
-    p Frontend developer: skills
-    p Backend developer: skills
-    p AWS developer: skills
-    p Portfolio
-    p Collaboration with companies
-    p My Startup Projects
-    p Tu veux me contacter ??? Clique là lol. 
+<!DOCTYPE html>
+html(lang="en")
+    head
+        title Meldocia
+    body
+        include partials/header
+        case panelNumber
+            when 0
+                include partials/description
+            when 1
+                include partials/skills
+            when 2
+                include partials/portfolio
+            when 3
+                include partials/contact
+        include partials/footer

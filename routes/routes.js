@@ -3,21 +3,11 @@ var express = require('express');
 var router = express.Router();
 
 // Data
-const userNames = ["Sean", "George", "Roger", "Timothy", "Pierce", "Daniel"];
-const bestMovie = "Casino Royale";
-const licensedToKill = false;
+let panelNumber = 0;
 
 // GET home page
 router.get('/', function (req, res) {
-    res.render('index', {
-        userNames,
-        bestMovie,
-        licensedToKill
-    });
-});
-// GET contact page
-router.get('/contact', function (req, res) {
-    res.render('contact', {userNames});
+    res.render('index', { panelNumber });
 });
 
 module.exports = router;
