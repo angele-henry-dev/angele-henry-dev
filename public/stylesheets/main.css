@@ -8,3 +8,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.gear {
+    position: relative;
+    text-align: center;
+}
+.gear .btn.description {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 95px;
+    left: 140px;
+}
+.gear .btn.skills {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 62px;
+    left: 88px;
+}
+.gear .btn.portfolio {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 5px;
+    left: 62px;
+}
+.gear .btn.contact {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 15px;
+    left: 140px;
+}
