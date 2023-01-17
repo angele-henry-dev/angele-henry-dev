@@ -1,8 +1,10 @@
-body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.title-sign {
+    background-image: url("/images/panneau.png");
+    background-repeat: no-repeat;
+    height: 318px;
 }
-
-a {
-    color: #00B7FF;
+.socialnetwork-sign {
+    background-image: url("/images/panneau.png");
+    background-repeat: no-repeat;
+    height: 318px;
 }
