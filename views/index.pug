@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 html(lang="en")
     head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
         title Meldocia
     body
         include partials/header
-        case plop
-            when 0
-                include partials/description
-            when 1
-                include partials/skills
-            when 2
-                include partials/portfolio
-            when 3
-                include partials/contact
-            default
-                p oh oh
-        p= plop
-        button.roue_button(type="button" onclick="display(0)") description
-        button.roue_button(type="button" onclick="display(1)") skills
-        button.roue_button(type="button" onclick="display(2)") portfolio
-        button.roue_button(type="button" onclick="display(3)") contact
+        div
+            p Plop
+        //button.roue_button(type="button" onclick="display(0)") description
+        //button.roue_button(type="button" onclick="display(1)") skills
+        //button.roue_button(type="button" onclick="display(2)") portfolio
+        //button.roue_button(type="button" onclick="display(3)") contact
         include partials/footer
-
-        script.
-            var plop = 2;
-            console.log(plop);
-            function display(number) {
-                plop = number;
-                console.log(plop);
-            }
+        
+script.
+    var plop = 2;
