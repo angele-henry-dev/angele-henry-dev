@@ -1,10 +1,10 @@
-.title-sign {
-    background-image: url("/images/panneau.png");
-    background-repeat: no-repeat;
-    height: 318px;
+.title-sign, .socialnetwork-sign {
+    position: relative;
+    text-align: center;
 }
-.socialnetwork-sign {
-    background-image: url("/images/panneau.png");
-    background-repeat: no-repeat;
-    height: 318px;
+.title-sign .btn, .socialnetwork-sign .btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

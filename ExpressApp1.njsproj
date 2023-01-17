@@ -34,14 +34,12 @@
   <ItemGroup>
     <Content Include="babel.config.js" />
     <Content Include=".gitignore" />
-    <Content Include="images\panneau.png" />
     <Content Include="index.js" />
     <Content Include="public\images\panneau.png" />
     <Content Include="routes\routes.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
-    <Content Include="css\main.css" />
     <Content Include="views\partials\contact.pug" />
     <Content Include="views\index.pug" />
     <Content Include="views\partials\description.pug" />
@@ -51,13 +49,11 @@
     <Content Include="views\partials\skills.pug" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="images\" />
     <Folder Include="js\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
-    <Folder Include="css\" />
     <Folder Include="views\" />
     <Folder Include="views\partials\" />
   </ItemGroup>
