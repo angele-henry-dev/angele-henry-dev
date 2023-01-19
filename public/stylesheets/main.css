@@ -1,3 +1,10 @@
+body {
+    background-image: url("/images/scene1.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+}
+
 .title-sign, .socialnetwork-sign {
     position: relative;
     text-align: center;
