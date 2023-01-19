@@ -1,3 +1,6 @@
 public/js
 node_modules
 .vs/
+*.vsidx
+.vs/ExpressApp1/*
+ExpressApp1.njsproj
