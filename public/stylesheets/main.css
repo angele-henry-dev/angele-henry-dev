@@ -2,7 +2,7 @@
     position: relative;
     text-align: center;
 }
-.title-sign .btn, .socialnetwork-sign .btn {
+.title-sign a, .socialnetwork-sign a {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -15,24 +15,28 @@
 .gear .btn.description {
     position: absolute;
     border-radius: 50%;
-    bottom: 95px;
-    left: 140px;
+    bottom: 107px;
+    left: 180px;
+    background-color: #E5A31E;
 }
 .gear .btn.skills {
     position: absolute;
     border-radius: 50%;
-    bottom: 62px;
-    left: 88px;
+    bottom: 68px;
+    left: 130px;
+    background-color: #E5A31E;
 }
 .gear .btn.portfolio {
     position: absolute;
     border-radius: 50%;
     bottom: 5px;
-    left: 62px;
+    left: 107px;
+    background-color: #E5A31E;
 }
 .gear .btn.contact {
     position: absolute;
     border-radius: 50%;
-    bottom: 15px;
-    left: 140px;
+    bottom: 7px;
+    right: 1px;
+    background-color: #E5A31E;
 }

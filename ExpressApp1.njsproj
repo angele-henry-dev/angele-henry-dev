@@ -32,9 +32,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="babel.config.js" />
     <Content Include=".gitignore" />
     <Content Include="index.js" />
+    <Content Include="public\images\gear.png" />
     <Content Include="public\images\panneau.png" />
     <Content Include="routes\routes.js" />
     <Content Include="package.json" />
