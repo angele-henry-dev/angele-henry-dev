@@ -16,22 +16,22 @@ p.h1, p.h2, p.h3 {
     margin: auto;
     width: 90%;
 }
-#description div, #skills div, #portfolio div, #contact div {
+#slide0 div, #slide1 div, #slide2 div, #slide3 div {
     margin: auto;
     width: 66%;
     text-align: center;
 }
 /* Description */
-#description div {
+#slide0 div {
 }
 /* Skills */
-#skills div {
+#slide1 div {
 }
 /* Portfolio */
-#portfolio div {
+#slide2 div {
 }
 /* Contact */
-#contact div {
+#slide3 div {
 }
 
 /* Header */
