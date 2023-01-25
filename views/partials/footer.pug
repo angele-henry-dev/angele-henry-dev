@@ -2,16 +2,16 @@
 footer.fixed-bottom
     div.d-flex.justify-content-end
         div.gear
-            img(src="/images/gear_cut.png" alt="Gear" height="250px")
-            button.btn.description(type="button" title="Show description" data-bs-toggle="tooltip" data-bs-placement="left")
+            button.btn.btn-lg.btn-dark.description(type="button" data-bs-target="#carousel-slides" data-bs-slide-to="0" aria-current="true" aria-label="Show description")
                 i.fa-solid.fa-address-card
-            button.btn.skills(type="button" title="Show skills" data-bs-toggle="tooltip" data-bs-placement="left")
+            button.btn.btn-lg.btn-dark.skills(type="button" data-bs-target="#carousel-slides" data-bs-slide-to="1" aria-current="true" aria-label="Show skills")
                 i.fa-solid.fa-fire
-            button.btn.portfolio(type="button" title="Show portfolio" data-bs-toggle="tooltip" data-bs-placement="left")
+            button.btn.btn-lg.btn-dark.portfolio(type="button" data-bs-target="#carousel-slides" data-bs-slide-to="2" aria-current="true" aria-label="Show portfolio")
                 i.fa-sharp.fa-solid.fa-images
-            button.btn.contact(type="button" title="Contact me" data-bs-toggle="tooltip" data-bs-placement="left")
+            button.btn.btn-lg.btn-dark.contact(type="button" data-bs-target="#carousel-slides" data-bs-slide-to="3" aria-current="true" aria-label="Show contact")
                 i.fa-solid.fa-envelope
     div.text-center.bg-dark.text-white.p-2
-        span Handcrafted by me 
+        span Handcrafted with 
+        i.fa-solid.fa-heart.text-danger.me-1
         i.fa-regular.fa-copyright.me-1
         span 2023

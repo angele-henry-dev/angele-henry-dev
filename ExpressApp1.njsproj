@@ -34,8 +34,7 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="index.js" />
-    <Content Include="public\images\gear.png" />
-    <Content Include="public\images\panneau.png" />
+    <Content Include="public\images\raccoon_logo.png" />
     <Content Include="routes\routes.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
