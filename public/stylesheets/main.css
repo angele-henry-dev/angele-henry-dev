@@ -3,6 +3,9 @@ body {
     background-color: #FFE2AE !important;
     color: #212529;
 }
+p.h1, p.h2, p.h3 {
+    color: #E5A31E;
+}
 
 /* Text center */
 #carousel-slides {
@@ -13,79 +16,34 @@ body {
     margin: auto;
     width: 90%;
 }
+#description div, #skills div, #portfolio div, #contact div {
+    margin: auto;
+    width: 66%;
+    text-align: center;
+}
 /* Description */
 #description div {
-    margin: auto;
-    width: 400px;
-    height: 400px;
-    background-color: #E5A31E;
-    border-radius: 100%;
-    border: 3px solid #000;
 }
 /* Skills */
 #skills div {
-    margin: auto;
-    width: 400px;
-    height: 400px;
-    background-color: #E5A31E;
-    border-radius: 100%;
-    border: 3px solid #000;
 }
 /* Portfolio */
 #portfolio div {
-    margin: auto;
-    width: 400px;
-    height: 400px;
-    background-color: #E5A31E;
-    border-radius: 100%;
-    border: 3px solid #000;
 }
 /* Contact */
 #contact div {
-    margin: auto;
-    width: 400px;
-    height: 400px;
-    background-color: #E5A31E;
-    border-radius: 100%;
-    border: 3px solid #000;
 }
 
 /* Header */
-header {
-    z-index: -1 !important;
-}
-/* Logo top left */
 .logo {
     position: relative;
-    height: 150px;
-    width: 150px;
-    background-color: #E5A31E;
-    border-bottom-right-radius: 100%;
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
+    left: 30px;
+    top: 20px;
 }
-.logo a {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    transform: translate(-25%, -25%);
-}
-/* Social networks hyperlinks */
 .socialnetwork {
     position: relative;
-    height: 80px;
-    width: 150px;
-    background-color: #E5A31E;
-    border-bottom-left-radius: 100%;
-    border-bottom: 3px solid #000;
-    border-left: 3px solid #000;
-}
-
-.socialnetwork a {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    transform: translate(-25%, -25%);
+    right: 30px;
+    top: 20px;
 }
 
 /* Gear bottom right */
