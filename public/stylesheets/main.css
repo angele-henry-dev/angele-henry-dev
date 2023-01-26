@@ -1,75 +1,19 @@
-/* General caracteristics */
-body {
-    background-color: #FFE2AE !important;
-    color: #212529;
+header {
+    background-color: #FFE2AE;
+}
+header .h4, .btn-link i {
+    color: #1A1A1A;
 }
 p.h1, p.h2, p.h3 {
     color: #E5A31E;
 }
 
-/* Text center */
-#carousel-slides {
-    width: 100%;
-    height: 100%;
-}
-#carousel-slides .carousel-inner {
+.header-menu {
+    width: 85%;
     margin: auto;
-    width: 90%;
-}
-#slide0 div, #slide1 div, #slide2 div, #slide3 div {
-    margin: auto;
-    width: 66%;
-}
-/* Description */
-#slide0 div {
-}
-/* Skills */
-#slide1 div {
-}
-/* Portfolio */
-#slide2 div {
-}
-/* Contact */
-#slide3 div {
 }
 
-/* Header */
-.logo {
-    position: relative;
-    left: 30px;
-    top: 20px;
-}
-.socialnetwork {
-    position: relative;
-    right: 30px;
-    top: 20px;
-}
-
-/* Gear bottom right */
-.gear {
-    position: relative;
-    height: 200px;
-    width: 200px;
-    background-color: #E5A31E;
-    border-bottom-right-radius: 100%;
-    border-bottom: 3px solid #000;
-    border-right: 3px solid #000;
-}
-.gear .btn.description {
-    position: absolute;
-    border-radius: 50%;
-    top: 20px;
-    right: 20px;
-}
-.gear .btn.skills {
-    position: absolute;
-    border-radius: 50%;
-    bottom: 63px;
-    left: 45%;
-}
-.gear .btn.portfolio {
-    position: absolute;
-    border-radius: 50%;
-    bottom: 20px;
-    left: 20px;
+div#description {
+    width: 65%;
+    margin: auto;
 }
