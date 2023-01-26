@@ -1,10 +1,18 @@
 div
-    p Formulaire à remplir
-    form(action="/", method="post")
-        label(for="user-name") Name:
-        input#user-name(type="name", name="user-name")
-        label(for="user-email") Email:
-        input#user-email(type="email", name="user-email")
-        label(for="message") Message:
-        input#message(type="message", name="message")
-        button(type="submit") Submit
+    form.text-start
+        div.row.text-center.mb-3
+            p.h1 Thanks for taking the time to reach out.
+        div.row.mb-3
+          div.col.ps-0
+            label.form-label(for="inputName") Your name
+            input#inputName.form-control(type="text")
+          div.col.pe-0
+            label.form-label(for="inputEmail") Your email address
+            input#inputEmail.form-control(type="email")
+        div.row.mb-3
+          div.col.px-0
+            label.form-label(for="inputMessage") Your message
+            textarea#inputMessage.form-control(rows="5")
+        div.row.text-center
+          div.col.px-0
+            button.btn.btn-primary(type="submit") Submit

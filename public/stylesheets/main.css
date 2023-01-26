@@ -19,7 +19,6 @@ p.h1, p.h2, p.h3 {
 #slide0 div, #slide1 div, #slide2 div, #slide3 div {
     margin: auto;
     width: 66%;
-    text-align: center;
 }
 /* Description */
 #slide0 div {
