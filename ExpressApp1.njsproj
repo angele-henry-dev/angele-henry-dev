@@ -39,7 +39,6 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
-    <Content Include="views\partials\contact.pug" />
     <Content Include="views\index.pug" />
     <Content Include="views\partials\description.pug" />
     <Content Include="views\partials\footer.pug" />

@@ -1,8 +1,21 @@
 header
     div.d-flex.justify-content-between.align-items-start
-        div.logo
+        div.gear
+            button.btn.btn-lg.btn-dark.description(type="button" data-bs-target="#carousel-slides" data-bs-slide-to="0" title="Show description")
+                i.fa-solid.fa-address-card
+            button.btn.btn-lg.btn-dark.skills(type="button" data-bs-target="#carousel-slides" data-bs-slide-to="1" title="Show skills")
+                i.fa-solid.fa-fire
+            button.btn.btn-lg.btn-dark.portfolio(type="button" data-bs-target="#carousel-slides" data-bs-slide-to="2" title="Show portfolio")
+                i.fa-sharp.fa-solid.fa-images
             a(href="/" target="_self" title="Homepage")
                 img(src="/images/raccoon_logo.png" alt="Sign" height="100px")
         div.socialnetwork
-            a(href="https://www.linkedin.com/in/angele-marques/" target="_blank" title="Go to LinkedIn page")
+            a.btn.btn-link(role="button" href="https://www.linkedin.com/in/angele-marques/" target="_blank" title="Go to LinkedIn page")
                 i.fa-brands.fa-linkedin.fa-2xl
+            button(type="button" title="Send me an email" onclick="contactMe()").btn.btn-link
+                i.fa-solid.fa-square-envelope.fa-2xl
+script.
+    async function contactMe() {
+        const post = await fetch("/contact").then((res) => res.json());
+        window.location.href = post.message;
+    }

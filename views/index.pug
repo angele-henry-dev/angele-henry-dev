@@ -17,8 +17,6 @@ html(lang="en")
                     include partials/skills
                 div#slide2.carousel-item
                     include partials/portfolio
-                div#slide3.carousel-item
-                    include partials/contact
         include partials/footer
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous")
         script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous")
@@ -29,7 +27,7 @@ html(lang="en")
                 const activeSlideIndex = Number(activeSlide.id.substring(5))
                 // delta is 1 for scroll down or -1 for scroll up
                 const delta = Math.sign(event.deltaY);
-                if ((delta == 1 && activeSlideIndex === 3) || (delta == -1 && activeSlideIndex === 0)) {
+                if ((delta == 1 && activeSlideIndex === 2) || (delta == -1 && activeSlideIndex === 0)) {
                     return;
                 }
                 activeSlide.className = "carousel-item";

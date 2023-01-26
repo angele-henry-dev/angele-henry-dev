@@ -51,31 +51,25 @@ p.h1, p.h2, p.h3 {
     height: 200px;
     width: 200px;
     background-color: #E5A31E;
-    border-top-left-radius: 100%;
-    border-top: 3px solid #000;
-    border-left: 3px solid #000;
+    border-bottom-right-radius: 100%;
+    border-bottom: 3px solid #000;
+    border-right: 3px solid #000;
 }
 .gear .btn.description {
     position: absolute;
     border-radius: 50%;
-    bottom: 130px;
-    left: 130px;
+    top: 20px;
+    right: 20px;
 }
 .gear .btn.skills {
     position: absolute;
     border-radius: 50%;
-    bottom: 80px;
-    left: 60px;
+    bottom: 63px;
+    left: 45%;
 }
 .gear .btn.portfolio {
     position: absolute;
     border-radius: 50%;
-    bottom: 5px;
-    left: 20px;
-}
-.gear .btn.contact {
-    position: absolute;
-    border-radius: 50%;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
 }
