@@ -7,13 +7,127 @@ header .h4, .btn-link i {
 p.h1, p.h2, p.h3 {
     color: #E5A31E;
 }
-
 .header-menu {
     width: 85%;
     margin: auto;
 }
 
-div#description {
+.main-content {
+    display: block;
+    margin-top: 100px !important;
     width: 65%;
     margin: auto;
+}
+
+/* Social links */
+.socialnetwork a {
+    transition: all 0.3s;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar-css {
+    overflow-y: scroll;
+}
+.custom-scrollbar-css::-webkit-scrollbar {
+    width: 5px;
+}
+.custom-scrollbar-css::-webkit-scrollbar-track {
+    background: #eee;
+}
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+    background-color: #99690A;
+}
+
+/* Animated cube */
+
+#menu a.cube span {
+    padding: 15px;
+    transition: .5s;
+    position: relative;
+    background: #FFE2AE;
+}
+#menu a.cube span:before {
+    content: attr(data-attr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #99690A;
+    padding: 15px;
+    transition: 0.5S;
+    transform-origin: top;
+    transform: rotateX(90deg) translateY(-50%);
+    background: #99690A;
+    color: #FFE2AE;
+}
+#menu a.cube:hover span:before {
+    transform: rotateX(0deg) translateY(0%);
+}
+#menu a.cube span:after {
+    content: attr(data-attr);
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #99690A;
+    transform-origin: bottom;
+    transform: rotateX(0deg) translateY(0%);
+    transition: 0.5s;
+    background: #FFE2AE;
+    color: #99690A;
+}
+#menu a.cube:hover span:after {
+    transform: rotateX(90deg) translateY(50%);
+}
+
+/* Animated heart */
+
+.animated-heart {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    line-height: 24px;
+    display: inline-block;
+    text-align: center;
+    background: #ff3f3f;
+    position: relative;
+}
+.animated-heart::before, .animated-heart::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: rgba(255, 63, 63, 0.8);
+    animation: ripple-1 2s infinite ease-in-out;
+    z-index: -1;
+}
+.animated-heart::after {
+    background: rgba(255, 63, 63, 0.6);
+    animation: ripple-2 2s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+@keyframes ripple-1 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes ripple-2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.7);
+        opacity: 0;
+    }
 }
