@@ -9,18 +9,15 @@ p.h1, p.h2, p.h3 {
 .custom-scrollbar-css {
     overflow-y: scroll;
 }
-
-.custom-scrollbar-css::-webkit-scrollbar {
-    width: 5px;
-}
-
-.custom-scrollbar-css::-webkit-scrollbar-track {
-    background: #eee;
-}
-
-.custom-scrollbar-css::-webkit-scrollbar-thumb {
-    background-color: #99690A;
-}
+    .custom-scrollbar-css::-webkit-scrollbar {
+        width: 5px;
+    }
+    .custom-scrollbar-css::-webkit-scrollbar-track {
+        background: #eee;
+    }
+    .custom-scrollbar-css::-webkit-scrollbar-thumb {
+        background-color: #99690A;
+    }
 
 /* Header */
 .header-menu {
@@ -36,9 +33,9 @@ p.h1, p.h2, p.h3 {
 .socialnetwork i {
     transition: all 0.3s;
 }
-.socialnetwork i:hover, .socialnetwork i:focus {
-    color: #666666;
-}
+    .socialnetwork i:hover, .socialnetwork i:focus {
+        color: #666666;
+    }
 
 /* Main content */
 
@@ -50,6 +47,7 @@ p.h1, p.h2, p.h3 {
 }
 
 /* Description */
+
 .blockquote-custom {
     position: relative;
     font-size: 1.1rem;
@@ -69,44 +67,44 @@ p.h1, p.h2, p.h3 {
 
 /* Animated cube */
 
-#menu a.cube span {
+a.cube span {
     padding: 15px;
     transition: .5s;
     position: relative;
     background: #FFE2AE;
 }
-#menu a.cube span:before {
-    content: attr(data-attr);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 1px solid #99690A;
-    padding: 15px;
-    transition: 0.5S;
-    transform-origin: top;
-    transform: rotateX(90deg) translateY(-50%);
-    background: #99690A;
-    color: #FFE2AE;
-}
-#menu a.cube:hover span:before {
-    transform: rotateX(0deg) translateY(0%);
-}
-#menu a.cube span:after {
-    content: attr(data-attr);
-    padding: 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 1px solid #99690A;
-    transform-origin: bottom;
-    transform: rotateX(0deg) translateY(0%);
-    transition: 0.5s;
-    background: #FFE2AE;
-    color: #99690A;
-}
-#menu a.cube:hover span:after {
-    transform: rotateX(90deg) translateY(50%);
-}
+    a.cube span:before {
+        content: attr(data-attr);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid #99690A;
+        padding: 15px;
+        transition: 0.5S;
+        transform-origin: top;
+        transform: rotateX(90deg) translateY(-50%);
+        background: #99690A;
+        color: #FFE2AE;
+    }
+    a.cube:hover span:before {
+        transform: rotateX(0deg) translateY(0%);
+    }
+    a.cube span:after {
+        content: attr(data-attr);
+        padding: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid #99690A;
+        transform-origin: bottom;
+        transform: rotateX(0deg) translateY(0%);
+        transition: 0.5s;
+        background: #FFE2AE;
+        color: #99690A;
+    }
+    a.cube:hover span:after {
+        transform: rotateX(90deg) translateY(50%);
+    }
 
 /* Animated heart */
 
@@ -119,25 +117,26 @@ p.h1, p.h2, p.h3 {
     text-align: center;
     background: #ff3f3f;
     position: relative;
+    z-index: 1;
 }
-.animated-heart::before, .animated-heart::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 50%;
-    background: rgba(255, 63, 63, 0.8);
-    animation: ripple-1 2s infinite ease-in-out;
-    z-index: -1;
-}
-.animated-heart::after {
-    background: rgba(255, 63, 63, 0.6);
-    animation: ripple-2 2s infinite ease-in-out;
-    animation-delay: 0.5s;
-}
+    .animated-heart::before, .animated-heart::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        background: rgba(255, 63, 63, 0.8);
+        animation: ripple-1 2s infinite ease-in-out;
+        z-index: -1;
+    }
+    .animated-heart::after {
+        background: rgba(255, 63, 63, 0.6);
+        animation: ripple-2 2s infinite ease-in-out;
+        animation-delay: 0.5s;
+    }
 @keyframes ripple-1 {
     0% {
         transform: scale(1);
@@ -160,3 +159,31 @@ p.h1, p.h2, p.h3 {
         opacity: 0;
     }
 }
+
+/* Go on top button */
+
+.go-top {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    width: 3vmin;
+    height: 3vmin;
+    background: transparent;
+    border-top: 1vmin solid white;
+    border-right: 1vmin solid white;
+    box-shadow: 0 0 0 lightgray;
+    transition: all 200ms ease;
+    transform: translate3d(0,-50%,0) rotate(-45deg);
+}
+    .go-top:hover {
+        border-color: orange;
+        box-shadow: 0.5vmin -0.5vmin 0 white;
+    }
+    .go-top:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%,-60%) rotate(45deg);
+        width: 200%;
+        height: 200%;
+    }
