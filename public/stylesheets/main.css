@@ -1,41 +1,70 @@
-header {
-    background-color: #FFE2AE;
-}
-header .h4, .btn-link i {
-    color: #1A1A1A;
+body, header {
+    background-color: #FFE2AE !important;
 }
 p.h1, p.h2, p.h3 {
     color: #E5A31E;
-}
-.header-menu {
-    width: 85%;
-    margin: auto;
-}
-
-.main-content {
-    display: block;
-    margin-top: 100px !important;
-    width: 65%;
-    margin: auto;
-}
-
-/* Social links */
-.socialnetwork a {
-    transition: all 0.3s;
 }
 
 /* Custom scrollbar */
 .custom-scrollbar-css {
     overflow-y: scroll;
 }
+
 .custom-scrollbar-css::-webkit-scrollbar {
     width: 5px;
 }
+
 .custom-scrollbar-css::-webkit-scrollbar-track {
     background: #eee;
 }
+
 .custom-scrollbar-css::-webkit-scrollbar-thumb {
     background-color: #99690A;
+}
+
+/* Header */
+.header-menu {
+    width: 85%;
+    margin: auto;
+}
+
+.btn-link i {
+    color: #1A1A1A;
+}
+
+/* Social links */
+.socialnetwork i {
+    transition: all 0.3s;
+}
+.socialnetwork i:hover, .socialnetwork i:focus {
+    color: #666666;
+}
+
+/* Main content */
+
+.main-content {
+    display: block;
+    margin-top: 120px !important;
+    width: 65%;
+    margin: auto;
+}
+
+/* Description */
+.blockquote-custom {
+    position: relative;
+    font-size: 1.1rem;
+}
+.blockquote-custom-icon {
+    background-color: #99690A;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+    left: 50px;
 }
 
 /* Animated cube */
