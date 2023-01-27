@@ -29,13 +29,22 @@ p.h1, p.h2, p.h3 {
     color: #1A1A1A;
 }
 
-/* Social links */
-.socialnetwork i {
-    transition: all 0.3s;
+.menu-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #E5A31E;
+    transition: 0.2s;
 }
-    .socialnetwork i:hover, .socialnetwork i:focus {
-        color: #666666;
-    }
+.menu-item:hover::after {
+    width: 100%;
+}
+.menu-item a {
+    padding: 15px 5px;
+    margin-right: 5px;
+    transition: 0.2s;
+}
 
 /* Main content */
 
@@ -64,47 +73,6 @@ p.h1, p.h2, p.h3 {
     top: -25px;
     left: 50px;
 }
-
-/* Animated cube */
-
-a.cube span {
-    padding: 15px;
-    transition: .5s;
-    position: relative;
-    background: #FFE2AE;
-}
-    a.cube span:before {
-        content: attr(data-attr);
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 1px solid #99690A;
-        padding: 15px;
-        transition: 0.5S;
-        transform-origin: top;
-        transform: rotateX(90deg) translateY(-50%);
-        background: #99690A;
-        color: #FFE2AE;
-    }
-    a.cube:hover span:before {
-        transform: rotateX(0deg) translateY(0%);
-    }
-    a.cube span:after {
-        content: attr(data-attr);
-        padding: 15px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 1px solid #99690A;
-        transform-origin: bottom;
-        transform: rotateX(0deg) translateY(0%);
-        transition: 0.5s;
-        background: #FFE2AE;
-        color: #99690A;
-    }
-    a.cube:hover span:after {
-        transform: rotateX(90deg) translateY(50%);
-    }
 
 /* Animated heart */
 
