@@ -40,6 +40,7 @@
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
     <Content Include="views\index.pug" />
+    <Content Include="views\partials\background.pug" />
     <Content Include="views\partials\description.pug" />
     <Content Include="views\partials\footer.pug" />
     <Content Include="views\partials\header.pug" />
