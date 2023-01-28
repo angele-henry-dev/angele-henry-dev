@@ -1,11 +1,195 @@
 #portfolio
+    section.timeline
+      ul
+        li
+          div
+            span.content
+                h2.h5.mb-0 Airbus - IoT Developer
+                span.small.text-gray
+                  i.fa.fa-clock-o.me-2
+                  | October, 2018 - April, 2023
+                p.text-small.mt-2.font-weight-light
+                  | Design and development of a portal in Python and VueJS on MacOS to allow the management of many connected objects.
+                p.text-small.mt-2.font-weight-light
+                  | Technologies / Environment:
+                  | o Python / Flask
+                  | o Vue.JS / Vuetify
+                  | o TypeScript
+                  | o AWS Services
+                  |         o SNS
+                  |         o SES
+                  |         o S3
+                  |         o DynamoDB
+                  |         o IoT Core
+                  |         o IoT Events
+                  |         o IAM
+                  |         o Secrets Manager
+                  | o Git
+                  | o Docker
+        li
+          div
+            span.content
+                h2.h5.mb-0 Activus Services - Software Engineer
+                span.small.text-gray
+                  i.fa.fa-clock-o.me-2
+                  | June, 2018 - September, 2018
+                p.text-small.mt-2.font-weight-light
+                  | At Airbus
+                p.text-small.mt-2.font-weight-light
+                  | Develop and manage robots which allow companies to follow the evolution of multiple and chosen systems to detect dangerous or alerting trends. 
+                p.text-small.mt-2.font-weight-light
+                  | Technologies / Environment:
+                  | o Java 7/8
+                  | o Eclipse Oxygen
+                  | o HTML5 / CSS3
+                  | o MongoDB
+                  | o Git
+        li
+          div
+            span.content
+            h2.h5.mb-0 Activus Services - Software Engineer
+            span.small.text-gray
+              i.fa.fa-clock-o.me-2
+              | January, 2017 - June, 2018
+            p.text-small.mt-2.font-weight-light
+              | At Airbus
+            p.text-small.mt-2.font-weight-light
+              | Integration of business rules into Java EE applications. 
+            p.text-small.mt-2.font-weight-light
+              | Technologies / Environment:
+              | o BRMS RedHat
+              | o Java EE
+              | o Liferay (portlet, hook, theme, layout)
+              | o Maven
+              | o Hibernate
+              | o Eclipse
+              | o Web Services / API REST
+              | o SVN / Git
+              | o MariaDB
+              | o Javascript / JQuery
+              | o HTML5 / CSS3
+              | o Dialogflow (Google chatbot)
+              | o ServiceNow
+              | o Arduino / esp8266 WiFi / C++
+        li
+          div
+            span.content
+                h2.h5.mb-0 Koncept - Analyst developer
+                span.small.text-gray
+                  i.fa.fa-clock-o.me-2
+                  | September, 2015 - December, 2016
+                p.text-small.mt-2.font-weight-light
+                  | At Airbus
+                p.text-small.mt-2.font-weight-light
+                  | Development of an intranet portal for end-users. 
+                p.text-small.mt-2.font-weight-light
+                  | Technologies / Environment:
+                  | o Java EE (Servlet, jsp, JSTL, applet)
+                  | o Maven
+                  | o Hibernate
+                  | o HTML 5 / CSS 3
+                  | o Javascript / JQuery
+                  | o Python
+                  | o Web Services / API REST
+                  | o BMC Remedy
+                  | o Liferay (portlet, hook, theme, layout)
+                  | o MariaDB
+                  | o SVN
+                  | o C++
+        li
+          div
+            span.content
+                h2.h5.mb-0 Libre-Services - Software developer
+                span.small.text-gray
+                  i.fa.fa-clock-o.me-2
+                  | April, 2015 - August, 2015
+                p.text-small.mt-2.font-weight-light
+                  | Development of a business application in the medical sector.
+                p.text-small.mt-2.font-weight-light
+                  | Technologies / Environment:
+                  | o UMLet
+                  | o C++
+                  | o Qt 5 (Qt Creator, Qt Designer, Qt Linguist)
+                  | o SQL / MySQL / PHPMyAdmin
+                  | o PHP and Slim
+        li
+          div
+            span.content
+                h2.h5.mb-0 LDNR - Software developer
+                span.small.text-gray
+                    i.fa.fa-clock-o.me-2
+                    | November, 2014 - July, 2015
+                p.text-small.mt-2.font-weight-light
+                    | Missions:
+                    | o Learning of C, C++ and Java
+                    | o ITIL
+                    | o UML
+                    | o Project management
+                    | o I realized five development projects with the different languages C, C++ and Java SE/2EE on a distant collaborative work.
+        li
+          div
+            span.content
+                h2.h5.mb-0 Radio Occitania - Radio technician
+                span.small.text-gray
+                  i.fa.fa-clock-o.me-2
+                  | January, 2011 - August, 2014
+                p.text-small.mt-2.font-weight-light
+                  | Missions:
+                  | o Realization of radio broadcasts
+                  | o Computer maintenance
+                  | o Web mastering
+                  | o Installation and management of a radio automation software
+
+
+
     .flip-card
         .flip-card-inner
-            .flip-card-front.shadow.rounded.me-1.mb-1.p-0
-                p Portfolio
-                p Collaboration with companies
-                p My Startup Projects
-            .flip-card-back.shadow.rounded
-                h1 John Doe
-                p Architect &amp; Engineer
-                p We love that guy
+            .flip-card-front.rounded
+                div.p-3
+                    h2.h5.mb-0 Airbus - IoT Developer
+                    span.small.text-gray
+                      i.fa.fa-clock-o.me-2
+                      | October, 2018 - April, 2023
+                    p.text-small.mt-2.font-weight-light
+                      | Design and development of a portal in Python and VueJS on MacOS to allow the management of many connected objects.
+            .flip-card-back.rounded
+                div.p-3
+                    p.text-small.mt-2.font-weight-light
+                      | Technologies / Environment:
+                    ul
+                        li Python / Flask
+                        li Vue.JS / Vuetify
+                        li TypeScript
+                        li AWS Services
+                        li Git
+                        li Docker
+
+script.
+    (function () {
+      "use strict";
+
+      var items = document.querySelectorAll(".timeline li");
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+      function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i])) {
+            items[i].classList.add("in-view");
+          }
+        }
+      }
+
+      // Listen for events
+      window.addEventListener("load", callbackFunc);
+      window.addEventListener("resize", callbackFunc);
+      window.addEventListener("scroll", callbackFunc);
+    })();
+
