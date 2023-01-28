@@ -1,8 +1,14 @@
-header {
-    background-color: #FFE2AE !important;
+:root {
+    --primary-color: #FFE2AE;
+    --secondary-color: #1E6DE6;
+    --black-color: #1A1A1A;
 }
-p.h1, p.h2, p.h3 {
-    color: #E5A31E;
+
+body {
+    color: var(--black-color);
+}
+.fa-heart {
+    color: var(--secondary-color);
 }
 
 /* Custom scrollbar */
@@ -16,7 +22,7 @@ p.h1, p.h2, p.h3 {
         background: #eee;
     }
     .custom-scrollbar-css::-webkit-scrollbar-thumb {
-        background-color: #99690A;
+        background-color: var(--black-color);
     }
 
 /* Header */
@@ -26,8 +32,11 @@ p.h1, p.h2, p.h3 {
 }
 
 .btn-link i {
-    color: #1A1A1A;
+    color: var(--secondary-color);
 }
+    .btn-link i:hover {
+        color: var(--black-color);
+    }
 
 /* Main content */
 
@@ -46,9 +55,10 @@ p.h1, p.h2, p.h3 {
 .blockquote-custom {
     position: relative;
     font-size: 1.1rem;
+    background-color: var(--primary-color);
 }
 .blockquote-custom-icon {
-    background-color: #E5A31E;
+    background-color: var(--secondary-color);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -69,7 +79,7 @@ p.h1, p.h2, p.h3 {
     line-height: 24px;
     display: inline-block;
     text-align: center;
-    background: #ff3f3f;
+    background: var(--secondary-color);
     position: relative;
     z-index: 1;
 }
@@ -82,12 +92,12 @@ p.h1, p.h2, p.h3 {
         bottom: 0;
         left: 0;
         border-radius: 50%;
-        background: rgba(255, 63, 63, 0.8);
+        background: rgba(30, 109, 230, 0.8);
         animation: ripple-1 2s infinite ease-in-out;
         z-index: -1;
     }
     .animated-heart::after {
-        background: rgba(255, 63, 63, 0.6);
+        background: rgba(30, 109, 230, 0.6);
         animation: ripple-2 2s infinite ease-in-out;
         animation-delay: 0.5s;
     }
@@ -123,15 +133,15 @@ p.h1, p.h2, p.h3 {
     width: 3vmin;
     height: 3vmin;
     background: transparent;
-    border-top: 1vmin solid #99690A;
-    border-right: 1vmin solid #99690A;
+    border-top: 1vmin solid var(--secondary-color);
+    border-right: 1vmin solid var(--secondary-color);
     box-shadow: 0 0 0 lightgray;
     transition: all 200ms ease;
     transform: translate3d(0,-50%,0) rotate(-45deg);
 }
     .go-top:hover {
-        border-color: #E5A31E;
-        box-shadow: 0.5vmin -0.5vmin 0 #99690A;
+        border-color: var(--black-color);
+        box-shadow: 0.5vmin -0.5vmin 0 var(--secondary-color);
     }
     .go-top:before {
         position: absolute;
@@ -155,10 +165,8 @@ p.h1, p.h2, p.h3 {
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -173,102 +181,8 @@ p.h1, p.h2, p.h3 {
     backface-visibility: hidden;
 }
 
-.flip-card-front {
-    background-color: #FFE2AE;
-    border: 2px solid #99690A;
-    color: black;
-}
-
 .flip-card-back {
-    background-color: #99690A;
-    border: 2px solid #1A1A1A;
-    color: white;
     transform: rotateY(180deg);
 }
 
 /* Background */
-
-@keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-    }
-
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-    }
-
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-    }
-}
-
-.waveWrapper {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    z-index: -1;
-}
-
-.waveWrapperInner {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    bottom: -1px;
-    background-image: linear-gradient(to top, #E5A31E 20%, #FFE2AE 80%);
-}
-
-.bgTop {
-    z-index: 15;
-    opacity: 0.5;
-}
-
-.bgMiddle {
-    z-index: 10;
-    opacity: 0.75;
-}
-
-.bgBottom {
-    z-index: 5;
-}
-
-.wave {
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
-    transform-origin: center bottom;
-}
-
-.waveTop {
-    background-size: 50% 100px;
-}
-
-.waveAnimation .waveTop {
-    animation: move-wave 3s;
-    -webkit-animation: move-wave 3s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-}
-
-.waveMiddle {
-    background-size: 50% 120px;
-}
-
-.waveAnimation .waveMiddle {
-    animation: move_wave 10s linear infinite;
-}
-
-.waveBottom {
-    background-size: 50% 100px;
-}
-
-.waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
-}

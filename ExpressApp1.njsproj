@@ -34,7 +34,14 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="index.js" />
+    <Content Include="public\images\avatar.png" />
+    <Content Include="public\images\img1.png" />
+    <Content Include="public\images\img2.png" />
+    <Content Include="public\images\img3.png" />
     <Content Include="public\images\raccoon_logo.png" />
+    <Content Include="public\images\wave-bot.png" />
+    <Content Include="public\images\wave-mid.png" />
+    <Content Include="public\images\wave-top.png" />
     <Content Include="routes\routes.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
