@@ -50,7 +50,7 @@ body {
     width: 65%;
     margin: auto;
 }
-#description, #skills, #portfolio {
+#description, #skills, #portfolio, #experience {
     margin-bottom: 200px;
 }
 
@@ -225,7 +225,7 @@ body {
             width: 400px;
             padding: 15px;
             background: white;
-            border: 1px solid var(--grey-color);
+            border: 1px solid var(--primary-color);
         }
 
             .timeline ul li div::before {
@@ -242,7 +242,7 @@ body {
         }
 
             .timeline ul li:nth-child(odd) div::before {
-                left: -15px;
+                left: -17px;
                 border-width: 8px 16px 8px 0;
                 border-color: transparent var(--primary-color) transparent transparent;
             }
@@ -252,7 +252,7 @@ body {
         }
 
             .timeline ul li:nth-child(even) div::before {
-                right: -15px;
+                right: -17px;
                 border-width: 8px 0 8px 16px;
                 border-color: transparent transparent transparent var(--primary-color);
             }
@@ -323,7 +323,7 @@ body {
         }
 
             .timeline ul li:nth-child(even) div::before {
-                left: -15px;
+                left: -17px;
                 border-width: 8px 16px 8px 0;
                 border-color: transparent var(--primary-color) transparent transparent;
             }

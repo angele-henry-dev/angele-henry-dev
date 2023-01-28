@@ -9,10 +9,10 @@ header.pb-2
             nav#menu.navbar.p-0
                 .menu-item
                     a.btn.btn-link.p-0.me-1(role="button" title="Send me an email" onclick="contactMe()")
-                        i.fa-solid.fa-square-envelope.fa-lg
+                        i.fa-solid.fa-square-envelope.fa-xl
                 .menu-item
                     a.btn.btn-link.p-0(role="button" href="https://www.linkedin.com/in/angele-marques/" target="_blank" title="Go to LinkedIn page")
-                        i.fa-brands.fa-linkedin.fa-lg
+                        i.fa-brands.fa-linkedin.fa-xl
 script.
     async function contactMe() {
         const post = await fetch("/contact").then((res) => res.json());

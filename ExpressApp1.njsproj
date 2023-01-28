@@ -50,6 +50,7 @@
     <Content Include="views\partials\description.pug" />
     <Content Include="views\partials\footer.pug" />
     <Content Include="views\partials\header.pug" />
+    <Content Include="views\partials\experience.pug" />
     <Content Include="views\partials\portfolio.pug" />
     <Content Include="views\partials\skills.pug" />
   </ItemGroup>
