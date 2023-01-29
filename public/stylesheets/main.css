@@ -193,11 +193,11 @@ body {
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.timeline ul {
+.timeline ul.timeline-items {
     padding: 50px 0;
 }
 
-    .timeline ul li {
+    .timeline ul.timeline-items li.timeline-item {
         list-style-type: none;
         position: relative;
         width: 6px;
@@ -206,7 +206,7 @@ body {
         background: var(--primary-color);
     }
 
-        .timeline ul li::after {
+        .timeline ul.timeline-items li.timeline-item::after {
             content: "";
             position: absolute;
             left: 50%;
@@ -219,7 +219,7 @@ body {
             z-index: 1;
         }
 
-        .timeline ul li div {
+        .timeline ul.timeline-items li.timeline-item div.container {
             position: relative;
             bottom: 0;
             width: 400px;
@@ -228,7 +228,7 @@ body {
             border: 1px solid var(--primary-color);
         }
 
-            .timeline ul li div::before {
+            .timeline ul.timeline-items li.timeline-item div.container::before {
                 content: "";
                 position: absolute;
                 bottom: 7px;
@@ -237,21 +237,21 @@ body {
                 border-style: solid;
             }
 
-        .timeline ul li:nth-child(odd) div {
+        .timeline ul.timeline-items li.timeline-item:nth-child(odd) div.container {
             left: 45px;
         }
 
-            .timeline ul li:nth-child(odd) div::before {
+            .timeline ul.timeline-items li.timeline-item:nth-child(odd) div.container::before {
                 left: -17px;
                 border-width: 8px 16px 8px 0;
                 border-color: transparent var(--primary-color) transparent transparent;
             }
 
-        .timeline ul li:nth-child(even) div {
+        .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container {
             left: -439px;
         }
 
-            .timeline ul li:nth-child(even) div::before {
+            .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container::before {
                 right: -17px;
                 border-width: 8px 0 8px 16px;
                 border-color: transparent transparent transparent var(--primary-color);
@@ -266,29 +266,29 @@ body {
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.timeline ul li::after {
+.timeline ul.timeline-items li.timeline-item::after {
     transition: background 0.5s ease-in-out;
 }
 
-.timeline ul li.in-view::after {
+.timeline ul.timeline-items li.timeline-item.in-view::after {
     background: var(--primary-color);
 }
 
-.timeline ul li div {
+.timeline ul.timeline-items li.timeline-item div.container {
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 
-.timeline ul li:nth-child(odd) div {
+.timeline ul.timeline-items li.timeline-item:nth-child(odd) div.container {
     transform: translate3d(200px, 0, 0);
 }
 
-.timeline ul li:nth-child(even) div {
+.timeline ul.timeline-items li.timeline-item:nth-child(even) div.container {
     transform: translate3d(-200px, 0, 0);
 }
 
-.timeline ul li.in-view div {
+.timeline ul.timeline-items li.timeline-item.in-view div.container {
     transform: none;
     visibility: visible;
     opacity: 1;
@@ -299,30 +299,30 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (max-width: 900px) {
-    .timeline ul li div {
+    .timeline ul.timeline-items li.timeline-item div.container {
         width: 250px;
     }
 
-    .timeline ul li:nth-child(even) div {
+    .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container {
         left: -289px;
         /*250+45-6*/
     }
 }
 
 @media screen and (max-width: 600px) {
-    .timeline ul li {
+    .timeline ul.timeline-items li.timeline-item {
         margin-left: 20px;
     }
 
-        .timeline ul li div {
+        .timeline ul.timeline-items li.timeline-item div.container {
             width: calc(100vw - 91px);
         }
 
-        .timeline ul li:nth-child(even) div {
+        .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container {
             left: 45px;
         }
 
-            .timeline ul li:nth-child(even) div::before {
+            .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container::before {
                 left: -17px;
                 border-width: 8px 16px 8px 0;
                 border-color: transparent var(--primary-color) transparent transparent;
@@ -332,29 +332,29 @@ body {
 
 /* EXTRA/CLIP PATH STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.timeline-clippy ul li::after {
+.timeline-clippy ul.timeline-items li.timeline-item::after {
     width: 40px;
     height: 40px;
     border-radius: 0;
 }
 
-.timeline-rhombus ul li::after {
+.timeline-rhombus ul.timeline-items li.timeline-item::after {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
-.timeline-rhombus ul li div::before {
+.timeline-rhombus ul.timeline-items li.timeline-item div.container::before {
     bottom: 12px;
 }
 
-.timeline-star ul li::after {
+.timeline-star ul.timeline-items li.timeline-item::after {
     clip-path: polygon( 50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35% );
 }
 
-.timeline-heptagon ul li::after {
+.timeline-heptagon ul.timeline-items li.timeline-item::after {
     clip-path: polygon( 50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20% );
 }
 
-.timeline-infinite ul li::after {
+.timeline-infinite ul.timeline-items li.timeline-item::after {
     animation: scaleAnimation 2s infinite;
 }
 
