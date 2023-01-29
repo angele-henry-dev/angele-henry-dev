@@ -8,12 +8,19 @@
 body {
     color: white !important;
     background-color: var(--black-color) !important;
+    font-family: Helvetica !important;
 }
 .fa-heart {
     color: var(--secondary-color);
 }
-.h1, .h2, .h3, .h4 {
+.h1, .h3, .h4 {
     color: var(--primary-color) !important;
+}
+.h2 {
+    color: var(--secondary-color) !important;
+}
+.h1 {
+    font-family: Lucida Handwriting;
 }
 
 /* Custom scrollbar */
@@ -36,9 +43,12 @@ body {
     margin: auto;
 }
     .header-menu a {
-        text-decoration: none;
         color: var(--primary-color);
-        font-size: x-large;
+    }
+    .header-menu a.title {
+        text-decoration: none;
+        font-size: xx-large;
+        font-family: Lucida Handwriting;
     }
         .header-menu a:hover {
             color: var(--secondary-color);
@@ -202,7 +212,7 @@ body {
     .timeline ul.timeline-items li.timeline-item {
         list-style-type: none;
         position: relative;
-        width: 6px;
+        width: 2px;
         margin: 0 auto;
         padding-top: 50px;
         background: var(--primary-color);
@@ -214,8 +224,8 @@ body {
             left: 50%;
             bottom: 0;
             transform: translateX(-50%);
-            width: 30px;
-            height: 30px;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
             background: inherit;
             z-index: 1;
@@ -244,7 +254,7 @@ body {
             .timeline ul.timeline-items li.timeline-item:nth-child(odd) div.container::before {
                 left: -17px;
                 border-width: 8px 16px 8px 0;
-                border-color: transparent var(--primary-color) transparent transparent;
+                border-color: transparent grey transparent transparent;
             }
 
         .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container {
@@ -254,7 +264,7 @@ body {
             .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container::before {
                 right: -17px;
                 border-width: 8px 0 8px 16px;
-                border-color: transparent transparent transparent var(--primary-color);
+                border-color: transparent transparent transparent grey;
             }
 
 .timeline .content {
@@ -325,7 +335,7 @@ body {
             .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container::before {
                 left: -17px;
                 border-width: 8px 16px 8px 0;
-                border-color: transparent var(--primary-color) transparent transparent;
+                border-color: transparent grey transparent transparent;
             }
 }
 
