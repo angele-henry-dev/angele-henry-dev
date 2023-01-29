@@ -1,12 +1,13 @@
 :root {
-    --primary-color: #E5A31E;
-    --secondary-color: #1E6DE6;
+    --primary-color: white;
+    --secondary-color: #E5A31E;
     --black-color: #1A1A1A;
     --grey-color: var(--bs-border-color-translucent);
 }
 
 body {
-    color: var(--black-color);
+    color: white !important;
+    background-color: var(--black-color) !important;
 }
 .fa-heart {
     color: var(--secondary-color);
@@ -34,13 +35,14 @@ body {
     width: 85%;
     margin: auto;
 }
-
-.btn-link i {
-    color: var(--secondary-color);
-}
-    .btn-link i:hover {
-        color: var(--black-color);
+    .header-menu a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: x-large;
     }
+        .header-menu a:hover {
+            color: var(--secondary-color);
+        }
 
 /* Main content */
 
@@ -96,12 +98,12 @@ body {
         bottom: 0;
         left: 0;
         border-radius: 50%;
-        background: rgba(30, 109, 230, 0.8);
+        background: rgba(229, 163, 30, 0.8);
         animation: ripple-1 2s infinite ease-in-out;
         z-index: -1;
     }
     .animated-heart::after {
-        background: rgba(30, 109, 230, 0.6);
+        background: rgba(229, 163, 30, 0.6);
         animation: ripple-2 2s infinite ease-in-out;
         animation-delay: 0.5s;
     }
@@ -137,15 +139,15 @@ body {
     width: 3vmin;
     height: 3vmin;
     background: transparent;
-    border-top: 1vmin solid var(--secondary-color);
-    border-right: 1vmin solid var(--secondary-color);
+    border-top: 1vmin solid var(--primary-color);
+    border-right: 1vmin solid var(--primary-color);
     box-shadow: 0 0 0 lightgray;
     transition: all 200ms ease;
     transform: translate3d(0,-50%,0) rotate(-45deg);
 }
     .go-top:hover {
-        border-color: var(--black-color);
-        box-shadow: 0.5vmin -0.5vmin 0 var(--secondary-color);
+        border-color: var(--secondary-color);
+        box-shadow: 0.5vmin -0.5vmin 0 var(--primary-color);
     }
     .go-top:before {
         position: absolute;
@@ -224,8 +226,6 @@ body {
             bottom: 0;
             width: 400px;
             padding: 15px;
-            background: white;
-            border: 1px solid var(--primary-color);
         }
 
             .timeline ul.timeline-items li.timeline-item div.container::before {
