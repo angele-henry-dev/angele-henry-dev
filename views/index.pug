@@ -10,6 +10,7 @@ html(lang="en")
     body.custom-scrollbar-css(data-bs-spy="scroll" data-bs-target="#menu")
         include partials/header
         container.main-content
+            include partials/tracks
             include partials/description
             p.h1.mb-5 Skills
             include partials/skills
@@ -20,4 +21,3 @@ html(lang="en")
             .fixed-bottom.mb-5.ms-5
                 a.go-top(href="#" title="Go on top")
         include partials/footer
-        

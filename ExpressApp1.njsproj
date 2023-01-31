@@ -42,6 +42,8 @@
     <Content Include="public\images\wave-bot.png" />
     <Content Include="public\images\wave-mid.png" />
     <Content Include="public\images\wave-top.png" />
+    <Content Include="public\js\gsap.min.js" />
+    <Content Include="public\js\MotionPathPlugin.min.js" />
     <Content Include="routes\routes.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
@@ -53,11 +55,12 @@
     <Content Include="views\partials\experience.pug" />
     <Content Include="views\partials\portfolio.pug" />
     <Content Include="views\partials\skills.pug" />
+    <Content Include="views\partials\tracks.pug" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="js\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
+    <Folder Include="public\js\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />

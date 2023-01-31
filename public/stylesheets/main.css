@@ -2,7 +2,7 @@
     --primary-color: white;
     --secondary-color: #E5A31E;
     --black-color: #1A1A1A;
-    --grey-color: var(--bs-border-color-translucent);
+    --grey-color: rgba(173, 181, 189, 0.75);
 }
 
 body {
@@ -380,4 +380,27 @@ body {
     100% {
         transform: translateX(-50%) scale(1);
     }
+}
+
+/* Foot prints */
+.cover {
+    animation: walk 7s steps(7, end) infinite;
+}
+
+@keyframes walk {
+    to {
+        transform: translateX(675px);
+    }
+}
+
+/* Foot prints */
+svg {
+    overflow: visible;
+    height: 100%;
+    /* Fix Safari rendering bug */
+    transform: translateZ(0);
+}
+path {
+    stroke-width: 2;
+    stroke: gray;
 }
