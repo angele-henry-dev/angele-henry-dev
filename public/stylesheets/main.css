@@ -394,13 +394,31 @@ body {
 }
 
 /* Foot prints */
-svg {
-    overflow: visible;
-    height: 100%;
-    /* Fix Safari rendering bug */
-    transform: translateZ(0);
+#lefthand, #righthand, #leftfoot, #rightfoot {
+    position: absolute;
+    display: block;
+    border: solid 1px transparent;
+    -webkit-backface-visibility: hidden;
 }
-path {
-    stroke-width: 2;
-    stroke: gray;
+
+#lefthand {
+    left: -10px;
+    top: 254px;
+    visibility: hidden;
+}
+#righthand {
+    left: 26px;
+    top: 254px;
+    visibility: hidden;
+}
+
+#leftfoot {
+    left: -10px;
+    top: 254px;
+    visibility: hidden;
+}
+#rightfoot {
+    left: 26px;
+    top: 254px;
+    visibility: hidden;
 }

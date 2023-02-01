@@ -9,7 +9,7 @@ header.pb-2
             .menu-item
                 a.btn.btn-link.p-0(role="button" href="https://www.linkedin.com/in/angele-marques/" target="_blank" title="Go to LinkedIn page")
                     i.fa-brands.fa-linkedin.fa-2xl
-script.
+script(type="text/javascript").
     async function contactMe() {
         const post = await fetch("/contact").then((res) => res.json());
         window.location.href = post.message;

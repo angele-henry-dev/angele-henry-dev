@@ -1,23 +1,34 @@
-svg#svg(width='100%' height='100%' viewbox='-20 0 557 190')
-  path#path(d='M9,100c0,0,18.53-41.58,49.91-65.11c30-22.5,65.81-24.88,77.39-24.88c33.87,0,57.55,11.71,77.05,28.47c23.09,19.85,40.33,46.79,61.71,69.77c24.09,25.89,53.44,46.75,102.37,46.75c22.23,0,40.62-2.83,55.84-7.43c27.97-8.45,44.21-22.88,54.78-36.7c14.35-18.75,16.43-36.37,16.43-36.37')
-  img#footprint(src="/images/raccoon_tracks.png" alt="Step" height="50px")
+.tracks
+    img#lefthand(src="/images/raccoon_tracks_1.png" alt="Step" height="30px")
+    img#righthand(src="/images/raccoon_tracks_2.png" alt="Step" height="30px")
+    img#leftfoot(src="/images/raccoon_tracks_3.png" alt="Step" height="30px")
+    img#rightfoot(src="/images/raccoon_tracks_4.png" alt="Step" height="30px")
 
-script(src="/js/gsap.min.js")
-script(src="/js/MotionPathPlugin.min.js")
+script(src="/js/TweenMax.min.js" type="text/javascript" charset="utf-8")
 script.
-    gsap.registerPlugin(MotionPathPlugin);
-    gsap.to("#footprint", {
-      duration: 5, 
-      repeat: 12,
-      repeatDelay: 3,
-      yoyo: true,
-      ease: "power1.inOut",
-      motionPath:{
-        path: "#path",
-        align: "#path",
-        autoRotate: true,
-        alignOrigin: [0.5, 0.5]
-      }
-    });
+    const lefthand = document.querySelector("#lefthand");
+    const righthand = document.querySelector("#righthand");
+    const leftfoot = document.querySelector("#leftfoot");
+    const rightfoot = document.querySelector("#rightfoot");
 
+    const tl = new TimelineMax({repeat:-1});
+    const ease = SteppedEase.config(5);
 
+    tl
+      .to(righthand, 0.25, {autoAlpha:1,},1)
+      .to(lefthand, 0.25, {autoAlpha:1,},1)
+      .to(lefthand, 3, 
+          {bezier:{ curviness: 1, values:[{x:0, y:0},{x:52, y:-25}, {x:97, y:-39}, {x:136, y:-54}, {x:172, y:-83}, {x:197, y:-117},{x:200, y:-163,}],
+          autoRotate:90}, ease:ease},1)
+      .to(righthand, 3, 
+          {bezier:{ curviness: 1, values:[{x:0, y:0}, {x:44, y:-13}, {x:97, y:-28,}, {x:134, y:-49,}, {x:166, y:-83,}, {x:182, y:-126,}, {x:176, y:-163,}],
+          autoRotate:100}, ease:ease},1.25)
+
+      .to(rightfoot, 0.25, {autoAlpha:1,},1)
+      .to(leftfoot, 0.25, {autoAlpha:1,},1)
+      .to(leftfoot, 3, 
+          {bezier:{ curviness: 1, values:[{x:0, y:0},{x:52, y:-25}, {x:97, y:-39}, {x:136, y:-54}, {x:172, y:-83}, {x:197, y:-117},{x:200, y:-163,}],
+          autoRotate:90}, ease:ease},1)
+      .to(rightfoot, 3, 
+          {bezier:{ curviness: 1, values:[{x:0, y:0}, {x:44, y:-13}, {x:97, y:-28,}, {x:134, y:-49,}, {x:166, y:-83,}, {x:182, y:-126,}, {x:176, y:-163,}],
+          autoRotate:100}, ease:ease},1.25)
