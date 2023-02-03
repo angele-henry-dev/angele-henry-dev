@@ -2,7 +2,7 @@
     --primary-color: white;
     --secondary-color: #E5A31E;
     --black-color: #1A1A1A;
-    --grey-color: rgba(173, 181, 189, 0.75);
+    --grey-color: #424549;
 }
 
 body {
@@ -151,6 +151,7 @@ body {
     background: transparent;
     border-top: 1vmin solid var(--primary-color);
     border-right: 1vmin solid var(--primary-color);
+    border-radius: 15%;
     box-shadow: 0 0 0 lightgray;
     transition: all 200ms ease;
     transform: translate3d(0,-50%,0) rotate(-45deg);
@@ -168,13 +169,19 @@ body {
         height: 200%;
     }
 
-/* Rotating cards */
+/* Experiences */
 
+#experience {
+    margin-top: 48px;
+}
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 18rem !important;
+    height: 350px;
     perspective: 1000px;
+    margin-bottom: 12px;
+    margin-right: 6px;
+    padding: 0;
 }
 
 .flip-card-inner {
@@ -196,190 +203,14 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border: 1px solid var(--grey-color);
+    background-color: #212529;
 }
+    .flip-card-front .entete {
+        /*background-color: var(--secondary-color);*/
+    }
 
 .flip-card-back {
     transform: rotateY(180deg);
-}
-
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline ul.timeline-items {
-    padding: 50px 0;
-}
-
-    .timeline ul.timeline-items li.timeline-item {
-        list-style-type: none;
-        position: relative;
-        width: 2px;
-        margin: 0 auto;
-        padding-top: 50px;
-        background: var(--primary-color);
-    }
-
-        .timeline ul.timeline-items li.timeline-item::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translateX(-50%);
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background: inherit;
-            z-index: 1;
-        }
-
-        .timeline ul.timeline-items li.timeline-item div.container {
-            position: relative;
-            bottom: 0;
-            width: 400px;
-            padding: 15px;
-        }
-
-            .timeline ul.timeline-items li.timeline-item div.container::before {
-                content: "";
-                position: absolute;
-                bottom: 7px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-            }
-
-        .timeline ul.timeline-items li.timeline-item:nth-child(odd) div.container {
-            left: 45px;
-        }
-
-            .timeline ul.timeline-items li.timeline-item:nth-child(odd) div.container::before {
-                left: -17px;
-                border-width: 8px 16px 8px 0;
-                border-color: transparent grey transparent transparent;
-            }
-
-        .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container {
-            left: -439px;
-        }
-
-            .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container::before {
-                right: -17px;
-                border-width: 8px 0 8px 16px;
-                border-color: transparent transparent transparent grey;
-            }
-
-.timeline .content {
-    display: block;
-    margin-bottom: 8px;
-}
-
-
-/* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline ul.timeline-items li.timeline-item::after {
-    transition: background 0.5s ease-in-out;
-}
-
-.timeline ul.timeline-items li.timeline-item.in-view::after {
-    background: var(--primary-color);
-}
-
-.timeline ul.timeline-items li.timeline-item div.container {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.timeline ul.timeline-items li.timeline-item:nth-child(odd) div.container {
-    transform: translate3d(200px, 0, 0);
-}
-
-.timeline ul.timeline-items li.timeline-item:nth-child(even) div.container {
-    transform: translate3d(-200px, 0, 0);
-}
-
-.timeline ul.timeline-items li.timeline-item.in-view div.container {
-    transform: none;
-    visibility: visible;
-    opacity: 1;
-}
-
-
-/* GENERAL MEDIA QUERIES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-@media screen and (max-width: 900px) {
-    .timeline ul.timeline-items li.timeline-item div.container {
-        width: 250px;
-    }
-
-    .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container {
-        left: -289px;
-        /*250+45-6*/
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .timeline ul.timeline-items li.timeline-item {
-        margin-left: 20px;
-    }
-
-        .timeline ul.timeline-items li.timeline-item div.container {
-            width: calc(100vw - 91px);
-        }
-
-        .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container {
-            left: 45px;
-        }
-
-            .timeline ul.timeline-items li.timeline-item:nth-child(even) div.container::before {
-                left: -17px;
-                border-width: 8px 16px 8px 0;
-                border-color: transparent grey transparent transparent;
-            }
-}
-
-
-/* EXTRA/CLIP PATH STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.timeline-clippy ul.timeline-items li.timeline-item::after {
-    width: 40px;
-    height: 40px;
-    border-radius: 0;
-}
-
-.timeline-rhombus ul.timeline-items li.timeline-item::after {
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-.timeline-rhombus ul.timeline-items li.timeline-item div.container::before {
-    bottom: 12px;
-}
-
-.timeline-star ul.timeline-items li.timeline-item::after {
-    clip-path: polygon( 50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35% );
-}
-
-.timeline-heptagon ul.timeline-items li.timeline-item::after {
-    clip-path: polygon( 50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20% );
-}
-
-.timeline-infinite ul.timeline-items li.timeline-item::after {
-    animation: scaleAnimation 2s infinite;
-}
-
-@keyframes scaleAnimation {
-    0% {
-        transform: translateX(-50%) scale(1);
-    }
-
-    50% {
-        transform: translateX(-50%) scale(1.25);
-    }
-
-    100% {
-        transform: translateX(-50%) scale(1);
-    }
 }
 
 /* Foot prints */
