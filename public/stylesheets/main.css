@@ -242,7 +242,7 @@ body {
     }
 .flip-card-inner .hover-me::before {
     margin-left: 16px;
-    content: 'Click me';
+    content: 'Click on me';
     color: var(--secondary-color);
     font-size: small;
 }
