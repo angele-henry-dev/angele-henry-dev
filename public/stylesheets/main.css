@@ -219,7 +219,6 @@ body {
     width: 18rem !important;
     perspective: 1000px;
     margin-bottom: 12px;
-    margin-right: 6px;
     padding: 0;
 }
 @media screen and (min-width: 576px) {
@@ -261,7 +260,6 @@ body {
     content: '';
     border-bottom: solid var(--black-color);
     border-right: solid var(--black-color);
-    margin-left: 5px;
     border-width: 0 3px 3px 0;
     border-radius: 15%;
     display: inline-block;
