@@ -211,41 +211,41 @@ body {
     background-color: #212529;
     overflow: hidden;
 }
-    .flip-card-front .entete {
-        position: relative;
-        height: 160px;
+.flip-card-inner .entete {
+    position: relative;
+    height: 160px;
+}
+    .flip-card-inner .entete div {
+        position: absolute;
+        bottom: 0;
     }
-        .flip-card-front .entete div {
-            position: absolute;
-            bottom: 0;
-        }
-        .flip-card-front .entete img {
-            position: absolute;
-            left: 0;
-            width: 100%;
-        }
-    .flip-card-front .hover-me::before {
-        margin-left: 16px;
-        content: 'Click me';
-        color: var(--secondary-color);
-        font-size: small;
+    .flip-card-inner .entete img {
+        position: absolute;
+        left: 0;
+        width: 100%;
     }
+.flip-card-inner .hover-me::before {
+    margin-left: 16px;
+    content: 'Click me';
+    color: var(--secondary-color);
+    font-size: small;
+}
     @media screen and (min-width: 480px) {
-        .flip-card-front .hover-me::before {
+        .flip-card-inner .hover-me::before {
             content: 'Hover me';
         }
     }
-    .flip-card-front .hover-me::after {
-        content: '';
-        margin-left: 5px;
-        border: solid var(--secondary-color);
-        border-width: 0 3px 3px 0;
-        border-radius: 15%;
-        display: inline-block;
-        padding: 3px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-    }
+.flip-card-inner .hover-me::after {
+    content: '';
+    margin-left: 5px;
+    border: solid var(--secondary-color);
+    border-width: 0 3px 3px 0;
+    border-radius: 15%;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 
 .flip-card-back {
     transform: rotateY(180deg);
