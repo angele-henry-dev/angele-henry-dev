@@ -31,10 +31,10 @@ body {
         width: 5px;
     }
     .custom-scrollbar-css::-webkit-scrollbar-track {
-        background: #eee;
+        background: var(--black-color);
     }
     .custom-scrollbar-css::-webkit-scrollbar-thumb {
-        background-color: var(--black-color);
+        background-color: var(--secondary-color);
     }
 
 /* Header */
