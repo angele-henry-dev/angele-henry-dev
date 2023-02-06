@@ -1,4 +1,6 @@
 :root {
+    --primary-color: white;
+    --secondary-color: #E5A31E;
     --black-color: #1A1A1A;
     --grey-color: #424549;
 }
@@ -72,13 +74,6 @@ body {
         width: 75%;
     }
 }
-.header-menu a {
-    color: var(--black-color);
-}
-
-    .header-menu a:hover {
-        color: var(--grey-color);
-    }
     .header-menu a.title {
         text-decoration: none;
         font-size: xx-large;

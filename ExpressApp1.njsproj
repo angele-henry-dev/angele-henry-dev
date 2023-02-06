@@ -46,6 +46,8 @@
     <Content Include="public\images\raccoon_tracks_3.png" />
     <Content Include="public\images\raccoon_tracks_4.png" />
     <Content Include="public\js\TweenMax.min.js" />
+    <Content Include="public\stylesheets\dark.css" />
+    <Content Include="public\stylesheets\light.css" />
     <Content Include="routes\routes.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />

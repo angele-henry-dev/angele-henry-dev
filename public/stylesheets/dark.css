@@ -1,0 +1,100 @@
+:root {
+    --primary-color: white;
+    --secondary-color: #E5A31E;
+    --black-color: #1A1A1A;
+    --grey-color: #424549;
+}
+
+body {
+    color: white !important;
+    background-color: var(--black-color) !important;
+}
+
+.fa-heart {
+    color: var(--secondary-color);
+}
+
+.h1, .h3, .h4 {
+    color: var(--primary-color) !important;
+}
+
+.h2 {
+    color: var(--secondary-color) !important;
+}
+
+.card-angele {
+    background-color: #212529;
+}
+    .card-angele .card-content ul li {
+        color: white;
+        background-color: var(--black-color);
+    }
+
+/* Custom scrollbar */
+
+.custom-scrollbar-css::-webkit-scrollbar-track {
+    background: var(--black-color);
+}
+
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+}
+
+/* Header */
+
+.header-menu a {
+    color: var(--primary-color);
+}
+
+    .header-menu a:hover {
+        color: var(--secondary-color);
+    }
+
+/* Description */
+
+.blockquote-custom {
+    border: 2px solid var(--primary-color);
+    background-image: url("/images/logo.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 40%;
+}
+
+.blockquote-custom-icon {
+    background-color: var(--secondary-color);
+}
+
+/* Animated heart */
+.animated-heart {
+    background: var(--secondary-color);
+}
+
+    .animated-heart::before, .animated-heart::after {
+        background: rgba(229, 163, 30, 0.8);
+    }
+
+    .animated-heart::after {
+        background: rgba(229, 163, 30, 0.6);
+    }
+
+/* Go on top button */
+
+.go-top {
+    border-top: 1vmin solid var(--primary-color);
+    border-right: 1vmin solid var(--primary-color);
+}
+
+    .go-top:hover {
+        border-color: var(--secondary-color);
+        box-shadow: 0.5vmin -0.5vmin 0 var(--primary-color);
+    }
+
+/* Experiences */
+
+.flip-card-inner .hover-me::before {
+    color: var(--secondary-color);
+}
+
+.flip-card-inner .hover-me::after {
+    border: solid var(--secondary-color);
+}
