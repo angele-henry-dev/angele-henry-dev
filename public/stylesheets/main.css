@@ -80,6 +80,10 @@ body {
     position: relative;
     font-size: 1.1rem;
     border: 2px solid var(--primary-color);
+    background-image: url("/images/logo.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
 }
 .blockquote-custom-icon {
     background-color: var(--secondary-color);
