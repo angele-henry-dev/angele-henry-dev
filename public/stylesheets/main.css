@@ -177,7 +177,7 @@ body {
 .flip-card {
     background-color: transparent;
     width: 18rem !important;
-    height: 350px;
+    height: 400px;
     perspective: 1000px;
     margin-bottom: 12px;
     margin-right: 6px;
@@ -204,10 +204,21 @@ body {
     backface-visibility: hidden;
     border: 1px solid var(--grey-color);
     background-color: #212529;
+    overflow: hidden;
 }
     .flip-card-front .entete {
-        /*background-color: var(--secondary-color);*/
+        position: relative;
+        height: 160px;
     }
+        .flip-card-front .entete div {
+            position: absolute;
+            bottom: 0;
+        }
+        .flip-card-front .entete img {
+            position: absolute;
+            left: 0;
+            width: 100%;
+        }
 
 .flip-card-back {
     transform: rotateY(180deg);

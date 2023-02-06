@@ -45,9 +45,6 @@
     <Content Include="public\images\raccoon_tracks_2.png" />
     <Content Include="public\images\raccoon_tracks_3.png" />
     <Content Include="public\images\raccoon_tracks_4.png" />
-    <Content Include="public\images\wave-bot.png" />
-    <Content Include="public\images\wave-mid.png" />
-    <Content Include="public\images\wave-top.png" />
     <Content Include="public\js\TweenMax.min.js" />
     <Content Include="routes\routes.js" />
     <Content Include="package.json" />
