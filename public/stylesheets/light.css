@@ -1,269 +1,105 @@
 :root {
-    --primary-color: white;
-    --secondary-color: #E5A31E;
+    --primary-color: #FFE2AE;
+    --secondary-color: #1E6DE6;
     --black-color: #1A1A1A;
+    --black-light-color: #212529;
     --grey-color: #424549;
 }
 
 body {
-    font-family: Helvetica !important;
-}
-.h1 {
-    font-family: Lucida Handwriting;
+    background-color: var(--primary-color) !important;
+    color: var(--black-color) !important;
 }
 
 .fa-heart {
-    color: #FF0000;
+    color: var(--secondary-color);
+}
+
+.h1, .h3, .h4 {
+    color: var(--black-color) !important;
+}
+
+.h2 {
+    color: var(--secondary-color) !important;
 }
 
 .card-angele {
-    overflow: hidden;
-    padding: 0 !important;
-    border: 1px solid var(--grey-color);
+    background-color: var(--primary-color);
 }
 
-.card-entete {
-    position: relative;
-    height: 160px;
-    color: white;
-}
-    .card-entete img {
-        height: 100%;
-    }
-    .card-entete div {
-        position: absolute;
-        bottom: 0;
-        z-index: 3;
-    }
-    .card-entete .black-cover {
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-        z-index: 2;
-    }
-    .card-entete img {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        z-index: 1;
+    .card-angele .card-content ul li {
+        color: var(--black-color);
+        background-color: var(--primary-color);
+        border-color: var(--black-color);
     }
 
 /* Custom scrollbar */
-.custom-scrollbar-css {
-    overflow-y: scroll;
-}
-    .custom-scrollbar-css::-webkit-scrollbar {
-        width: 5px;
-    }
-    .custom-scrollbar-css::-webkit-scrollbar-track {
-        background: white;
-    }
 
-    .custom-scrollbar-css::-webkit-scrollbar-thumb {
-        background-color: var(--black-color);
-    }
+.custom-scrollbar-css::-webkit-scrollbar-track {
+    background: var(--primary-color);
+}
+
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+    background-color: var(--black-color);
+}
 
 /* Header */
-.header-menu {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-}
-@media screen and (min-width: 576px) {
-    .header-menu {
-        width: 75%;
-    }
-}
-    .header-menu a.title {
-        text-decoration: none;
-        font-size: xx-large;
-        font-family: Lucida Handwriting;
-    }
 
-/* Main content */
+.header-menu a {
+    color: var(--black-color);
+}
 
-.main-content {
-    display: block;
-    margin-top: 50px !important;
-    width: 95%;
-    max-width: 900px;
-    margin: auto;
-}
-@media screen and (min-width: 576px) {
-    .main-content {
-        width: 65%;
+    .header-menu a:hover {
+        color: var(--secondary-color);
     }
-}
-#description, #skills, #portfolio, #experience {
-    margin-bottom: 150px;
-}
 
 /* Description */
 
 .blockquote-custom {
-    position: relative;
+    background-color: var(--primary-color) !important;
+    border: 2px solid var(--black-color);
+    background-image: url("/images/logo2.png");
+    background-repeat: no-repeat;
+    background-position: 93% 50%;
+    background-size: 30%;
 }
-    .blockquote-custom .avatar {
-        text-align: center;
-        margin-bottom: 20px;
-    }
+
 .blockquote-custom-icon {
-    background-color: var(--black-color);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -25px;
-    left: 50px;
-}
-
-/* Skills */
-
-#skills .card-angele {
-    width: 18rem !important;
+    background-color: var(--secondary-color);
 }
 
 /* Animated heart */
 .animated-heart {
-    background: #FF0000;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    line-height: 24px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    z-index: 1;
+    background: var(--secondary-color);
 }
 
     .animated-heart::before, .animated-heart::after {
-        content: '';
-        background: rgba(255, 0, 0, 0.8);
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-radius: 50%;
-        animation: ripple-1 2s infinite ease-in-out;
-        z-index: -1;
+        background: rgba(30, 109, 230, 0.8);
     }
+
     .animated-heart::after {
-        background: rgba(255, 0, 0, 0.6);
-        animation: ripple-2 2s infinite ease-in-out;
-        animation-delay: 0.5s;
+        background: rgba(30, 109, 230, 0.6);
     }
-@keyframes ripple-1 {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1.5);
-        opacity: 0;
-    }
-}
-@keyframes ripple-2 {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1.7);
-        opacity: 0;
-    }
-}
 
 /* Go on top button */
 
 .go-top {
-    position: absolute;
-    bottom: 0;
-    right: 3%;
-    width: 3vmin;
-    height: 3vmin;
-    background: transparent;
-    border-radius: 15%;
-    box-shadow: 0 0 0 lightgray;
-    transition: all 200ms ease;
-    transform: translate3d(0,-50%,0) rotate(-45deg);
+    border-top: 1vmin solid var(--black-color);
+    border-right: 1vmin solid var(--black-color);
 }
-    .go-top:before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-40%,-60%) rotate(45deg);
-        width: 200%;
-        height: 200%;
+
+    .go-top:hover {
+        border-color: var(--secondary-color);
+        box-shadow: 0.5vmin -0.5vmin 0 var(--black-color);
     }
 
 /* Experiences */
 
-#experience {
-    margin-top: 48px;
-}
-.flip-card {
-    background-color: transparent;
-    height: 650px;
-    width: 18rem !important;
-    perspective: 1000px;
-    margin-bottom: 12px;
-    margin-right: 6px;
-    padding: 0;
-}
-@media screen and (min-width: 576px) {
-    .flip-card {
-        height: 490px;
-    }
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
 .flip-card-inner .hover-me::before {
-    margin-left: 16px;
-    content: 'Click on me';
-    font-size: small;
-}
-@media screen and (min-width: 576px) {
-    .flip-card-inner .hover-me::before {
-        content: 'Hover me';
-    }
-}
-.flip-card-inner .hover-me::after {
-    content: '';
-    border: solid var(--black-color);
-    margin-left: 5px;
-    border-width: 0 3px 3px 0;
-    border-radius: 15%;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+    color: var(--secondary-color);
 }
 
-.flip-card-back {
-    transform: rotateY(180deg);
+.flip-card-inner .hover-me::after {
+    border-bottom: solid var(--secondary-color);
+    border-right: solid var(--secondary-color);
 }

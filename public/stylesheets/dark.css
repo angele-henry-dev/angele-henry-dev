@@ -2,6 +2,7 @@
     --primary-color: white;
     --secondary-color: #E5A31E;
     --black-color: #1A1A1A;
+    --black-light-color: #212529;
     --grey-color: #424549;
 }
 
@@ -23,11 +24,11 @@ body {
 }
 
 .card-angele {
-    background-color: #212529;
+    background-color: var(--black-light-color);
 }
     .card-angele .card-content ul li {
         color: white;
-        background-color: var(--black-color);
+        background-color: var(--black-light-color);
     }
 
 /* Custom scrollbar */
@@ -96,5 +97,6 @@ body {
 }
 
 .flip-card-inner .hover-me::after {
-    border: solid var(--secondary-color);
+    border-bottom: solid var(--secondary-color);
+    border-right: solid var(--secondary-color);
 }
