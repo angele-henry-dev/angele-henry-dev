@@ -23,6 +23,14 @@ body {
     font-family: Lucida Handwriting;
 }
 
+.card-angele {
+    border: 1px solid var(--grey-color);
+    background-color: #212529;
+    overflow: hidden;
+    width: 18rem !important;
+    padding: 0 !important;
+}
+
 /* Custom scrollbar */
 .custom-scrollbar-css {
     overflow-y: scroll;
@@ -176,8 +184,8 @@ body {
 }
 .flip-card {
     background-color: transparent;
-    width: 18rem !important;
     height: 650px;
+    width: 18rem !important;
     perspective: 1000px;
     margin-bottom: 12px;
     margin-right: 6px;
@@ -207,22 +215,30 @@ body {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border: 1px solid var(--grey-color);
-    background-color: #212529;
-    overflow: hidden;
 }
-.flip-card-inner .entete {
+.card-entete {
     position: relative;
     height: 160px;
 }
-    .flip-card-inner .entete div {
+    .card-entete img {
+        height: 100%;
+    }
+    .card-entete div {
         position: absolute;
         bottom: 0;
+        z-index: 3;
     }
-    .flip-card-inner .entete img {
+    .card-entete .black-cover {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        z-index: 2;
+    }
+    .card-entete img {
         position: absolute;
         left: 0;
         width: 100%;
+        z-index: 1;
     }
 .flip-card-inner .hover-me::before {
     margin-left: 16px;
