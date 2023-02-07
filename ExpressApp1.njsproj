@@ -15,7 +15,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>03d1260e-bb07-40e1-b8d5-de49692cd779</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>index.js</StartupFile>
+    <StartupFile>app.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="index.js" />
+    <Content Include="app.js" />
     <Content Include="public\images\avatar.png" />
     <Content Include="public\favicon.ico" />
     <Content Include="public\images\img1.png" />
@@ -52,6 +52,8 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
+    <Content Include="views\404.pug" />
+    <Content Include="views\error.pug" />
     <Content Include="views\index.pug" />
     <Content Include="views\partials\description.pug" />
     <Content Include="views\partials\footer.pug" />

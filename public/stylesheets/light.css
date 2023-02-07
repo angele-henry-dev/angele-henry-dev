@@ -63,11 +63,6 @@ body {
     background-position: 93% 50%;
     background-size: 30%;
 }
-@media screen and (min-width: 750px) {
-    .blockquote-custom .inline {
-        display: inline;
-    }
-}
 
 .blockquote-custom-icon {
     background-color: var(--secondary-color);
