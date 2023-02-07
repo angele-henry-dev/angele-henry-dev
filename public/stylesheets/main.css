@@ -6,8 +6,9 @@
 body {
     font-family: Helvetica !important;
 }
-.h1 {
-    font-family: Lucida Handwriting;
+.h1, .header-menu a.title {
+    font-family: 'Reenie Beanie';
+    font-size: 54px !important;
 }
 
 .fa-heart {
@@ -81,8 +82,6 @@ body {
     }
     .header-menu a.title {
         text-decoration: none;
-        font-size: xx-large;
-        font-family: Lucida Handwriting;
     }
 
 /* Main content */
