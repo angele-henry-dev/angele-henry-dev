@@ -43,11 +43,11 @@ body {
 
 /* Header */
 
-.header-menu a {
+a.btn {
     color: var(--primary-color);
 }
 
-    .header-menu a:hover {
+    a.btn:hover, a.btn:active, a.btn:focus {
         color: var(--secondary-color);
     }
 
