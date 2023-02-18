@@ -12,7 +12,8 @@
 ```javascript
 const angele : {
   frontend: [
-    HTML5 / CSS3, 
+    HTML5,
+    CSS3, 
     VueJS,
     Javascript,
     Typescript,
@@ -21,9 +22,8 @@ const angele : {
   ],
   backend: [
     Python,
-    Java SE,
-    Java EE,
-    C++,
+    Java,
+    CPlusPlus,
     NodeJS,
     ExpressJS,
   ],
