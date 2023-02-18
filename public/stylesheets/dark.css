@@ -55,10 +55,6 @@ a.btn {
 
 .blockquote-custom {
     border: 2px solid var(--primary-color);
-    background-image: url("/images/logo.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 40%;
 }
 
 .blockquote-custom-icon {

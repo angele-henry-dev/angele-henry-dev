@@ -58,10 +58,6 @@ body {
 .blockquote-custom {
     background-color: var(--primary-color) !important;
     border: 2px solid var(--black-color);
-    background-image: url("/images/logo2.png");
-    background-repeat: no-repeat;
-    background-position: 93% 50%;
-    background-size: 30%;
 }
 
 .blockquote-custom-icon {
