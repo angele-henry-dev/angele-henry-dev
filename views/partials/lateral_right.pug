@@ -1,0 +1,12 @@
+#lateral_right.d-flex.flex-column.nav.nav-pills
+    a.btn.btn-link.p-0.mt-4.me-3(href="#description" title="Description") .Description
+    a.btn.btn-link.p-0.me-3(href="#skills" title="Skills") .Skills
+    a.btn.btn-link.p-0.me-3(href="#experience" title="Professional experiences") .Experience
+    div
+        a.go-top(href="#" title="Go on top")
+
+script(type="text/javascript").
+    async function contactMe() {
+        const post = await fetch("/contact").then((res) => res.json());
+        window.location.href = post.message;
+    }

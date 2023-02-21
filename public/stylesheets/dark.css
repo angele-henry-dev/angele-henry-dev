@@ -47,8 +47,8 @@ a.btn {
     color: var(--primary-color);
 }
 
-    a.btn:hover, a.btn:active, a.btn:focus {
-        color: var(--secondary-color);
+    a.btn:hover, a.btn.active, a.btn:focus {
+        color: var(--secondary-color) !important;
     }
 
 /* Description */
@@ -85,6 +85,12 @@ a.btn {
         border-color: var(--secondary-color);
         box-shadow: 0.5vmin -0.5vmin 0 var(--primary-color);
     }
+
+/* Left sidebar */
+
+#lateral_left .vl {
+    border-right: 2px solid var(--secondary-color);
+}
 
 /* Experiences */
 

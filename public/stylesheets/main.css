@@ -48,16 +48,19 @@ body {
 /* Header */
 .header-menu {
     width: 100%;
-    max-width: 1000px;
-    margin: auto;
 }
+    .header-menu #menu-right {
+        display: none;
+    }
 @media screen and (min-width: 576px) {
-    .header-menu {
-        width: 75%;
+    .header-menu #menu-right {
+        display: block;
     }
 }
-a.title {
+
+a.btn {
     text-decoration: none;
+    text-align: left;
 }
 
 /* Main content */
@@ -74,12 +77,18 @@ footer .row {
     max-width: 900px;
     margin: auto;
 }
+footer .links {
+    display: block;
+}
 @media screen and (min-width: 576px) {
     .main-content {
         width: 65%;
     }
     footer .row {
         width: 65%;
+    }
+    footer .links {
+        display: none;
     }
 }
 #description, #skills, #portfolio, #experience {
@@ -179,7 +188,7 @@ footer .row {
 .go-top {
     position: absolute;
     bottom: 0;
-    right: 3%;
+    right: 35%;
     width: 3vmin;
     height: 3vmin;
     background: transparent;
@@ -197,29 +206,69 @@ footer .row {
         height: 200%;
     }
 
-/* Experiences */
+/* Left sidebar */
 
-#experience {
-    margin-top: 48px;
+#lateral_left, #lateral_right {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100px;
+    height: 100vh;
 }
-.flip-card {
-    width: 18rem !important;
-}
-    .flip-card .flip-card-back .card-entete {
-        display: none;
+    #lateral_left .box-vl {
+        height: 200px;
+    }
+    #lateral_left .vl {
+        border-right: 2px solid black;
+        width: 50px;
+        height: 100%;
     }
 @media screen and (min-width: 576px) {
-    .flip-card {
-        height: 490px;
-        background-color: transparent;
-        width: 18rem !important;
-        perspective: 1000px;
-        margin-bottom: 12px;
-        padding: 0;
+    #lateral_left, #lateral_right {
+        display: flex;
     }
+}
+#lateral_left {
+    left: 20px;
+}
+#lateral_right {
+    right: 20px;
+}
+
+@media screen and (min-width: 576px) {
+    #lateral_right {
+        display: flex;
+    }
+}
+
+    /* Experiences */
+
+    #experience {
+        margin-top: 48px;
+    }
+
+    .flip-card {
+        width: 18rem !important;
+    }
+
         .flip-card .flip-card-back .card-entete {
-            display: block;
+            display: none;
         }
+
+    @media screen and (min-width: 576px) {
+        .flip-card {
+            height: 490px;
+            background-color: transparent;
+            width: 18rem !important;
+            perspective: 1000px;
+            margin-bottom: 12px;
+            padding: 0;
+        }
+
+            .flip-card .flip-card-back .card-entete {
+                display: block;
+            }
+
         .flip-card-inner {
             position: relative;
             width: 100%;
@@ -228,36 +277,36 @@ footer .row {
             transform-style: preserve-3d;
         }
 
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
 
-    .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
 
-    .flip-card-inner .hover-me::before {
-        margin-left: 16px;
-        content: 'Hover me';
-        font-size: small;
-    }
+        .flip-card-inner .hover-me::before {
+            margin-left: 16px;
+            content: 'Hover me';
+            font-size: small;
+        }
 
-    .flip-card-inner .hover-me::after {
-        content: '';
-        border-width: 0 3px 3px 0;
-        border-radius: 15%;
-        display: inline-block;
-        padding: 3px;
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-    }
+        .flip-card-inner .hover-me::after {
+            content: '';
+            border-width: 0 3px 3px 0;
+            border-radius: 15%;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
 
-    .flip-card-back {
-        transform: rotateY(180deg);
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
     }
-}
 
