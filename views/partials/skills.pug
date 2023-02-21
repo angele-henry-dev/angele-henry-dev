@@ -3,53 +3,17 @@
         i.fa-solid.fa-bolt-lightning.fa-2xl.me-2
         span.h1
             | Skills
-    .card-angele.rounded.mb-3.mx-1
-        .card-entete
-            .black-cover
-            img(src="/images/pug.png" alt="Frontend developer")
-            .p-3
-                h2.h5 Frontend developer
-                span.small.text-gray I love bringing design to life
-        .card-content.p-3
-            h6 My languages
-            ul.list-group.list-group-flush
-                li.list-group-item HTML5 / CSS3
-                li.list-group-item VueJS
-                li.list-group-item Javascript
-                li.list-group-item Typescript
-                li.list-group-item Bootstrap
-                li.list-group-item PugJS
 
-    .card-angele.rounded.mb-3.mx-2
-        .card-entete
-            .black-cover
-            img.card-img-top(src="/images/python.png" alt="Backend developer")
-            .p-3
-                h2.h5 Backend developer
-                span.small.text-gray I have fun solving puzzles
-        .card-content.p-3
-            h6.card-text My languages
-            ul.list-group.list-group-flush
-                li.list-group-item Python
-                li.list-group-item Java SE
-                li.list-group-item Java EE
-                li.list-group-item C++
-                li.list-group-item NodeJS
-                li.list-group-item ExpressJS
-                
-    .card-angele.rounded.mb-3.mx-2
-        .card-entete
-            .black-cover
-            img.card-img-top(src="/images/cloud.png" alt="AWS developer")
-            .p-3
-                h2.h5 AWS developer
-                span.small.text-gray I like having my head in the clouds
-        .card-content.p-3
-            h6.card-text My services
-            ul.list-group.list-group-flush
-                li.list-group-item Lambda
-                li.list-group-item IoT Core
-                li.list-group-item IoT Events
-                li.list-group-item DynamoDB
-                li.list-group-item S3
-                li.list-group-item SES
+    each skill in skills
+        .card-angele.rounded.mb-3.mx-1
+            .card-entete
+                .black-cover
+                img(src=skill.imagePath alt=skill.title)
+                .p-3
+                    h2.h5 #{skill.title}
+                    span.small.text-gray #{skill.subtitle}
+            .card-content.p-3
+                h6 #{skill.technologiesTitle}
+                ul.list-group.list-group-flush
+                    each technology in skill.technologies
+                        li.list-group-item #{technology}

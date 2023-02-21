@@ -1,0 +1,221 @@
+[
+  {
+    "imagePath": "/images/iot.png",
+    "what": "IoT Developer",
+    "when": "2018 - 2023, Airbus",
+    "descriptions": [
+      "Design and development of a platform in Python and VueJS using AWS services to allow the management of many connected objects.",
+      "Management of the frontend part (reviews of code, migrations, upgrades, ui/ux)."
+    ],
+    "technologiesTitle": "Technologies I used",
+    "technologies": [
+      {
+        "technologyImage": "https://cdn.simpleicons.org/python/white",
+        "technologyTitle": "Python"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/flask/white",
+        "technologyTitle": "Flask"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/vuedotjs/white",
+        "technologyTitle": "VueJS"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/vuetify/white",
+        "technologyTitle": "Vuetify"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/typescript/white",
+        "technologyTitle": "Typescript"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/amazonaws/white",
+        "technologyTitle": "Amazon AWS"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/awslambda/white",
+        "technologyTitle": "AWS Lambda"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/tailwindcss/white",
+        "technologyTitle": "Tailwind CSS"
+      }
+    ]
+  },
+  {
+    "imagePath": "/images/plane.png",
+    "what": "Software Engineer",
+    "when": "2017 - 2018, Activus Services",
+    "descriptions": [
+      "Develop and manage a platform for airplane companies to follow the evolution of multiple systems to detect dangerous or alerting trends.",
+      "Development of a ServiceNow portal for the management of the various ITSM processes."
+    ],
+    "technologiesTitle": "Technologies I used",
+    "technologies": [
+      {
+        "technologyImage": "https://cdn.simpleicons.org/hibernate/white",
+        "technologyTitle": "Hibernate"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/html5/white",
+        "technologyTitle": "HTML5"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/css3/white",
+        "technologyTitle": "CSS3"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/javascript/white",
+        "technologyTitle": "Javascript"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/cplusplus/white",
+        "technologyTitle": "C++"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/dialogflow/white",
+        "technologyTitle": "Google Dialogflow"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/arduino/white",
+        "technologyTitle": "Arduino"
+      }
+    ]
+  },
+  {
+    "imagePath": "/images/intranet.png",
+    "what": "Analyst developer",
+    "when": "2015 - 2016, Koncept",
+    "descriptions": [
+      "Design and development of a portal with Liferay in Java EE for the creation/handling of incidents.",
+      "Implementation and management of a decision tree with RedHat BRMS."
+    ],
+    "technologiesTitle": "Technologies I used",
+    "technologies": [
+      {
+        "technologyImage": "/images/liferay.png",
+        "technologyTitle": "Liferay"
+      },
+      {
+        "technologyImage": "/images/java.png",
+        "technologyTitle": "Java"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/hibernate/white",
+        "technologyTitle": "Hibernate"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/html5/white",
+        "technologyTitle": "HTML5"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/css3/white",
+        "technologyTitle": "CSS3"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/javascript/white",
+        "technologyTitle": "Javascript"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/jquery/white",
+        "technologyTitle": "JQuery"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/redhat/white",
+        "technologyTitle": "BRMS RedHat"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/bmcsoftware/white",
+        "technologyTitle": "BMC Remedy"
+      }
+    ]
+  },
+  {
+    "imagePath": "/images/dentist.png",
+    "what": "Software developer",
+    "when": "2015, Libre-Services",
+    "descriptions": [
+      "Design and development of patients files management and 3D image manipulation software for medical sector."
+    ],
+    "technologiesTitle": "Technologies I used",
+    "technologies": [
+      {
+        "technologyImage": "https://cdn.simpleicons.org/cplusplus/white",
+        "technologyTitle": "C++"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/qt/white",
+        "technologyTitle": "QT5"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/mysql/white",
+        "technologyTitle": "MySQL"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/phpmyadmin/white",
+        "technologyTitle": "PHPMyAdmin"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/php/white",
+        "technologyTitle": "PHP"
+      }
+    ]
+  },
+  {
+    "imagePath": "/images/study.png",
+    "what": "Software developer training",
+    "when": "2014 - 2015, LDNR",
+    "descriptions": [
+      "I realized five development projects with the different languages C, C++ and Java SE/2EE on a distant collaborative work."
+    ],
+    "technologiesTitle": "Learnings",
+    "technologies": [
+      {
+        "technologyImage": "https://cdn.simpleicons.org/c/white",
+        "technologyTitle": "C"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/cplusplus/white",
+        "technologyTitle": "C++"
+      },
+      {
+        "technologyImage": "/images/java.png",
+        "technologyTitle": "Java"
+      }
+    ]
+  },
+  {
+    "imagePath": "/images/radio.png",
+    "what": "Sound technician",
+    "when": "2011 - 2014, Radio Occitania",
+    "descriptions": [
+      "Implementation of a website with live broadcast of radio programs.",
+      "Installation and management of a radio automation software.",
+      "Realization of radio broadcasts as a radio animator and as a sound technician."
+    ],
+    "technologiesTitle": "Technologies I used",
+    "technologies": [
+      {
+        "technologyImage": "https://cdn.simpleicons.org/html5/white",
+        "technologyTitle": "HTML5"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/css3/white",
+        "technologyTitle": "CSS3"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/javascript/white",
+        "technologyTitle": "Javascript"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/jquery/white",
+        "technologyTitle": "JQuery"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/php/white",
+        "technologyTitle": "PHP"
+      }
+    ]
+  }
+]

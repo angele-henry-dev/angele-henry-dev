@@ -1,0 +1,44 @@
+[
+  {
+    "imagePath": "/images/pug.png",
+    "title": "Frontend developer",
+    "subtitle": "I love bringing design to life",
+    "technologiesTitle": "My languages",
+    "technologies": [
+      "HTML5 / CSS3",
+      "VueJS",
+      "Javascript",
+      "Typescript",
+      "Bootstrap",
+      "PugJS"
+    ]
+  },
+  {
+    "imagePath": "/images/python.png",
+    "title": "Backend developer",
+    "subtitle": "I have fun solving puzzles",
+    "technologiesTitle": "My languages",
+    "technologies": [
+      "Python",
+      "Java SE",
+      "Java EE",
+      "C++",
+      "NodeJS",
+      "ExpressJS"
+    ]
+  },
+  {
+    "imagePath": "/images/cloud.png",
+    "title": "AWS developer",
+    "subtitle": "I like having my head in the clouds",
+    "technologiesTitle": "My services",
+    "technologies": [
+      "Lambda",
+      "IoT Core",
+      "IoT Events",
+      "DynamoDB",
+      "S3",
+      "SES"
+    ]
+  }
+]
