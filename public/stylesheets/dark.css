@@ -86,12 +86,6 @@ a.btn {
         box-shadow: 0.5vmin -0.5vmin 0 var(--primary-color);
     }
 
-/* Left sidebar */
-
-#lateral_left .vl {
-    border-right: 2px solid var(--secondary-color);
-}
-
 /* Experiences */
 
 .flip-card-inner .hover-me::before {

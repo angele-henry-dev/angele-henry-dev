@@ -49,14 +49,6 @@ body {
 .header-menu {
     width: 100%;
 }
-    .header-menu #menu-right {
-        display: none;
-    }
-@media screen and (min-width: 576px) {
-    .header-menu #menu-right {
-        display: block;
-    }
-}
 
 a.btn {
     text-decoration: none;
@@ -92,7 +84,12 @@ footer .links {
     }
 }
 #description, #skills, #portfolio, #experience {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
+}
+@media screen and (min-width: 750px) {
+    #description, #skills, #portfolio, #experience {
+        margin-bottom: 150px;
+    }
 }
 
 /* Description */
@@ -206,107 +203,109 @@ footer .links {
         height: 200%;
     }
 
-/* Left sidebar */
+/* Experiences */
 
-#lateral_left, #lateral_right {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: 100px;
-    height: 100vh;
+#experience {
+    margin-top: 48px;
 }
-    #lateral_left .box-vl {
-        height: 200px;
+
+.flip-card {
+    width: 18rem !important;
+}
+
+    .flip-card .flip-card-back .card-entete {
+        display: none;
     }
-    #lateral_left .vl {
-        border-right: 2px solid black;
-        width: 50px;
-        height: 100%;
-    }
-@media screen and (min-width: 576px) {
-    #lateral_left, #lateral_right {
-        display: flex;
-    }
-}
-#lateral_left {
-    left: 20px;
-}
-#lateral_right {
-    right: 20px;
-}
 
 @media screen and (min-width: 576px) {
-    #lateral_right {
-        display: flex;
-    }
-}
-
-    /* Experiences */
-
-    #experience {
-        margin-top: 48px;
-    }
-
     .flip-card {
+        height: 490px;
+        background-color: transparent;
         width: 18rem !important;
+        perspective: 1000px;
+        margin-bottom: 12px;
+        padding: 0;
     }
 
         .flip-card .flip-card-back .card-entete {
-            display: none;
+            display: block;
         }
 
-    @media screen and (min-width: 576px) {
-        .flip-card {
-            height: 490px;
-            background-color: transparent;
-            width: 18rem !important;
-            perspective: 1000px;
-            margin-bottom: 12px;
-            padding: 0;
-        }
-
-            .flip-card .flip-card-back .card-entete {
-                display: block;
-            }
-
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-        }
-
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front, .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-        }
-
-        .flip-card-inner .hover-me::before {
-            margin-left: 16px;
-            content: 'Hover me';
-            font-size: small;
-        }
-
-        .flip-card-inner .hover-me::after {
-            content: '';
-            border-width: 0 3px 3px 0;
-            border-radius: 15%;
-            display: inline-block;
-            padding: 3px;
-            transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg);
-        }
-
-        .flip-card-back {
-            transform: rotateY(180deg);
-        }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
     }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-inner .hover-me::before {
+        margin-left: 16px;
+        content: 'Hover me';
+        font-size: small;
+    }
+
+    .flip-card-inner .hover-me::after {
+        content: '';
+        border-width: 0 3px 3px 0;
+        border-radius: 15%;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .flip-card-back {
+        transform: rotateY(180deg);
+    }
+}
+
+/* Sidebars */
+
+#lateral-left, #lateral-right {
+    display: none !important;
+}
+
+@media screen and (min-width: 576px) {
+
+    #lateral-left, #lateral-right {
+        display: flex !important;
+        position: fixed;
+        bottom: 0;
+        width: 100px;
+        height: 100vh;
+    }
+
+        #lateral-left .vl {
+            border-right: 2px solid var(--secondary-color);
+            width: 50px;
+            height: 100%;
+        }
+        #lateral-left .box-vl {
+            height: 200px;
+        }
+
+    #lateral-left {
+        left: 20px;
+    }
+    #lateral-left a.btn {
+        text-align: center;
+    }
+
+    #lateral-right {
+        right: 20px;
+    }
+}
 
