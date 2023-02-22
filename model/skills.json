@@ -40,5 +40,19 @@
       "S3",
       "SES"
     ]
+  },
+  {
+    "imagePath": "/images/painter.png",
+    "title": "New skills researcher",
+    "subtitle": "I always want to know more",
+    "technologiesTitle": "My knowledge",
+    "technologies": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "Adobe XD",
+      "Microsoft Word",
+      "Microsoft Excel"
+    ]
   }
 ]
