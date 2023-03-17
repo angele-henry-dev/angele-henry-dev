@@ -27,12 +27,24 @@ app.get('/404', function (req, res, next) {
 // Since this is the last non-error-handling
 // middleware use()d, we assume 404, as nothing else
 // responded.
+const cards = [
+    "/images/pug.png",
+    "/images/python.png",
+    "/images/cloud.png",
+    "/images/painter.png",
+    "/images/iot.png",
+    "/images/plane.png",
+    "/images/intranet.png",
+    "/images/dentist.png",
+    "/images/study.png",
+    "/images/radio.png",
+];
 app.use(function (req, res, next) {
     res.status(404);
 
     res.format({
         html: function () {
-            res.render('404')
+            res.render('404', { cards: cards.concat(cards) })
         },
         json: function () {
             res.json({ error: 'Not found' })

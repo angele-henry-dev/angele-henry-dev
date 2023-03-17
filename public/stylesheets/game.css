@@ -2,10 +2,11 @@
     width: 80%;
     margin: auto;
 }
-.game-title {
-    text-align: center;
-}
 .game-frame {
-    height: 500px;
     border: 1px solid white;
 }
+    .memory-card .front, .memory-card .back {
+        border: 1px solid white;
+        height: 102px;
+        width: 159.5px;
+    }
