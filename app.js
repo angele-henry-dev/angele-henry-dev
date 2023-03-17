@@ -28,23 +28,93 @@ app.get('/404', function (req, res, next) {
 // middleware use()d, we assume 404, as nothing else
 // responded.
 const cards = [
-    "/images/pug.png",
-    "/images/python.png",
-    "/images/cloud.png",
-    "/images/painter.png",
-    "/images/iot.png",
-    "/images/plane.png",
-    "/images/intranet.png",
-    "/images/dentist.png",
-    "/images/study.png",
-    "/images/radio.png",
+    {
+        id: "pug1",
+        src: "/images/pug.png"
+    },
+    {
+        id: "python1",
+        src: "/images/python.png"
+    },
+    {
+        id: "cloud1",
+        src: "/images/cloud.png"
+    },
+    {
+        id: "painter1",
+        src: "/images/painter.png"
+    },
+    {
+        id: "iot1",
+        src: "/images/iot.png"
+    },
+    {
+        id: "plane1",
+        src: "/images/plane.png"
+    },
+    {
+        id: "intranet1",
+        src: "/images/intranet.png"
+    },
+    {
+        id: "dentist1",
+        src: "/images/dentist.png"
+    },
+    {
+        id: "study1",
+        src: "/images/study.png"
+    },
+    {
+        id: "radio1",
+        src: "/images/radio.png"
+    },
+    {
+        id: "pug2",
+        src: "/images/pug.png"
+    },
+    {
+        id: "python2",
+        src: "/images/python.png"
+    },
+    {
+        id: "cloud2",
+        src: "/images/cloud.png"
+    },
+    {
+        id: "painter2",
+        src: "/images/painter.png"
+    },
+    {
+        id: "iot2",
+        src: "/images/iot.png"
+    },
+    {
+        id: "plane2",
+        src: "/images/plane.png"
+    },
+    {
+        id: "intranet2",
+        src: "/images/intranet.png"
+    },
+    {
+        id: "dentist2",
+        src: "/images/dentist.png"
+    },
+    {
+        id: "study2",
+        src: "/images/study.png"
+    },
+    {
+        id: "radio2",
+        src: "/images/radio.png"
+    },
 ];
 app.use(function (req, res, next) {
     res.status(404);
 
     res.format({
         html: function () {
-            res.render('404', { cards: cards.concat(cards) })
+            res.render('404', { cards: cards })
         },
         json: function () {
             res.json({ error: 'Not found' })

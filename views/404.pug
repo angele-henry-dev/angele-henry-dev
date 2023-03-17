@@ -24,9 +24,10 @@ html(lang="en")
                 - cards.sort(() => (Math.random() > .5) ? 1 : -1);
                 each card in cards
                     .memory-card.col.m-2
-                        .front.collapse.show
-                            img(src=card height="100px" alt="front of the card")
-                        .back.text-center.collapse
-                            img(src="/images/logo.png" height="100px" alt="back of the card")
+                        .back.text-center.collapse.show(id='back-'+card.id)
+                            button.btn.p-0(type='button' data-bs-toggle='collapse' data-bs-target='#back-'+card.id aria-expanded='false' aria-controls='back-'+card.id)
+                                img(src="/images/logo.png" height="100px" alt="back of the card")
+                        .front.collapse.collapse-horizontal(id='back-'+card.id)
+                            img(src=card.src height="100px" alt="front of the card")
 
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous")

@@ -5,6 +5,9 @@
 .game-frame {
     border: 1px solid white;
 }
+    .game-frame .btn {
+        border: none;
+    }
     .memory-card .front, .memory-card .back {
         border: 1px solid white;
         height: 102px;
