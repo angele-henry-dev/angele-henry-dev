@@ -32,7 +32,7 @@ app.use(function (req, res, next) {
 
     res.format({
         html: function () {
-            res.render('404', { url: req.url })
+            res.render('404')
         },
         json: function () {
             res.json({ error: 'Not found' })
