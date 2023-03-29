@@ -3,8 +3,23 @@
     margin: auto;
 }
 .game-frame {
+    font-family: 'Fredericka the Great';
+    font-size: 22px;
     border: 1px solid white;
 }
+    .game-frame .toolbar {
+        height: 95px;
+    }
+        .game-frame .toolbar #displayTimer {
+            background-image: url("/images/chronometer.png");
+            background-repeat: no-repeat;
+            background-size: 80px;
+            background-position: center;
+            width: 75px;
+            height: 95px;
+            padding-top: 38px;
+            color: #FFE2AE;
+        }
     .game-frame .memory-card {
         background-color: transparent;
         height: 102px;
@@ -31,6 +46,7 @@
         left: 0;
         right: 0;
         border: 1px solid white;
+        background-color: var(--black-color);
     }
     .game-frame .memory-card-front {
         transform: rotateY(180deg);
