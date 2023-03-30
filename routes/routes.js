@@ -16,9 +16,15 @@ router.get('/', function (req, res) {
     res.render('index', data);
 });
 
-// POST message
+// GET address mail
 router.get('/contact', function (req, res) {
     res.status(200).send({ message: 'mailto:angele.henry@outlook.com' });
+});
+
+// GET game record time
+router.get('/recordtime', function (req, res) {
+    const record = require('../saves/record.json');
+    res.status(200).send({ record: record });
 });
 
 module.exports = router;

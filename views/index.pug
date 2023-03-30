@@ -40,3 +40,9 @@ script.
         origin: 'left',
         duration: 1000
     });
+
+script(type="text/javascript").
+    async function contactMe() {
+        const post = await fetch("/contact").then((res) => res.json());
+        window.location.href = post.message;
+    }
