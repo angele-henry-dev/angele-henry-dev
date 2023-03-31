@@ -63,18 +63,51 @@ html(lang="en")
         let pending = false;
         let record = undefined;
         (async function () {
-            let record = await getRecord();
+            record = await getRecord();
             document.getElementById("record").innerHTML = record.name + " - " + record.time;
         })()
 
-        async function getRecord() {
+        async function getRecord () {
             const response = await fetch("/recordtime").then((res) => res.json());
             return response.record;
-        };
-        async function writeRecord() {
+        }
+        async function writeRecord () {
+            // TODO Ask the nickname
+            // Post record
             const response = await fetch("/recordtime").then((res) => res.json());
             return response.record;
-        };
+        }
+        function isNewRecord () {
+            const splitRecordTime = record.time.split(":");
+            if ((min < splitRecordTime[0]) || (min === splitRecordTime[0] && sec < splitRecordTime[1])) {
+                return true;
+            }
+            return false;
+        }
+        function displayDialog (message) {
+            // TODO
+        }
+        async function thenVictory () {
+            clearTimeout(t);
+            if (isNewRecord()) {
+                // Check the record is still the same
+                const newRecord = await getRecord();
+                if (record.time != newRecord.time) {
+                    record = newRecord;
+                }
+                if (isNewRecord()) {
+                    // New record
+                    displayDialog("You broke the previous record! Good game :)");
+                    writeRecord();
+                } else {
+                    // No new record
+                    displayDialog(" Since you started the game, a new record has been set and you haven't beaten it. Sorry :(");
+                }
+            } else {
+                // Game over
+                displayDialog("Good game! Let's try to set a new record?");
+            }
+        }
         function flipCard(cardId, cardSrc) {
             if (pending) {
                 return;
@@ -116,29 +149,4 @@ html(lang="en")
                 };
                 pending = false;
             }
-        };
-        function thenVictory () {
-            clearTimeout(t);
-            if (isNewRecord()) {
-                // Check the record is still the same
-                const newRecord = getRecord();
-                if (record.time != newRecord.time) {
-                    record = newRecord;
-                }
-                if (isNewRecord()) {
-                    // TODO Record battu - Record the record
-                } else {
-                    // TODO Since you started the game, a new record has been set
-                    // and you haven't beaten it. Sorry :(
-                }
-            } else {
-                // TODO Gagné mais sans battre le record
-            }
-        };
-        function isNewRecord () {
-            const splitRecordTime = record.time.split(":");
-            if ((min < splitRecordTime[0]) || (min === splitRecordTime[0] && sec < splitRecordTime[1])) {
-                return true;
-            }
-            return false;
-        };
+        }
