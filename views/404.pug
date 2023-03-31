@@ -62,11 +62,18 @@ html(lang="en")
         let firstCard = undefined;
         let pending = false;
         let record = undefined;
-        getRecord();
-        async function getRecord() {
-            const getRecord = await fetch("/recordtime").then((res) => res.json());
-            record = getRecord.record;
+        (async function () {
+            let record = await getRecord();
             document.getElementById("record").innerHTML = record.name + " - " + record.time;
+        })()
+
+        async function getRecord() {
+            const response = await fetch("/recordtime").then((res) => res.json());
+            return response.record;
+        };
+        async function writeRecord() {
+            const response = await fetch("/recordtime").then((res) => res.json());
+            return response.record;
         };
         function flipCard(cardId, cardSrc) {
             if (pending) {
@@ -82,21 +89,14 @@ html(lang="en")
                 const previousCard = document.getElementById(firstCard.id);
                 // If a card has been previously flipped
                 if (firstCard.src === cardSrc) {
-                    // Then check if it is the same than the one the user clicked on
+                    // Check if it is the same than the one the user clicked on
                     firstCard = undefined;
                     previousCard.classList.toggle("notfound");
                     selectedCard.classList.toggle("notfound");
                     // Check if victory
                     const notFoundCards = document.getElementsByClassName("notfound");
                     if (notFoundCards.length === 0) {
-                        clearTimeout(t);
-                        const splitRecordTime = record.time.split(":");
-                        if ((min < splitRecordTime[0]) || (min === splitRecordTime[0] && sec < splitRecordTime[1])) {
-                            // TODO Record battu
-                            // TODO Record the record
-                        } else {
-                            // TODO Gagné mais sans battre le record
-                        }
+                        thenVictory();
                     }
                     pending = false;
                 } else {
@@ -116,4 +116,29 @@ html(lang="en")
                 };
                 pending = false;
             }
+        };
+        function thenVictory () {
+            clearTimeout(t);
+            if (isNewRecord()) {
+                // Check the record is still the same
+                const newRecord = getRecord();
+                if (record.time != newRecord.time) {
+                    record = newRecord;
+                }
+                if (isNewRecord()) {
+                    // TODO Record battu - Record the record
+                } else {
+                    // TODO Since you started the game, a new record has been set
+                    // and you haven't beaten it. Sorry :(
+                }
+            } else {
+                // TODO Gagné mais sans battre le record
+            }
+        };
+        function isNewRecord () {
+            const splitRecordTime = record.time.split(":");
+            if ((min < splitRecordTime[0]) || (min === splitRecordTime[0] && sec < splitRecordTime[1])) {
+                return true;
+            }
+            return false;
         };
