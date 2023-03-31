@@ -60,3 +60,22 @@ button.btn {
     .game-frame .memory-card-front {
         transform: rotateY(180deg);
     }
+
+/* Bubbles */
+
+.bubble {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: linear 2s, transform 0.2s;
+}
+
+    .bubble:hover {
+        transform: scale(1.7);
+    }
+
+.bubble--bust {
+    transform: scale(1.8);
+}

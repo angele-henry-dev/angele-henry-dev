@@ -34,13 +34,13 @@ html(lang="en")
                             .memory-card-front
                                 img(src=card.src height="100px" alt="front of the card")
             
-            // Modal
             #modal.modal.fade(data-bs-theme="dark")
               .modal-dialog.modal-sm
                 .modal-content
                   #textModal.modal-body
                   .modal-footer
                     button.btn.btn-primary(type="button" onclick="window.location.reload()") Retry
+            #bubbles
 
 
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous")
@@ -96,6 +96,9 @@ html(lang="en")
                     const notFoundCards = document.getElementsByClassName("notfound");
                     if (notFoundCards.length === 0) {
                         clearTimeout(t);
+                        setInterval(function () {
+                          requestAnimationFrame(() => new Bubble());
+                        }, 300);
                         displayDialog("Good game! Do you want to try again?");
                     }
                     pending = false;
@@ -116,4 +119,76 @@ html(lang="en")
                 };
                 pending = false;
             }
+        }
+
+    script(type="text/javascript").
+        const root = document.querySelector("#bubbles");
+        let { innerHeight, innerWidth } = window;
+        innerHeight -= 150;
+        innerWidth -= 150;
+
+        class Bubble {
+          constructor() {
+            this.bubbleSpan = undefined;
+            this.handleNewBubble();
+            this.color = "#E5A31E";
+
+            this.posY = this.randomNumber(innerHeight - 20, 20);
+            this.posX = this.randomNumber(innerWidth - 20, 20);
+
+            this.bubbleSpan.style.top = this.posY + "px";
+            this.bubbleSpan.style.left = this.posX + "px";
+
+            // setting height and width of the bubble
+            this.height = this.randomNumber(60, 20);
+            this.width = this.height;
+
+            this.bubbleEnd.call(this.bubbleSpan, this.randomNumber(6000, 3000));
+          }
+
+          // creates and appends a new bubble in the DOM
+          handleNewBubble() {
+            this.bubbleSpan = document.createElement("span");
+            this.bubbleSpan.classList.add("bubble");
+            root.append(this.bubbleSpan);
+            this.handlePosition();
+            this.bubbleSpan.addEventListener("click", this.bubbleEnd);
+          }
+
+          handlePosition() {
+            // positioning the bubble in different random X and Y
+            const randomY = this.randomNumber(60, -60);
+            const randomX = this.randomNumber(60, -60);
+
+            this.bubbleSpan.style.backgroundColor = this.color;
+            this.bubbleSpan.style.height = this.height + "px";
+            this.bubbleSpan.style.width = this.height + "px";
+
+            this.posY = this.randomNumber(innerHeight - 20, 20);
+            this.posX = this.randomNumber(innerWidth - 20, 20);
+
+            this.bubbleSpan.style.top = this.posY + "px";
+            this.bubbleSpan.style.left = this.posX + "px";
+
+            const randomSec = this.randomNumber(4000, 200);
+            setTimeout(this.handlePosition.bind(this), randomSec); // calling for re-position of bubble
+          }
+
+          randomNumber(max, min) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+          }
+
+          bubbleEnd(removingTime = 0) {
+            setTimeout(
+              () => {
+                requestAnimationFrame(() => this.classList.add("bubble--bust"));
+              },
+              removingTime === 0 ? removingTime : removingTime - 100
+            );
+
+            setTimeout(() => {
+              requestAnimationFrame(() => this.remove());
+              requestAnimationFrame(() => new Bubble());
+            }, removingTime);
+          }
         }
