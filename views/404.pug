@@ -39,6 +39,8 @@ html(lang="en")
               .modal-dialog.modal-sm
                 .modal-content
                   #textModal.modal-body
+                  .modal-footer
+                    button.btn.btn-primary(type="button" onclick="window.location.reload()") Retry
 
 
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous")
@@ -94,7 +96,7 @@ html(lang="en")
                     const notFoundCards = document.getElementsByClassName("notfound");
                     if (notFoundCards.length === 0) {
                         clearTimeout(t);
-                        displayDialog("Good game!");
+                        displayDialog("Good game! Do you want to try again?");
                     }
                     pending = false;
                 } else {

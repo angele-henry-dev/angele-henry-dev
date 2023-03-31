@@ -2,6 +2,15 @@
     width: 80%;
     margin: auto;
 }
+
+.modal-content {
+    background-color: var(--black-color) !important;
+}
+button.btn {
+    background-color: var(--black-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
 .game-frame {
     font-family: 'Fredericka the Great';
     font-size: 22px;
