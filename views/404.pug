@@ -30,9 +30,9 @@ html(lang="en")
                         .memory-card.m-2.p-0.notfound(id=card.id)
                           .memory-card-inner
                             .memory-card-back
-                                img(src="/images/logo.png" height="100px" alt="back of the card" onclick="flipCard('"+card.id+"', '"+card.src+"')")
+                                img(src="/images/logo.png" alt="back of the card" onclick="flipCard('"+card.id+"', '"+card.src+"')")
                             .memory-card-front
-                                img(src=card.src height="100px" alt="front of the card")
+                                img(src=card.src alt="front of the card")
             
             #modal.modal.fade(data-bs-theme="dark")
               .modal-dialog.modal-sm

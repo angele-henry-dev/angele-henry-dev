@@ -31,9 +31,21 @@ button.btn {
         }
     .game-frame .memory-card {
         background-color: transparent;
-        height: 102px;
-        width: 159.5px;
+        height: 51px;
+        width: 79.75px;
         perspective: 1000px;
+    }
+    .game-frame .memory-card-inner img {
+        height: 50px;
+    }
+    @media screen and (min-width: 576px) {
+        .game-frame .memory-card {
+            height: 102px;
+            width: 159.5px;
+        }
+        .game-frame .memory-card-inner img {
+            height: 100px;
+        }
     }
     .game-frame .memory-card-inner {
         position: relative;
@@ -62,6 +74,15 @@ button.btn {
     }
 
 /* Bubbles */
+
+#bubbles {
+    display: none;
+}
+@media screen and (min-width: 576px) {
+    #bubbles {
+        display: block;
+    }
+}
 
 .bubble {
     position: absolute;
