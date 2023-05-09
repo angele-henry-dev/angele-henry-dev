@@ -34,10 +34,6 @@
         "technologyTitle": "Amazon AWS"
       },
       {
-        "technologyImage": "https://cdn.simpleicons.org/awslambda/white",
-        "technologyTitle": "AWS Lambda"
-      },
-      {
         "technologyImage": "https://cdn.simpleicons.org/tailwindcss/white",
         "technologyTitle": "Tailwind CSS"
       }
@@ -54,8 +50,8 @@
     "technologiesTitle": "Technologies I used",
     "technologies": [
       {
-        "technologyImage": "https://cdn.simpleicons.org/hibernate/white",
-        "technologyTitle": "Hibernate"
+        "technologyImage": "/images/java.png",
+        "technologyTitle": "Java"
       },
       {
         "technologyImage": "https://cdn.simpleicons.org/html5/white",
@@ -70,16 +66,8 @@
         "technologyTitle": "Javascript"
       },
       {
-        "technologyImage": "https://cdn.simpleicons.org/cplusplus/white",
-        "technologyTitle": "C++"
-      },
-      {
-        "technologyImage": "https://cdn.simpleicons.org/dialogflow/white",
-        "technologyTitle": "Google Dialogflow"
-      },
-      {
-        "technologyImage": "https://cdn.simpleicons.org/arduino/white",
-        "technologyTitle": "Arduino"
+        "technologyImage": "/images/servicenow.png",
+        "technologyTitle": "ServiceNow"
       }
     ]
   },
@@ -89,7 +77,8 @@
     "when": "2015 - 2016, Koncept",
     "descriptions": [
       "Design and development of a portal with Liferay in Java EE for the creation/handling of incidents.",
-      "Implementation and management of a decision tree with RedHat BRMS."
+      "Implementation and management of a decision tree with RedHat BRMS.",
+      "Many POCs."
     ],
     "technologiesTitle": "Technologies I used",
     "technologies": [
@@ -128,6 +117,18 @@
       {
         "technologyImage": "https://cdn.simpleicons.org/bmcsoftware/white",
         "technologyTitle": "BMC Remedy"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/cplusplus/white",
+        "technologyTitle": "C++"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/dialogflow/white",
+        "technologyTitle": "Google Dialogflow"
+      },
+      {
+        "technologyImage": "https://cdn.simpleicons.org/arduino/white",
+        "technologyTitle": "Arduino"
       }
     ]
   },
