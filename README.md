@@ -17,15 +17,11 @@ const angele : {
     VueJS,
     Javascript,
     Typescript,
-    Bootstrap,
-    PugJS,
   ],
   backend: [
     Python,
     Java,
     CPlusPlus,
-    NodeJS,
-    ExpressJS,
   ],
   devops: [
     AWS,
