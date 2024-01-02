@@ -1,5 +1,5 @@
 ## 👋 Hello world! I'm Angele!
-### 🥐 Technical leader / Python Javascript developer from France
+### Technical leader / Python Javascript developer from France
 
 #### Looking for a Python/TypeScript Technical Lead to manage your development team?
 <p>I am a freelance full-stack developer with over 8 years of experience in sectors such as aerospace, web, and data.
@@ -20,7 +20,7 @@
 
 #### To learn more about me:
 <p>🌐 My website: <a target="_blank" href="http://angelehenry.com"><img src="http://angelehenry.com/images/logo.png" height="20px" title="My website" /></a>
-</br>⌨️ My LinkedIn page: <a target="_blank" href="https://www.linkedin.com/in/angele-henry/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@8.5.0/icons/linkedin.svg" height="20px" title="LinkedIn" /></a></p>
+</br>⌨️ My LinkedIn page: <a target="_blank" href="https://www.linkedin.com/in/angele-henry/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@10.4.0/icons/linkedin.svg" height="20px" title="LinkedIn" /></a></p>
 
 ### 🔥 Skills
 ```javascript
