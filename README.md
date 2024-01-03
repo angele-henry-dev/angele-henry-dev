@@ -14,10 +14,6 @@
 #### The goal?
 <p>To reduce technical debt, maximize code quality, and strengthen the overall performance of the development team.</p>
 
-#### Let's talk about your project?
-<p>📅 Book a slot: https://calendly.com/angele-henry/discutons-de-votre-projet
-</br>📧 Send me an email: angele.henry[at]outlook.com</p>
-
 #### To learn more about me:
 <p>🌐 My website: <a target="_blank" href="http://angelehenry.com"><img src="http://angelehenry.com/images/logo.png" height="20px" title="My website" /></a>
 </br>⌨️ My LinkedIn page: <a target="_blank" href="https://www.linkedin.com/in/angele-henry/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@10.4.0/icons/linkedin.svg" height="20px" title="LinkedIn" /></a></p>
