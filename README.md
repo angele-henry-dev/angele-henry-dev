@@ -7,6 +7,7 @@
     <img src="https://skillicons.dev/icons?i=gmail" />
   </a>
 </p>
+
 # Technical leader / Javascript Python developer from Toulouse, France
 
 ### Looking for a JavaScript/Python Technical Lead to manage your development team?
