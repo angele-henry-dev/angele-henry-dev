@@ -20,29 +20,39 @@
 </p>
 
 ## 🔥 Skills
-```javascript
-const angele : {
+``` javascript
+const angele = {
   frontend: [
-    HTML5,
-    CSS3, 
-    VueJS,
-    Javascript,
-    Typescript,
+    "HTML5",
+    "CSS3",
+    "VueJS",
+    "Javascript",
+    "Typescript",
   ],
   backend: [
-    Python,
-    Java,
-    CPlusPlus,
+    "Python",
+    "Java",
+    "CPlusPlus",
   ],
-  tools: [
-    AWS,
-    Docker,
-    Jenkins,
-  ]
+  devOps: [
+    "AWS",
+    "Docker",
+    "Jenkins",
+  ],
   otherSoftwares: [
-    "Illustrator",
-    "Photoshop",
-    "XD",
+    "Adobe Illustrator",
+    "Adobe Photoshop",
+    "Adobe XD",
   ]
-}
+};
 ```
+
+## 🫶 Current personal project
+<p>I am currently working on a video game for smartphone: <b>Raqyx</b>.</p>
+<p>Players navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals, progressive levels, and an engaging 8-bit soundtrack, offering a unique and enjoyable gaming adventure.</p>
+
+<p>Game in progress visual:</p>
+<p>
+  <img width="378" alt="Homepage of Raqyx" src="https://github.com/angele-henry-dev/angele-henry-dev/assets/122747317/0d9f551a-8466-4990-a344-d659c486fbe1">
+  <img width="378" alt="Capture d’écran 2024-01-17 à 18 30 09" src="https://github.com/angele-henry-dev/angele-henry-dev/assets/122747317/7c36fc92-7d5a-4788-b018-8caef7bc71e5">
+</p>
