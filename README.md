@@ -59,3 +59,9 @@ const angele = {
   <img width="378" alt="Homepage of Raqyx" src="https://github.com/angele-henry-dev/angele-henry-dev/assets/122747317/0d9f551a-8466-4990-a344-d659c486fbe1">
   <img width="378" alt="Capture d’écran 2024-01-17 à 18 34 51" src="https://github.com/angele-henry-dev/angele-henry-dev/assets/122747317/0215a54b-1bc7-439e-8999-500d2c1086e6">
 </p>
+
+## 🕹️ When I am not working
+![Playstation 5](https://img.shields.io/badge/Playstation%205-003791?style=for-the-badge&logo=playstation-5&logoColor=white)
+![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white)
+![Netflix](https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white)
+![Crunchyroll](https://img.shields.io/badge/Crunchyroll-F47521?style=for-the-badge&logo=crunchyroll&logoColor=white)
