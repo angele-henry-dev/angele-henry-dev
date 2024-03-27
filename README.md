@@ -3,9 +3,6 @@
   <a href="https://www.linkedin.com/in/angele-henry/">
     <img src="https://skillicons.dev/icons?i=linkedin" />
   </a>
-  <a href="mailto:angele.henry@outlook.com">
-    <img src="https://skillicons.dev/icons?i=gmail" />
-  </a>
 </p>
 
 # Technical leader / Javascript Python developer from Toulouse, France
@@ -29,11 +26,6 @@ const angele = {
     "Python",
     "Java",
     "CPlusPlus",
-  ],
-  devOps: [
-    "AWS",
-    "Docker",
-    "Jenkins",
   ],
   otherSoftwares: [
     "Adobe Illustrator",

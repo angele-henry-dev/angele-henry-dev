@@ -96,7 +96,7 @@ footer .links {
 
 .blockquote-custom {
     position: relative;
-    background-image: url("/images/logo.png");
+    background-image: url("../images/logo.png");
     background-repeat: no-repeat;
     background-position: 93% 50%;
     background-size: 30%;
