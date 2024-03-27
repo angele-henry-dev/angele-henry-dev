@@ -1,58 +1,38 @@
 [
   {
-    "imagePath": "/images/pug.png",
-    "title": "Frontend developer",
-    "subtitle": "I love bringing design to life",
-    "technologiesTitle": "My languages",
-    "technologies": [
-      "HTML5 / CSS3",
-      "VueJS",
-      "Javascript",
-      "Typescript",
-      "Bootstrap",
-      "PugJS"
-    ]
+      "imagePath": "/images/pug.png",
+      "title": "Frontend developer",
+      "subtitle": "I love bringing design to life",
+      "technologiesTitle": "My languages",
+      "technologies": [
+          "HTML5 / CSS3",
+          "Javascript",
+          "Typescript",
+          "VueJS"
+      ]
   },
   {
-    "imagePath": "/images/python.png",
-    "title": "Backend developer",
-    "subtitle": "I have fun solving puzzles",
-    "technologiesTitle": "My languages",
-    "technologies": [
-      "Python",
-      "Java SE",
-      "Java EE",
-      "C++",
-      "NodeJS",
-      "ExpressJS"
-    ]
+      "imagePath": "/images/python.png",
+      "title": "Backend developer",
+      "subtitle": "I have fun solving puzzles",
+      "technologiesTitle": "My languages",
+      "technologies": [
+          "Python",
+          "Java SE",
+          "Java EE",
+          "C++"
+      ]
   },
   {
-    "imagePath": "/images/cloud.png",
-    "title": "AWS developer",
-    "subtitle": "I like having my head in the clouds",
-    "technologiesTitle": "My services",
-    "technologies": [
-      "Lambda",
-      "IoT Core",
-      "IoT Events",
-      "DynamoDB",
-      "S3",
-      "SES"
-    ]
-  },
-  {
-    "imagePath": "/images/painter.png",
-    "title": "New skills researcher",
-    "subtitle": "I always want to know more",
-    "technologiesTitle": "My knowledge",
-    "technologies": [
-      "Adobe Illustrator",
-      "Adobe Photoshop",
-      "Adobe InDesign",
-      "Adobe XD",
-      "Microsoft Word",
-      "Microsoft Excel"
-    ]
+      "imagePath": "/images/painter.png",
+      "title": "New skills researcher",
+      "subtitle": "I always want to know more",
+      "technologiesTitle": "My knowledge",
+      "technologies": [
+          "Adobe Illustrator",
+          "Adobe Photoshop",
+          "Adobe InDesign",
+          "Adobe XD"
+      ]
   }
 ]
