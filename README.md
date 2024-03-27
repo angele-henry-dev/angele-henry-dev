@@ -16,20 +16,21 @@
 ``` javascript
 const angele = {
   frontend: [
-    "HTML5",
-    "CSS3",
-    "VueJS",
+    "HTML5 / CSS3",
     "Javascript",
     "Typescript",
+    "VueJS",
   ],
   backend: [
     "Python",
-    "Java",
+    "Java SE",
+    "Java EE",
     "CPlusPlus",
   ],
   otherSoftwares: [
     "Adobe Illustrator",
     "Adobe Photoshop",
+    "Adobe InDesign",
     "Adobe XD",
   ]
 };
