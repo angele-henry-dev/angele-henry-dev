@@ -135,7 +135,7 @@ function generateProjects(projects) {
         projects[i].descriptions.forEach(description => {
             summaryItem.appendChild(addTextContent(createElement("p", null), description));
         });
-        summaryItem.appendChild(addTextContent(createElement("p", "small"), projects[i].technologies.join(' / ')));
+        summaryItem.appendChild(createTextElement("p", "small", `<span>${projects[i].technologies.join(' &#8226; ')}</span>`));
         carouselSummaryArea.appendChild(summaryItem);
     }
     carouselContainer.appendChild(carouselItems);
