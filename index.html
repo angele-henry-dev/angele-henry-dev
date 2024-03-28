@@ -56,7 +56,7 @@
                         <p class="lead">Coding is a game I have the chance to play every day of my life!</p>
                         <div class="my-5">
                             <p class="inline h3">Hello world! </p>
-                            <p class="inline h3">I'm Angele :)</p>
+                            <p class="inline h3">I'm Angele :&#41;</p>
                         </div>
                         <p class="mt-3">
                             I am a computer developer passionate about her work
@@ -88,18 +88,7 @@
                     <span>Handcrafted with </span>
                     <i class="fa-solid fa-heart me-1"></i>
                     <i class="fa-regular fa-copyright me-1"></i>
-                    <span>2024</span>
-                </div>
-                <div class="links col">
-                    <a class="btn btn-link p-0 me-1" role="button" title="Send me an email" onclick="contactMe()">
-                        <i class="fa-solid fa-square-envelope fa-xl"></i>
-                    </a>
-                    <a class="btn btn-link p-0 me-1" role="button" title="Github" href="https://github.com/angele-henry-dev" target="_blank">
-                        <i class="fa-brands fa-github fa-xl"></i>
-                    </a>
-                    <a class="btn btn-link p-0" role="button" href="https://www.linkedin.com/in/angele-henry/" target="_blank" title="Go to LinkedIn page">
-                        <i class="fa-brands fa-linkedin fa-xl"></i>
-                    </a>
+                    <span id="currentYear"></span>
                 </div>
             </div>
         </footer>
@@ -124,4 +113,10 @@
         origin: 'left',
         duration: 1000
     });
+    getYear();
+
+    function getYear() {
+        const element = document.querySelector("#currentYear");
+        element.innerHTML = new Date().getFullYear();
+    }
 </script>
