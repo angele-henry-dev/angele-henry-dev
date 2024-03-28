@@ -48,7 +48,7 @@ function generateSkills(skills) {
 
         const titleDiv = createElement("div", "p-3");
         titleDiv.appendChild(createTextElement("h2", "h5", skill.title));
-        titleDiv.appendChild(createTextElement("span", "small text-gray", skill.subtitle));
+        titleDiv.appendChild(createTextElement("span", "small", skill.subtitle));
         cardEntete.appendChild(titleDiv);
 
         const cardContent = createElement("div", "card-content p-3");
@@ -85,16 +85,16 @@ function generateExperience(experience) {
         const textContainer = createElement("div", "p-3");
         textContainer.appendChild(addTextContent(createElement("h2", "h5"), exp.what));
         if (isFront) {
-            textContainer.appendChild(createTextElement("span", "small text-gray", `<i class="fa fa-clock-o me-2"></i>${exp.when}`));
+            textContainer.appendChild(createTextElement("span", "small", `<i class="fa fa-clock-o me-2"></i>${exp.when}`));
         } else {
-            textContainer.appendChild(createTextElement("span", "small text-gray", `<i class="fa fa-regular fa-floppy-disk me-2"></i>${exp.technologiesTitle}`));
+            textContainer.appendChild(createTextElement("span", "small", `<i class="fa fa-regular fa-floppy-disk me-2"></i>${exp.technologiesTitle}`));
         }
         cardHeader.appendChild(textContainer);
         side.appendChild(cardHeader);
         if (isFront) {
             const cardContent = createElement("div", "card-content p-3");
             exp.descriptions.forEach(description => {
-                cardContent.appendChild(addTextContent(createElement("p", "text-small mt-2 font-weight-light"), description));
+                cardContent.appendChild(addTextContent(createElement("p", "mt-2"), description));
             });
             side.appendChild(cardContent);
         } else {
@@ -113,25 +113,32 @@ function generateExperience(experience) {
 
 function generateProjects(projects) {
     const projectsElement = document.querySelector("#projects");
-    projects.forEach(project => {
-        const cardItem = createElement("div", "carousel-custom d-flex flex-column align-items-center");
-        
-        const cardImage = createElement("div", "card-image mb-3");
-        cardImage.appendChild(createElement("img", null, {"src": project.imagePath, "alt": project.title, "height": "400px"}));
+    const carouselContainer = createElement("div", "carousel-custom-container");
+    const carouselItems = createElement("div", "carousel-custom-items");
+    const carouselSummary = createElement("div", "carousel-custom-summary card-custom rounded p-4");
+    const carouselSummaryArea = createElement("div", "summary-area");
+    const carouselSummaryUpperPart = createElement("div", "upper-part");
+    carouselSummaryUpperPart.appendChild(carouselSummaryArea);
+    carouselSummary.appendChild(carouselSummaryUpperPart);
 
-        const cardContent = createElement("div", "card-custom card-content p-3 rounded");
-        const titleDiv = createElement("div", null);
-        titleDiv.appendChild(createTextElement("h2", "h5", project.title));
-        titleDiv.appendChild(createTextElement("span", "small text-gray", project.subtitle));
-        cardContent.appendChild(titleDiv);
-        project.descriptions.forEach(description => {
-            cardContent.appendChild(addTextContent(createElement("p", "text-small font-weight-light"), description));
+    for (let i=0; i<projects.length; i++) {
+        const input = createElement("input", null, {"type": "radio", "name": "slider", "id": `item-${i}`, "checked": i === 10 ? 'true' : 'false'});
+        carouselContainer.appendChild(input);
+
+        const cardItem = createElement("label", "carousel-custom-item", {"for": `item-${i}`, "id": `project-${i}`});
+        cardItem.appendChild(createElement("img", null, {"src": projects[i].imagePath, "alt": projects[i].title, "height": "400px"}));
+        carouselItems.appendChild(cardItem);
+
+        const summaryItem = createElement("div", "project-info", {"id": `project-info-${i}`});
+        summaryItem.appendChild(createTextElement("h2", "h5", `<i class="fa-solid ${projects[i].icon}"></i> ${projects[i].title}`));
+        summaryItem.appendChild(createTextElement("span", "subtitle", projects[i].subtitle));
+        projects[i].descriptions.forEach(description => {
+            summaryItem.appendChild(addTextContent(createElement("p", null), description));
         });
-        /*cardContent.appendChild(createTextElement("h6", null, project.technologiesTitle));
-        cardContent.appendChild(createList(project.technologies));*/
-
-        cardItem.appendChild(cardImage);
-        cardItem.appendChild(cardContent);
-        projectsElement.appendChild(cardItem);
-    });
+        summaryItem.appendChild(addTextContent(createElement("p", "small"), projects[i].technologies.join(' / ')));
+        carouselSummaryArea.appendChild(summaryItem);
+    }
+    carouselContainer.appendChild(carouselItems);
+    carouselContainer.appendChild(carouselSummary);
+    projectsElement.appendChild(carouselContainer);
 }

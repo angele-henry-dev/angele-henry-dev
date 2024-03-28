@@ -1,17 +1,47 @@
 [
-  {
-      "imagePath": "/images/raqyx.png",
-      "title": "Raqyx",
-      "subtitle": "Video game for iOS and Android",
-      "descriptions": [
-          "Players navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals, progressive levels, and an engaging 8-bit soundtrack, offering a unique and enjoyable gaming adventure."
-      ],
-      "technologiesTitle": "The technologies I am using",
-      "technologies": [
+    {
+        "imagePath": "/images/study.png",
+        "title": "Test",
+        "icon": "fa-gamepad",
+        "subtitle": "Test",
+        "descriptions": [
+            "Players navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals, progressive levels, and an engaging 8-bit soundtrack, offering a unique and enjoyable gaming adventure."
+        ],
+        "technologies": [
             "JavaScript",
             "TypeScript",
-            "Vue",
+            "HTML/CSS",
             "Ionic"
-      ]
-  }
+        ]
+    },
+    {
+        "imagePath": "/images/iot.png",
+        "title": "Women in IT",
+        "icon": "fa-microphone",
+        "subtitle": "Talk about women in IT",
+        "descriptions": [
+            "Players navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals, progressive levels, and an engaging 8-bit soundtrack, offering a unique and enjoyable gaming adventure."
+        ],
+        "technologies": [
+            "JavaScript",
+            "TypeScript",
+            "HTML/CSS",
+            "Ionic"
+        ]
+    },
+    {
+        "imagePath": "/images/raqyx.png",
+        "title": "Raqyx",
+        "icon": "fa-gamepad",
+        "subtitle": "Video game for iOS and Android made with JavaScript and Ionic",
+        "descriptions": [
+            "Players navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals, progressive levels, and an engaging 8-bit soundtrack, offering a unique and enjoyable gaming adventure."
+        ],
+        "technologies": [
+            "JavaScript",
+            "TypeScript",
+            "HTML/CSS",
+            "Ionic"
+        ]
+    }
 ]
