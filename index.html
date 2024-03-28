@@ -39,6 +39,7 @@
         <div class="d-flex flex-column" id="lateral-right">
             <a class="btn btn-link p-0 mt-4 me-3" href="#description" title="Description">.Description</a>
             <a class="btn btn-link p-0 me-3" href="#skills" title="Skills">.Skills</a>
+            <a class="btn btn-link p-0 me-3" href="#projects" title="Projects">.Projects</a>
             <a class="btn btn-link p-0 me-3" href="#experience" title="Professional experiences">.Experience</a>
             <div>
                 <a class="go-top" href="#" title="Go on top"></a>
@@ -68,15 +69,22 @@
             </div>
 
             <div class="row justify-content-center" id="skills">
-                <div>
-                    <i class="fa-solid fa-bolt-lightning fa-2xl me-2"></i>
+                <div class="mb-3">
+                    <i class="fa-solid fa-hat-wizard fa-2xl me-2"></i>
                     <span class="h1">Skills</span>
                 </div>
             </div>
 
+            <div class="row justify-content-center" id="projects">
+                <div class="mb-3">
+                    <i class="fa-solid fa-dragon fa-2xl me-2"></i>
+                    <span class="h1">Projects</span>
+                </div>
+            </div>
+
             <div class="row justify-content-center" id="experience">
-                <div>
-                    <i class="fa-solid fa-star fa-2xl me-2"></i>
+                <div class="mb-3">
+                    <i class="fa-solid fa-book fa-2xl me-2"></i>
                     <span class="h1">Professional experiences</span>
                 </div>
             </div>
@@ -105,7 +113,13 @@
     ScrollReveal().reveal('#skills', {
         distance: '100%',
         origin: 'left',
-        delay: 500,
+        delay: 333,
+        duration: 1000
+    });
+    ScrollReveal().reveal('#projects', {
+        distance: '100%',
+        origin: 'left',
+        delay: 666,
         duration: 1000
     });
     ScrollReveal().reveal('#experience', {

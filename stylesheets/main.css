@@ -6,7 +6,15 @@ body {
     font-size: 54px !important;
 }
 
-.card-angele {
+i {
+    vertical-align: baseline !important;
+}
+
+.carousel-custom .card-custom {
+    width: 500px;
+}
+
+.card-custom {
     overflow: hidden;
     padding: 0 !important;
 }
@@ -83,11 +91,11 @@ footer .links {
         display: none;
     }
 }
-#description, #skills, #portfolio, #experience {
+#description, #skills, #projects, #experience {
     margin-bottom: 50px;
 }
 @media screen and (min-width: 750px) {
-    #description, #skills, #portfolio, #experience {
+    #description, #skills, #projects, #experience {
         margin-bottom: 150px;
     }
 }
@@ -124,7 +132,7 @@ footer .links {
 
 /* Skills */
 
-#skills .card-angele {
+#skills .card-custom {
     width: 18rem !important;
 }
 

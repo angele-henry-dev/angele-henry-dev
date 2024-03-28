@@ -23,13 +23,13 @@ body {
     color: var(--secondary-color) !important;
 }
 
-.card-angele {
+.card-custom {
     background-color: var(--black-light-color);
 }
-    .card-angele .card-content ul li {
-        color: white;
-        background-color: var(--black-light-color);
-    }
+.card-content ul li {
+    color: white;
+    background-color: var(--black-light-color);
+}
 
 /* Custom scrollbar */
 
