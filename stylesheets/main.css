@@ -28,13 +28,22 @@ i {
     cursor: pointer;
 }
 .carousel-custom-container {
-    width: 100%;
-    height: 700px;
+    min-width: 380px !important;
+    max-width: 380px !important;
+    width: 380px !important;
+    height: 600px;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+@media screen and (min-width: 1000px) {
+    .carousel-custom-container {
+        min-width: 730px !important;
+        max-width: 730px !important;
+        width: 730px !important;
+    }
 }
 .carousel-custom-container .carousel-custom-items {
     position: relative;
@@ -82,8 +91,13 @@ i {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-    height: 215px;
+    height: 520px;
     overflow: hidden;
+}
+@media screen and (min-width: 1000px) {
+    .upper-part {
+        height: 235px;
+    }
 }
 .carousel-custom-container .project-info {
     display: block;
@@ -99,10 +113,21 @@ i {
     transform: translateY(0);
 }
 #item-1:checked ~ .carousel-custom-summary .summary-area  {
-    transform: translateY(-182px);
+    transform: translateY(-275px);
 }
 #item-2:checked ~ .carousel-custom-summary .summary-area  {
-    transform: translateY(-362px);
+    transform: translateY(-555px);
+}
+@media screen and (min-width: 1000px) {
+    #item-0:checked ~ .carousel-custom-summary .summary-area {
+        transform: translateY(0);
+    }
+    #item-1:checked ~ .carousel-custom-summary .summary-area  {
+        transform: translateY(-182px);
+    }
+    #item-2:checked ~ .carousel-custom-summary .summary-area  {
+        transform: translateY(-362px);
+    }
 }
 
 .card-custom {

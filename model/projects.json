@@ -1,11 +1,11 @@
 [
     {
-        "imagePath": "/images/study.png",
-        "title": "Test",
-        "icon": "fa-gamepad",
-        "subtitle": "Test",
+        "imagePath": "/images/prompt.webp",
+        "title": "Prompt engineering",
+        "icon": "fa-graduation-cap",
+        "subtitle": "Learning efficient communicate with AI",
         "descriptions": [
-            "Players navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals, progressive levels, and an engaging 8-bit soundtrack, offering a unique and enjoyable gaming adventure."
+            "Enhance and refine prompts for diverse uses of language models. Understand their potential and limits. Gain insight into their strengths and limits. Use AI to boost programming, streamline management, and draft documents efficiently."
         ],
         "technologies": [
             "JavaScript",
@@ -15,7 +15,7 @@
         ]
     },
     {
-        "imagePath": "/images/iot.png",
+        "imagePath": "/images/womeninit.webp",
         "title": "Women in IT",
         "icon": "fa-microphone",
         "subtitle": "Talk about women in IT",
@@ -23,10 +23,8 @@
             "Players navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals, progressive levels, and an engaging 8-bit soundtrack, offering a unique and enjoyable gaming adventure."
         ],
         "technologies": [
-            "JavaScript",
-            "TypeScript",
-            "HTML/CSS",
-            "Ionic"
+            "Google Slides",
+            "Interviews"
         ]
     },
     {
