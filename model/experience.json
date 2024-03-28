@@ -1,4 +1,40 @@
 [
+    {
+        "imagePath": "/images/plane.png",
+        "what": "Fullstack developer as a Freelance",
+        "when": "2023 - 2024, Alten",
+        "descriptions": [
+            "Design and development of applications on Skywise using Slate and Workshop.",
+            "Development of the backend using datasets with PySpark."
+        ],
+        "technologiesTitle": "Technologies I used",
+        "technologies": [
+            {
+                "technologyImage": "https://cdn.simpleicons.org/palantir/white",
+                "technologyTitle": "Skywise"
+            },
+            {
+                "technologyImage": "https://cdn.simpleicons.org/python/white",
+                "technologyTitle": "Python"
+            },
+            {
+                "technologyImage": "https://cdn.simpleicons.org/apache/white",
+                "technologyTitle": "PySpark"
+            },
+            {
+                "technologyImage": "https://cdn.simpleicons.org/postgresql/white",
+                "technologyTitle": "PostgreSQL"
+            },
+            {
+                "technologyImage": "https://cdn.simpleicons.org/javascript/white",
+                "technologyTitle": "Javascript"
+            },
+            {
+                "technologyImage": "https://cdn.simpleicons.org/css3/white",
+                "technologyTitle": "CSS"
+            }
+        ]
+    },
   {
       "imagePath": "/images/iot.png",
       "what": "IoT Developer",
