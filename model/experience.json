@@ -1,6 +1,6 @@
 [
     {
-        "imagePath": "/images/plane.png",
+        "imagePath": "/images/plane.webp",
         "what": "Fullstack developer as a Freelance",
         "when": "2023 - 2024, Alten",
         "descriptions": [
@@ -36,7 +36,7 @@
         ]
     },
   {
-      "imagePath": "/images/iot.png",
+      "imagePath": "/images/iot.webp",
       "what": "IoT Developer",
       "when": "2018 - 2023, Airbus",
       "descriptions": [
@@ -76,7 +76,7 @@
       ]
   },
   {
-      "imagePath": "/images/servicedesk.png",
+      "imagePath": "/images/servicedesk.webp",
       "what": "Software Engineer",
       "when": "2017 - 2018, Activus Services",
       "descriptions": [
@@ -108,7 +108,7 @@
       ]
   },
   {
-      "imagePath": "/images/intranet.png",
+      "imagePath": "/images/collab.webp",
       "what": "Analyst developer",
       "when": "2015 - 2016, Koncept",
       "descriptions": [
@@ -169,7 +169,7 @@
       ]
   },
   {
-      "imagePath": "/images/dentist.png",
+      "imagePath": "/images/dentist.webp",
       "what": "Software developer",
       "when": "2015, Libre-Services",
       "descriptions": [
@@ -200,7 +200,7 @@
       ]
   },
   {
-      "imagePath": "/images/study.png",
+      "imagePath": "/images/study.webp",
       "what": "Software developer training",
       "when": "2014 - 2015, LDNR",
       "descriptions": [
@@ -223,7 +223,7 @@
       ]
   },
   {
-      "imagePath": "/images/radio.png",
+      "imagePath": "/images/radio.webp",
       "what": "Sound technician",
       "when": "2011 - 2014, Radio Occitania",
       "descriptions": [

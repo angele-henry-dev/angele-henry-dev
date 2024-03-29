@@ -1,6 +1,6 @@
 [
   {
-      "imagePath": "/images/pug.png",
+      "imagePath": "/images/frontend.webp",
       "title": "Frontend developer",
       "subtitle": "I love bringing design to life",
       "technologiesTitle": "My languages",
@@ -12,7 +12,7 @@
       ]
   },
   {
-      "imagePath": "/images/python.png",
+      "imagePath": "/images/backend.webp",
       "title": "Backend developer",
       "subtitle": "I have fun solving puzzles",
       "technologiesTitle": "My languages",
@@ -24,7 +24,7 @@
       ]
   },
   {
-      "imagePath": "/images/painter.png",
+      "imagePath": "/images/adobe.webp",
       "title": "New skills researcher",
       "subtitle": "I always want to know more",
       "technologiesTitle": "My knowledge",
