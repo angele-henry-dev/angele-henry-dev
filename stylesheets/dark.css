@@ -1,17 +1,20 @@
 :root {
-    --primary-color: white;
-    --secondary-color: #E5A31E;
+    --primary-color: #DDDDDD;
+    --secondary-color: #D51067;
     --black-color: #1A1A1A;
-    --black-light-color: #212529;
-    --grey-color: #424549;
+    --black-light-color: #363636;
+    --grey-color: #C1C1C1;
 }
 
 body {
-    color: white !important;
+    color: var(--primary-color) !important;
     background-color: var(--black-color) !important;
 }
 
 .fa-heart {
+    color: var(--primary-color);
+}
+.handcrafted .fa-heart {
     color: var(--secondary-color);
 }
 
@@ -27,7 +30,7 @@ body {
     background-color: var(--black-light-color);
 }
 .card-content ul li {
-    color: white;
+    color: var(--primary-color);
     background-color: var(--black-light-color);
 }
 
@@ -67,11 +70,13 @@ a.btn {
 }
 
     .animated-heart::before, .animated-heart::after {
-        background: rgba(229, 163, 30, 0.8);
+        background: var(--secondary-color);
+        opacity: 0.8;
     }
 
     .animated-heart::after {
-        background: rgba(229, 163, 30, 0.6);
+        background: var(--secondary-color);
+        opacity: 0.6;
     }
 
 /* Go on top button */
