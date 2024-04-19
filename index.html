@@ -39,18 +39,18 @@
             </div>
         </div>
 
-        <div class="d-flex flex-column" id="lateral-right">
-            <a class="btn btn-link p-0 mt-4 me-3" href="#description" title="Description">.Description</a>
-            <a class="btn btn-link p-0 me-3" href="#skills" title="Skills">.Skills</a>
-            <a class="btn btn-link p-0 me-3" href="#projects" title="Projects">.Projects</a>
-            <a class="btn btn-link p-0 me-3" href="#experience" title="Professional experiences">.Experience</a>
+        <nav class="d-flex flex-column" id="lateral-right">
+            <a id="description-link" class="btn btn-link p-0 mt-4 me-3" href="#description" title="Description">.Description</a>
+            <a id="skills-link" class="btn btn-link p-0 me-3" href="#skills" title="Skills">.Skills</a>
+            <a id="projects-link" class="btn btn-link p-0 me-3" href="#projects" title="Projects">.Projects</a>
+            <a id="experience-link" class="btn btn-link p-0 me-3" href="#experience" title="Professional experiences">.Experience</a>
             <div>
                 <a class="go-top" href="#" title="Go on top"></a>
             </div>
-        </div>
+        </nav>
 
         <container class="main-content">
-            <div id="description">
+            <div id="description" class="section">
                 <blockquote class="blockquote-custom shadow rounded p-5">
                     <div class="blockquote-custom-icon shadow-sm">
                         <i class="fa fa-quote-left"></i>
@@ -71,24 +71,24 @@
                 </blockquote>
             </div>
 
-            <div class="row justify-content-center" id="skills">
+            <div class="row justify-content-center section" id="skills">
                 <div class="mb-3">
                     <i class="fa-solid fa-hat-wizard fa-2xl me-2"></i>
-                    <span class="h1">Skills</span>
+                    <span class="h1" href="#skills" title="Skills">Skills</span>
                 </div>
             </div>
 
-            <div class="row justify-content-center" id="projects">
+            <div class="row justify-content-center section" id="projects">
                 <div class="mb-3">
                     <i class="fa-solid fa-dragon fa-2xl me-2"></i>
-                    <span class="h1">Projects</span>
+                    <span class="h1" href="#projects" title="Projects">Projects</span>
                 </div>
             </div>
 
-            <div class="row justify-content-center" id="experience">
+            <div class="row justify-content-center section" id="experience">
                 <div class="mb-3">
                     <i class="fa-solid fa-book fa-2xl me-2"></i>
-                    <span class="h1">Professional experiences</span>
+                    <span class="h1" href="#experience" title="Professional experiences">Professional experiences</span>
                 </div>
             </div>
         </container>
@@ -106,34 +106,33 @@
     </body>
 </html>
 
-<script type="module" src="./js/index.js"></script>
+<script type="module" src="./js/content.js"></script>
+<script src="./js/index.js"></script>
 <script>
-    ScrollReveal().reveal('#description', {
-        delay: 375,
-        duration: 1000,
-        scale: 1.5
-    });
-    ScrollReveal().reveal('#skills', {
-        distance: '100%',
-        origin: 'left',
-        delay: 333,
-        duration: 1000
-    });
-    ScrollReveal().reveal('#projects', {
-        distance: '100%',
-        origin: 'left',
-        delay: 666,
-        duration: 1000
-    });
-    ScrollReveal().reveal('#experience', {
-        distance: '100%',
-        origin: 'left',
-        duration: 1000
-    });
-    getYear();
-
-    function getYear() {
-        const element = document.querySelector("#currentYear");
-        element.innerHTML = new Date().getFullYear();
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+        ScrollReveal().reveal('#description', {
+            delay: 375,
+            duration: 1000,
+            scale: 1.5
+        });
+        ScrollReveal().reveal('#skills', {
+            distance: '100%',
+            origin: 'left',
+            delay: 333,
+            duration: 1000
+        });
+        ScrollReveal().reveal('#projects', {
+            distance: '100%',
+            origin: 'left',
+            delay: 666,
+            duration: 1000
+        });
+        ScrollReveal().reveal('#experience', {
+            distance: '100%',
+            origin: 'left',
+            duration: 1000
+        });
+        scrollSpy();
+        getYear();
+    })
 </script>

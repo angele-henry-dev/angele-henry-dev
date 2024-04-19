@@ -10,6 +10,9 @@ body {
         font-size: 54px !important;
     }
 }
+a {
+    text-decoration: none !important;
+}
 
 i {
     vertical-align: baseline !important;

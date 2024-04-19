@@ -50,7 +50,7 @@ a.btn {
     color: var(--primary-color);
 }
 
-    a.btn:hover, a.btn.active, a.btn:focus {
+    a.btn:hover, a.btn.active, a.btn:focus, a[aria-current="location"] {
         color: var(--secondary-color) !important;
     }
 
