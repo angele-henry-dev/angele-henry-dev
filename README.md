@@ -1,4 +1,5 @@
-![hello_background](https://github.com/angele-henry-dev/angele-henry-dev/assets/122747317/f789d1f5-bcef-470c-aaf2-befa3f861928)
+![linkedin_banniere](https://github.com/angele-henry-dev/angele-henry-dev/assets/122747317/f8891746-b8d0-4540-b45a-6cfd6e04c42d)
+
 <p align="center">
   <a href="https://www.linkedin.com/in/angele-henry/">
     <img src="https://skillicons.dev/icons?i=linkedin" />
