@@ -28,7 +28,7 @@ function addTextContent(element, text) {
 
 function createList(technologies) {
     const list = document.createElement("ul");
-    list.classList.add("list-group", "list-group-flush");
+    list.classList.add("list-group", "list-group-flush", "p-0");
     technologies.forEach(technology => {
         const item = document.createElement("li");
         item.classList.add("list-group-item");
@@ -98,13 +98,8 @@ function generateExperience(experience) {
             });
             side.appendChild(cardContent);
         } else {
-            const technologiesContainer = createElement("div", "p-3 row text-center");
-            exp.technologies.forEach(technology => {
-                const col = createElement("div", "col mb-3");
-                const techImg = createElement("img", null, {src: technology.technologyImage, alt: technology.technologyTitle, style: "height: 50px;"});
-                col.appendChild(techImg);
-                technologiesContainer.appendChild(col);
-            });
+            const technologiesContainer = createElement("div", "card-content p-4 row text-center");
+            technologiesContainer.appendChild(createList(exp.technologies));
             side.appendChild(technologiesContainer);
         }
         return side;

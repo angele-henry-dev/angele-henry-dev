@@ -9,30 +9,12 @@
         ],
         "technologiesTitle": "Technologies I used",
         "technologies": [
-            {
-                "technologyImage": "https://cdn.simpleicons.org/palantir/white",
-                "technologyTitle": "Skywise"
-            },
-            {
-                "technologyImage": "https://cdn.simpleicons.org/python/white",
-                "technologyTitle": "Python"
-            },
-            {
-                "technologyImage": "https://cdn.simpleicons.org/apache/white",
-                "technologyTitle": "PySpark"
-            },
-            {
-                "technologyImage": "https://cdn.simpleicons.org/postgresql/white",
-                "technologyTitle": "PostgreSQL"
-            },
-            {
-                "technologyImage": "https://cdn.simpleicons.org/javascript/white",
-                "technologyTitle": "Javascript"
-            },
-            {
-                "technologyImage": "https://cdn.simpleicons.org/css3/white",
-                "technologyTitle": "CSS"
-            }
+            "Skywise Palantir",
+            "Python",
+            "PySpark",
+            "PostgreSQL",
+            "Javascript",
+            "HTML5 / CSS3"
         ]
     },
   {
@@ -45,34 +27,12 @@
       ],
       "technologiesTitle": "Technologies I used",
       "technologies": [
-          {
-              "technologyImage": "https://cdn.simpleicons.org/python/white",
-              "technologyTitle": "Python"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/flask/white",
-              "technologyTitle": "Flask"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/vuedotjs/white",
-              "technologyTitle": "VueJS"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/vuetify/white",
-              "technologyTitle": "Vuetify"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/typescript/white",
-              "technologyTitle": "Typescript"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/amazonaws/white",
-              "technologyTitle": "Amazon AWS"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/tailwindcss/white",
-              "technologyTitle": "Tailwind CSS"
-          }
+        "Python",
+        "Flask",
+        "VueJS / Vuetify",
+        "JavaScript / Typescript",
+        "Amazon AWS",
+        "Tailwind CSS"
       ]
   },
   {
@@ -85,26 +45,10 @@
       ],
       "technologiesTitle": "Technologies I used",
       "technologies": [
-          {
-              "technologyImage": "/images/java.png",
-              "technologyTitle": "Java"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/html5/white",
-              "technologyTitle": "HTML5"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/css3/white",
-              "technologyTitle": "CSS3"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/javascript/white",
-              "technologyTitle": "Javascript"
-          },
-          {
-              "technologyImage": "/images/servicenow.png",
-              "technologyTitle": "ServiceNow"
-          }
+        "Java",
+        "HTML5 / CSS3",
+        "Javascript",
+        "ServiceNow"
       ]
   },
   {
@@ -118,54 +62,13 @@
       ],
       "technologiesTitle": "Technologies I used",
       "technologies": [
-          {
-              "technologyImage": "/images/liferay.png",
-              "technologyTitle": "Liferay"
-          },
-          {
-              "technologyImage": "/images/java.png",
-              "technologyTitle": "Java"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/hibernate/white",
-              "technologyTitle": "Hibernate"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/html5/white",
-              "technologyTitle": "HTML5"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/css3/white",
-              "technologyTitle": "CSS3"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/javascript/white",
-              "technologyTitle": "Javascript"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/jquery/white",
-              "technologyTitle": "JQuery"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/redhat/white",
-              "technologyTitle": "BRMS RedHat"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/bmcsoftware/white",
-              "technologyTitle": "BMC Remedy"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/cplusplus/white",
-              "technologyTitle": "C++"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/dialogflow/white",
-              "technologyTitle": "Google Dialogflow"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/arduino/white",
-              "technologyTitle": "Arduino"
-          }
+        "Liferay / Java / Hibernate",
+        "HTML5 / CSS3",
+        "Javascript / JQuery",
+        "BRMS RedHat",
+        "BMC Remedy",
+        "C++ / Arduino",
+        "Google Dialogflow"
       ]
   },
   {
@@ -177,26 +80,11 @@
       ],
       "technologiesTitle": "Technologies I used",
       "technologies": [
-          {
-              "technologyImage": "https://cdn.simpleicons.org/cplusplus/white",
-              "technologyTitle": "C++"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/qt/white",
-              "technologyTitle": "QT5"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/mysql/white",
-              "technologyTitle": "MySQL"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/phpmyadmin/white",
-              "technologyTitle": "PHPMyAdmin"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/php/white",
-              "technologyTitle": "PHP"
-          }
+        "C++",
+        "QT5",
+        "MySQL",
+        "PHPMyAdmin",
+        "PHP"
       ]
   },
   {
@@ -208,18 +96,9 @@
       ],
       "technologiesTitle": "Learnings",
       "technologies": [
-          {
-              "technologyImage": "https://cdn.simpleicons.org/c/white",
-              "technologyTitle": "C"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/cplusplus/white",
-              "technologyTitle": "C++"
-          },
-          {
-              "technologyImage": "/images/java.png",
-              "technologyTitle": "Java"
-          }
+        "C",
+        "C++",
+        "Java"
       ]
   },
   {
@@ -233,26 +112,9 @@
       ],
       "technologiesTitle": "Technologies I used",
       "technologies": [
-          {
-              "technologyImage": "https://cdn.simpleicons.org/html5/white",
-              "technologyTitle": "HTML5"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/css3/white",
-              "technologyTitle": "CSS3"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/javascript/white",
-              "technologyTitle": "Javascript"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/jquery/white",
-              "technologyTitle": "JQuery"
-          },
-          {
-              "technologyImage": "https://cdn.simpleicons.org/php/white",
-              "technologyTitle": "PHP"
-          }
+        "HTML5 / CSS3",
+        "Javascript / JQuery",
+        "PHP"
       ]
   }
 ]
