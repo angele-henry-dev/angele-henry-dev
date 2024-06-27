@@ -13,18 +13,6 @@
         ]
     },
     {
-        "imagePath": "/images/womeninit.webp",
-        "title": "Women in IT",
-        "icon": "fa-microphone",
-        "subtitle": "Talk about women in IT",
-        "descriptions": [
-            "This conference explores the historical and current contributions of women in computing, highlights the challenges posed by gender stereotypes, and examines ongoing efforts to promote greater diversity and inclusion in the tech field."
-        ],
-        "technologies": [
-            "<a class='link' href='womeninit.html'>Want to see more?</a>"
-        ]
-    },
-    {
         "imagePath": "/images/raqyx.webp",
         "title": "Raqyx",
         "icon": "fa-gamepad",
@@ -37,6 +25,18 @@
             "TypeScript",
             "HTML/CSS",
             "Ionic"
+        ]
+    },
+    {
+        "imagePath": "/images/womeninit.webp",
+        "title": "Women in IT",
+        "icon": "fa-microphone",
+        "subtitle": "Talk about women in IT",
+        "descriptions": [
+            "This conference explores the historical and current contributions of women in computing, highlights the challenges posed by gender stereotypes, and examines ongoing efforts to promote greater diversity and inclusion in the tech field."
+        ],
+        "technologies": [
+            "<a class='link' href='womeninit.html'>Want to see more?</a>"
         ]
     }
 ]
