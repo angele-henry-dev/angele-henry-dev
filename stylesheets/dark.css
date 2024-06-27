@@ -26,6 +26,13 @@ body {
     color: var(--secondary-color) !important;
 }
 
+a.link {
+    color: var(--secondary-color) !important;
+    &:hover {
+        color: var(--primary-color) !important;
+    }
+}
+
 .card-custom {
     background-color: var(--black-light-color);
 }

@@ -8,7 +8,6 @@ function scrollSpy() {
     const menuLinks = document.querySelectorAll("nav a");
 
     const makeActive = (link) => menuLinks[link].classList.add("active");
-    const removeActive = (link) => menuLinks[link].classList.remove("active");
     const removeAllActive = () => menuLinks.forEach(link => link.classList.remove("active"));
     const sectionMargin = 200;
     let currentActive = -1; // Initialize to -1 to ensure the initial setup works correctly

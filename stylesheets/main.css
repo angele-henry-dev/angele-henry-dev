@@ -266,6 +266,14 @@ footer .links {
     width: 18rem !important;
 }
 
+/* Projects part */
+div.project {
+    margin-bottom: 60px;
+}
+div.project .h2 {
+    margin-bottom: 20px;
+}
+
 /* Animated heart */
 
 .animated-heart {
