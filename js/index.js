@@ -1,8 +1,3 @@
-function getYear() {
-    const element = document.querySelector("#currentYear");
-    element.innerHTML = new Date().getFullYear();
-}
-
 function scrollSpy() {
     const sections = document.querySelectorAll(".section");
     const menuLinks = document.querySelectorAll("nav a");
