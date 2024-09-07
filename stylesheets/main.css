@@ -1,23 +1,52 @@
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../fonts/OpenDyslexic-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../fonts/OpenDyslexic-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../fonts/OpenDyslexic-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+  
 html, body {
     height: 100%;
 }
 body {
-    font-family: Helvetica !important;
+    font-family: 'OpenDyslexic', Helvetica, sans-serif !important;
+    font-size: 14px !important;
     min-height: 100vh;
 }
 
 /* Main page */
-.h1, .header-menu a.title {
-    font-family: 'Reenie Beanie';
+.header-menu a.title {
+    font-family: 'Reenie Beanie', sans-serif;
     font-size: 42px !important;
 }
 @media screen and (min-width: 576px) {
-    .h1, .header-menu a.title {
+    .header-menu a.title {
         font-size: 54px !important;
     }
 }
 a {
     text-decoration: none !important;
+}
+i {
+    vertical-align: baseline !important;
 }
 .subtitle {
     font-size: small;
