@@ -18,11 +18,11 @@ body {
     color: var(--secondary-color);
 }
 
-.h1, .h3, .h4 {
+h2, h3, h4 {
     color: var(--primary-color) !important;
 }
 
-.h2 {
+h1 {
     color: var(--secondary-color) !important;
 }
 
@@ -42,7 +42,6 @@ a.link {
 }
 
 /* Custom scrollbar */
-
 .custom-scrollbar-css::-webkit-scrollbar-track {
     background: var(--black-color);
 }
@@ -52,7 +51,6 @@ a.link {
 }
 
 /* Header */
-
 a.btn {
     color: var(--primary-color);
 }
@@ -62,7 +60,6 @@ a.btn {
     }
 
 /* Description */
-
 .blockquote-custom {
     border: 2px solid var(--primary-color);
 }
@@ -87,19 +84,22 @@ a.btn {
     }
 
 /* Go on top button */
-
 .go-top {
     border-top: 1vmin solid var(--primary-color);
     border-right: 1vmin solid var(--primary-color);
 }
 
-    .go-top:hover {
-        border-color: var(--secondary-color);
-        box-shadow: 0.5vmin -0.5vmin 0 var(--primary-color);
-    }
+.go-top:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0.5vmin -0.5vmin 0 var(--primary-color);
+}
+
+/* Carousel */
+.carousel-custom-container .project-info {
+    background-color: var(--black-color);
+}
 
 /* Experiences */
-
 .flip-card-inner .hover-me::before {
     color: var(--secondary-color);
 }

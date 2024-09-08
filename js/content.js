@@ -14,7 +14,7 @@ function generateSkills(skills) {
         
         const cardEntete = utils.createElement("div", "card-entete");
         cardEntete.appendChild(utils.createElement("div", "black-cover"));
-        cardEntete.appendChild(utils.createElement("img", null, {"src": skill.imagePath, "alt": skill.title}));
+        cardEntete.appendChild(utils.createElement("img", null, {"src": skill.imagePath, "title": skill.title, "alt": skill.title}));
 
         const titleDiv = utils.createElement("div", "p-3");
         titleDiv.appendChild(utils.createTextElement("h2", "h5", skill.title));
@@ -51,7 +51,7 @@ function generateExperience(experience) {
         const side = utils.createElement("div", `flip-card-${isFront ? 'front' : 'back'} card-custom rounded`);
         const cardHeader = utils.createElement("div", "card-entete");
         cardHeader.appendChild(utils.createElement("div", "black-cover"));
-        cardHeader.appendChild(utils.createElement("img", null, {src: exp.imagePath, alt: exp.what}));
+        cardHeader.appendChild(utils.createElement("img", null, {"src": exp.imagePath, "title": exp.what, "alt": exp.what}));
         const textContainer = utils.createElement("div", "p-3");
         textContainer.appendChild(utils.addTextContent(utils.createElement("h2", "h5"), exp.what));
         if (isFront) {
@@ -80,19 +80,13 @@ function generateProjects(projects) {
     const projectsElement = document.querySelector("#projects");
     const carouselContainer = utils.createElement("div", "carousel-custom-container");
     const carouselItems = utils.createElement("div", "carousel-custom-items");
-    const carouselSummary = utils.createElement("div", "carousel-custom-summary card-custom rounded p-4");
-    const carouselSummaryArea = utils.createElement("div", "summary-area");
-    const carouselSummaryUpperPart = utils.createElement("div", "upper-part");
-    carouselSummaryUpperPart.appendChild(carouselSummaryArea);
-    carouselSummary.appendChild(carouselSummaryUpperPart);
 
     for (let i=0; i<projects.length; i++) {
         const input = utils.createElement("input", null, {"type": "radio", "name": "slider", "id": `item-${i}`, "checked": i === 10 ? 'true' : 'false'});
         carouselContainer.appendChild(input);
 
         const cardItem = utils.createElement("label", "carousel-custom-item", {"for": `item-${i}`, "id": `project-${i}`});
-        cardItem.appendChild(utils.createElement("img", null, {"src": projects[i].imagePath, "alt": projects[i].title, "height": "400px"}));
-        carouselItems.appendChild(cardItem);
+        cardItem.appendChild(utils.createElement("img", null, {"src": projects[i].imagePath, "title": projects[i].title, "alt": projects[i].title, "height": "300px"}));
 
         const summaryItem = utils.createElement("div", "project-info", {"id": `project-info-${i}`});
         summaryItem.appendChild(utils.createTextElement("h2", "h5", `<i class="fa-solid ${projects[i].icon}"></i> ${projects[i].title}`));
@@ -101,9 +95,10 @@ function generateProjects(projects) {
             summaryItem.appendChild(utils.addTextContent(utils.createElement("p", null), description));
         });
         summaryItem.appendChild(utils.createTextElement("p", "small", `<span>${projects[i].technologies.join(' &#8226; ')}</span>`));
-        carouselSummaryArea.appendChild(summaryItem);
+        cardItem.appendChild(summaryItem);
+
+        carouselItems.appendChild(cardItem);
     }
     carouselContainer.appendChild(carouselItems);
-    carouselContainer.appendChild(carouselSummary);
     projectsElement.appendChild(carouselContainer);
 }

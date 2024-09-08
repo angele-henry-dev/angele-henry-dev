@@ -17,26 +17,15 @@
     </head>
     <body class="custom-scrollbar-css d-flex flex-column">
         <div id="header"></div>
-
-        <div class="d-flex flex-column" id="lateral-left">
-            <a class="btn btn-link p-0 mb-3 mt-auto" role="button" title="Github" href="https://github.com/angele-henry-dev" target="_blank">
-                <i class="fa-brands fa-github fa-xl"></i>
-            </a>
-            <a class="btn btn-link p-0 mb-3" role="button" href="https://www.linkedin.com/in/angele-henry/" target="_blank" title="Go to LinkedIn page">
-                <i class="fa-brands fa-linkedin fa-xl"></i>
-            </a>
-            <div class="box-vl">
-                <div class="vl"></div>
-            </div>
-        </div>
+        <div id="contact"></div>
 
         <nav class="d-flex flex-column" id="lateral-right">
-            <a id="introduction-link" class="btn btn-link p-0 mt-4 me-3" href="#introduction" title="Introduction">.Introduction</a>
-            <a id="basics-link" class="btn btn-link p-0 me-3" href="#basics" title="Basics">.Basics</a>
-            <a id="layout-link" class="btn btn-link p-0 me-3" href="#layout" title="Layout">.Layout</a>
-            <a id="animations-link" class="btn btn-link p-0 me-3" href="#animations" title="Animations">.Animations</a>
-            <a id="responsive-link" class="btn btn-link p-0 me-3" href="#responsive" title="Responsive">.Responsive</a>
-            <a id="advanced-link" class="btn btn-link p-0 me-3" href="#advanced" title="Advanced">.Advanced</a>
+            <a id="introduction-link" class="btn btn-link p-0 mt-4 me-3" href="#introduction" title="Go to Introduction">.Introduction</a>
+            <a id="basics-link" class="btn btn-link p-0 me-3" href="#basics" title="Go to Basics">.Basics</a>
+            <a id="layout-link" class="btn btn-link p-0 me-3" href="#layout" title="Go to Layout">.Layout</a>
+            <a id="animations-link" class="btn btn-link p-0 me-3" href="#animations" title="Go to Animations">.Animations</a>
+            <a id="responsive-link" class="btn btn-link p-0 me-3" href="#responsive" title="Go to Responsive">.Responsive</a>
+            <a id="advanced-link" class="btn btn-link p-0 me-3" href="#advanced" title="Go to Advanced">.Advanced</a>
             <a id="further-link" class="btn btn-link p-0 me-3" href="#further" title="Go further">.Go further</a>
             <div>
                 <a class="go-top" href="#" title="Go on top"></a>
@@ -46,37 +35,37 @@
         <container class="main-content">
             <div class="row justify-content-center section" id="introduction">
                 <div class="mb-3">
-                    <span class="h1" href="#introduction" title="Introduction">Introduction</span>
+                    <h2 href="#introduction" title="Introduction">Introduction</h2>
                 </div>
             </div>
             <div class="row justify-content-center section" id="basics">
                 <div class="mb-3">
-                    <span class="h1" href="#basics" title="Basics">Basics</span>
+                    <h2 href="#basics" title="Basics">Basics</h2>
                 </div>
             </div>
             <div class="row justify-content-center section" id="layout">
                 <div class="mb-3">
-                    <span class="h1" href="#layout" title="Layout">Layout</span>
+                    <h2 href="#layout" title="Layout">Layout</h2>
                 </div>
             </div>
             <div class="row justify-content-center section" id="animations">
                 <div class="mb-3">
-                    <span class="h1" href="#animations" title="Animations">Animations</span>
+                    <h2 href="#animations" title="Animations">Animations</h2>
                 </div>
             </div>
             <div class="row justify-content-center section" id="responsive">
                 <div class="mb-3">
-                    <span class="h1" href="#responsive" title="Responsive">Responsive</span>
+                    <h2 href="#responsive" title="Responsive">Responsive</h2>
                 </div>
             </div>
             <div class="row justify-content-center section" id="advanced">
                 <div class="mb-3">
-                    <span class="h1" href="#advanced" title="Advanced">Advanced</span>
+                    <h2 href="#advanced" title="Advanced">Advanced</h2>
                 </div>
             </div>
             <div class="row justify-content-center section" id="further">
                 <div class="mb-3">
-                    <span class="h1" href="#further" title="Go further">Go further</span>
+                    <h2 href="#further" title="Go further">Go further</h2>
                 </div>
             </div>
         </container>
@@ -87,6 +76,7 @@
 <script>
     $(document).ready(function(){
         $("#header").load("header.html");
+        $("#contact").load("contact.html");
         $("#footer").load("footer.html");
     });
 </script>
