@@ -228,14 +228,9 @@ footer .links {
     background-position: 93% 50%;
     background-size: 30%;
 }
-    .blockquote-custom .avatar {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-@media screen and (min-width: 750px) {
-    .blockquote-custom .inline {
-        display: inline;
-    }
+.blockquote-custom .avatar {
+    text-align: center;
+    margin-bottom: 20px;
 }
 .blockquote-custom-icon {
     width: 50px;
