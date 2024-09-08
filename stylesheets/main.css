@@ -384,7 +384,7 @@ footer .row div {
     #lateral-left, #lateral-right {
         display: flex !important;
         position: fixed;
-        width: 100px;
+        width: 120px;
     }
     #lateral-right {
         top: 0;

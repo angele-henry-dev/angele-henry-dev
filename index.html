@@ -32,8 +32,8 @@
             </div>
         </nav>
 
-        <div class="main-content">
-            <div id="description" class="section">
+        <div id="main-content" class="main-content">
+            <div id="description">
                 <blockquote class="blockquote-custom shadow rounded p-5">
                     <div class="blockquote-custom-icon shadow-sm">
                         <i class="fa fa-quote-left"></i>
@@ -53,21 +53,21 @@
                 </blockquote>
             </div>
 
-            <div class="row justify-content-center section" id="skills">
-                <div href="#skills" class="mb-3">
-                    <h2 title="Skills"><i class="fa-solid fa-hat-wizard"></i> Skills</h2>
+            <div class="row justify-content-center" id="skills">
+                <div class="mb-3">
+                    <h2 href="#skills" title="Skills"><i class="fa-solid fa-hat-wizard"></i> Skills</h2>
                 </div>
             </div>
 
-            <div class="row justify-content-center section" id="projects">
-                <div href="#projects" class="mb-3">
-                    <h2 title="Projects"><i class="fa-solid fa-dragon"></i> Projects</h2>
+            <div class="row justify-content-center" id="projects">
+                <div class="mb-3">
+                    <h2 href="#projects" title="Projects"><i class="fa-solid fa-dragon"></i> Projects</h2>
                 </div>
             </div>
 
-            <div class="row justify-content-center section" id="experience">
-                <div href="#experience" class="mb-3">
-                    <h2 title="Professional experiences"><i class="fa-solid fa-book"></i> Professional experiences</h2>
+            <div class="row justify-content-center" id="experience">
+                <div class="mb-3">
+                    <h2 href="#experience" title="Professional experiences"><i class="fa-solid fa-book"></i> Professional experiences</h2>
                 </div>
             </div>
         </div>
@@ -84,23 +84,6 @@
                     delay: 375,
                     duration: 1000,
                     scale: 1.5
-                });
-                ScrollReveal().reveal('#skills', {
-                    distance: '100%',
-                    origin: 'left',
-                    delay: 333,
-                    duration: 1000
-                });
-                ScrollReveal().reveal('#projects', {
-                    distance: '100%',
-                    origin: 'left',
-                    delay: 666,
-                    duration: 1000
-                });
-                ScrollReveal().reveal('#experience', {
-                    distance: '100%',
-                    origin: 'left',
-                    duration: 1000
                 });
                 scrollSpy();
             });
