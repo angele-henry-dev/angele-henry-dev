@@ -72,14 +72,14 @@
         </div>
 
         <div id="footer"></div>
+
+        <script>
+            $(document).ready(function(){
+                $("#header").load("header.html");
+                $("#contact").load("contact.html");
+                $("#footer").load("footer.html");
+                scrollSpy();
+            });
+        </script>
     </body>
 </html>
-
-<script>
-    $(document).ready(function(){
-        $("#header").load("header.html");
-        $("#contact").load("contact.html");
-        $("#footer").load("footer.html");
-        scrollSpy();
-    });
-</script>

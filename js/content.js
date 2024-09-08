@@ -14,7 +14,7 @@ function generateSkills(skills) {
         
         const cardEntete = utils.createElement("div", "card-entete");
         cardEntete.appendChild(utils.createElement("div", "black-cover"));
-        cardEntete.appendChild(utils.createElement("img", null, {"src": skill.imagePath, "title": skill.title, "alt": skill.title}));
+        cardEntete.appendChild(utils.createElement("img", null, {"src": skill.imagePath, "title": skill.title, "alt": skill.title, "width": "100%", "height": "100%"}));
 
         const titleDiv = utils.createElement("div", "p-3");
         titleDiv.appendChild(utils.createTextElement("h2", "h5", skill.title));
@@ -37,8 +37,6 @@ function generateExperience(experience) {
         const flipCard = utils.createElement("div", "flip-card mb-3");
         const flipCardInner = utils.createElement("div", "flip-card-inner");
         const flipCardFront = createCardSide(exp, true);
-        const hoverMe = utils.createElement("div", "hover-me fixed-bottom");
-        flipCardFront.appendChild(hoverMe);
         const flipCardBack = createCardSide(exp, false);
 
         flipCardInner.appendChild(flipCardFront);
@@ -48,10 +46,11 @@ function generateExperience(experience) {
     });
 
     function createCardSide(exp, isFront) {
+        const hoverMe = utils.createElement("div", "hover-me fixed-bottom");
         const side = utils.createElement("div", `flip-card-${isFront ? 'front' : 'back'} card-custom rounded`);
         const cardHeader = utils.createElement("div", "card-entete");
         cardHeader.appendChild(utils.createElement("div", "black-cover"));
-        cardHeader.appendChild(utils.createElement("img", null, {"src": exp.imagePath, "title": exp.what, "alt": exp.what}));
+        cardHeader.appendChild(utils.createElement("img", null, {"src": exp.imagePath, "title": exp.what, "alt": exp.what, "width": "100%", "height": "100%"}));
         const textContainer = utils.createElement("div", "p-3");
         textContainer.appendChild(utils.addTextContent(utils.createElement("h2", "h5"), exp.what));
         if (isFront) {
@@ -66,6 +65,7 @@ function generateExperience(experience) {
             exp.descriptions.forEach(description => {
                 cardContent.appendChild(utils.addTextContent(utils.createElement("p", "mt-2"), description));
             });
+            cardContent.appendChild(hoverMe);
             side.appendChild(cardContent);
         } else {
             const technologiesContainer = utils.createElement("div", "card-content p-4 row text-center");
@@ -86,15 +86,15 @@ function generateProjects(projects) {
         carouselContainer.appendChild(input);
 
         const cardItem = utils.createElement("label", "carousel-custom-item", {"for": `item-${i}`, "id": `project-${i}`});
-        cardItem.appendChild(utils.createElement("img", null, {"src": projects[i].imagePath, "title": projects[i].title, "alt": projects[i].title}));
+        cardItem.appendChild(utils.createElement("img", null, {"src": projects[i].imagePath, "title": projects[i].title, "alt": projects[i].title, "width": "100%", "height": "auto"}));
 
         const summaryItem = utils.createElement("div", "project-info", {"id": `project-info-${i}`});
-        summaryItem.appendChild(utils.createTextElement("h2", "h5", `<i class="fa-solid ${projects[i].icon}"></i> ${projects[i].title}`));
-        summaryItem.appendChild(utils.createTextElement("span", "subtitle", projects[i].subtitle));
+        summaryItem.appendChild(utils.createTextElement("h2", null, `<i class="fa-solid ${projects[i].icon}"></i> ${projects[i].title}`));
+        summaryItem.appendChild(utils.createTextElement("p", "subtitle", projects[i].subtitle));
         projects[i].descriptions.forEach(description => {
             summaryItem.appendChild(utils.addTextContent(utils.createElement("p", null), description));
         });
-        summaryItem.appendChild(utils.createTextElement("p", "small", `<span>${projects[i].technologies.join(' &#8226; ')}</span>`));
+        summaryItem.appendChild(utils.createTextElement("p", "subtitle", `<span>${projects[i].technologies.join(' &#8226; ')}</span>`));
         cardItem.appendChild(summaryItem);
 
         carouselItems.appendChild(cardItem);

@@ -40,7 +40,7 @@
                     </div>
                     <div class="mb-0 mt-2 font-italic">
                         <h1>Fullstack developer && Technical leader</h1>
-                        <p class="lead">Coding is a game I have the chance to play every day of my life!</p>
+                        <q><cite>Coding is a game I have the chance to play every day of my life!</cite></q>
                         <div class="my-3">
                             <h2>Hello world! I am Angele :&#41;</h2>
                         </div>
@@ -54,56 +54,56 @@
             </div>
 
             <div class="row justify-content-center section" id="skills">
-                <div class="mb-3">
-                    <h2 href="#skills" title="Skills"><i class="fa-solid fa-hat-wizard"></i> Skills</h2>
+                <div href="#skills" class="mb-3">
+                    <h2 title="Skills"><i class="fa-solid fa-hat-wizard"></i> Skills</h2>
                 </div>
             </div>
 
             <div class="row justify-content-center section" id="projects">
-                <div class="mb-3">
-                    <h2 href="#projects" title="Projects"><i class="fa-solid fa-dragon"></i> Projects</h2>
+                <div href="#projects" class="mb-3">
+                    <h2 title="Projects"><i class="fa-solid fa-dragon"></i> Projects</h2>
                 </div>
             </div>
 
             <div class="row justify-content-center section" id="experience">
-                <div class="mb-3">
-                    <h2 href="#experience" title="Professional experiences"><i class="fa-solid fa-book"></i> Professional experiences</h2>
+                <div href="#experience" class="mb-3">
+                    <h2 title="Professional experiences"><i class="fa-solid fa-book"></i> Professional experiences</h2>
                 </div>
             </div>
         </div>
 
         <div id="footer"></div>
+
+        <script>
+            $(document).ready(function(){
+                $("#header").load("header.html");
+                $("#contact").load("contact.html");
+                $("#footer").load("footer.html");
+
+                ScrollReveal().reveal('#description', {
+                    delay: 375,
+                    duration: 1000,
+                    scale: 1.5
+                });
+                ScrollReveal().reveal('#skills', {
+                    distance: '100%',
+                    origin: 'left',
+                    delay: 333,
+                    duration: 1000
+                });
+                ScrollReveal().reveal('#projects', {
+                    distance: '100%',
+                    origin: 'left',
+                    delay: 666,
+                    duration: 1000
+                });
+                ScrollReveal().reveal('#experience', {
+                    distance: '100%',
+                    origin: 'left',
+                    duration: 1000
+                });
+                scrollSpy();
+            });
+        </script>
     </body>
 </html>
-
-<script>
-    $(document).ready(function(){
-        $("#header").load("header.html");
-        $("#contact").load("contact.html");
-        $("#footer").load("footer.html");
-
-        ScrollReveal().reveal('#description', {
-            delay: 375,
-            duration: 1000,
-            scale: 1.5
-        });
-        ScrollReveal().reveal('#skills', {
-            distance: '100%',
-            origin: 'left',
-            delay: 333,
-            duration: 1000
-        });
-        ScrollReveal().reveal('#projects', {
-            distance: '100%',
-            origin: 'left',
-            delay: 666,
-            duration: 1000
-        });
-        ScrollReveal().reveal('#experience', {
-            distance: '100%',
-            origin: 'left',
-            duration: 1000
-        });
-        scrollSpy();
-    });
-</script>

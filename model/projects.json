@@ -13,21 +13,6 @@
         ]
     },
     {
-        "imagePath": "/images/raqyx.webp",
-        "title": "Raqyx",
-        "icon": "fa-gamepad",
-        "subtitle": "Video game for iOS and Android",
-        "descriptions": [
-            "Players navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals, progressive levels, and an engaging 8-bit soundtrack, offering a unique and enjoyable gaming adventure."
-        ],
-        "technologies": [
-            "JavaScript",
-            "TypeScript",
-            "HTML/CSS",
-            "Ionic"
-        ]
-    },
-    {
         "imagePath": "/images/womeninit.webp",
         "title": "Women in IT",
         "icon": "fa-microphone",
@@ -36,7 +21,20 @@
             "This conference explores the historical and current contributions of women in computing, highlights the challenges posed by gender stereotypes, and examines ongoing efforts to promote greater diversity and inclusion in the tech field."
         ],
         "technologies": [
-            "To have more information send me an email ;)"
+            "For more information send me an email"
+        ]
+    },
+    {
+        "imagePath": "/images/raqyx.webp",
+        "title": "Raqyx",
+        "icon": "fa-gamepad",
+        "subtitle": "Video game for iOS and Android",
+        "descriptions": [
+            "Players navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals, progressive levels, and an engaging 8-bit soundtrack, offering a unique and enjoyable gaming adventure."
+        ],
+        "technologies": [
+            "C#",
+            "Unity3D"
         ]
     }
 ]
