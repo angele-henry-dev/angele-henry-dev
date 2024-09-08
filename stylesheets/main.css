@@ -70,7 +70,7 @@ i {
 .carousel-custom-container .carousel-custom-items {
     position: relative;
     width: 100%;
-    min-height: 670px;
+    height: 700px;
 }
 .carousel-custom-container .carousel-custom-item {
     position: absolute;
@@ -84,7 +84,7 @@ i {
 }
 @media screen and (min-width: 576px) {
     .carousel-custom-container .carousel-custom-item {
-        width: 50%;
+        width: 40%;
     }
 }
 .carousel-custom-container .carousel-custom-item img {
@@ -195,11 +195,6 @@ footer .row div {
 }
 #description, #skills, #projects, #experience {
     margin-bottom: 50px;
-}
-@media screen and (min-width: 750px) {
-    #description, #skills, #projects, #experience {
-        margin-bottom: 150px;
-    }
 }
 
 /* Description */
@@ -389,9 +384,15 @@ footer .row div {
     #lateral-left, #lateral-right {
         display: flex !important;
         position: fixed;
-        bottom: 0;
         width: 100px;
+    }
+    #lateral-right {
+        top: 0;
         height: 100vh;
+    }
+    #lateral-left {
+        bottom: 0;
+        left: 20px;
     }
         #lateral-left .vl {
             border-right: 2px solid var(--secondary-color);
@@ -401,9 +402,6 @@ footer .row div {
         #lateral-left .box-vl {
             height: 200px;
         }
-    #lateral-left {
-        left: 20px;
-    }
     #lateral-left a.btn {
         text-align: center;
     }

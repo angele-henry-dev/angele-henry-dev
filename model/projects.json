@@ -1,15 +1,15 @@
 [
     {
-        "imagePath": "/images/prompt.webp",
-        "title": "Prompt engineering",
-        "icon": "fa-graduation-cap",
-        "subtitle": "Learning efficient communicate with AI",
+        "imagePath": "/images/balloon.png",
+        "title": "I Balloons",
+        "icon": "fa-gamepad",
+        "subtitle": "Video game for iOS and Android",
         "descriptions": [
-            "Enhance and refine prompts for diverse uses of language models. Understand their potential and limits. Gain insight into their strengths and limits. Use AI to boost programming, streamline management, and draft documents efficiently."
+            "Tap on multiple colorful balloons to pop them! The game will test your reflexes and your patience. It features colorful and friendly visuals and progressive levels."
         ],
         "technologies": [
-            "DeepLearningAI",
-            "ChatGPT 4"
+            "C#",
+            "Unity3D"
         ]
     },
     {
