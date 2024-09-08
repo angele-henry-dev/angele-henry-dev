@@ -41,7 +41,7 @@ h2 {
 /* Main page */
 .header-menu a.title {
     font-family: 'Reenie Beanie', sans-serif;
-    font-size: 42px !important;
+    font-size: 38px !important;
 }
 @media screen and (min-width: 576px) {
     .header-menu a.title {
@@ -60,47 +60,41 @@ i {
 }
 
 /* Carousel */
+.carousel-custom-container {
+    transform-style: preserve-3d;
+}
 .carousel-custom-container input[type=radio] {
     display: none;
 }
+.carousel-custom-container .carousel-custom-items {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+}
 .carousel-custom-container .carousel-custom-item {
     position: absolute;
-    width: 50%;
-    height: 100%;
+    width: 80%;
     left: 0;
     right: 0;
     margin: auto;
     transition: transform .4s ease;
     cursor: pointer;
+    min-height: 100%;
 }
-.carousel-custom-container {
-    min-width: 380px !important;
-    max-width: 380px !important;
-    width: 380px !important;
-    height: 550px;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-@media screen and (min-width: 1000px) {
-    .carousel-custom-container {
-        min-width: 730px !important;
-        max-width: 730px !important;
-        width: 730px !important;
+@media screen and (min-width: 576px) {
+    .carousel-custom-container .carousel-custom-item {
+        width: 50%;
     }
-}
-.carousel-custom-container .carousel-custom-items {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
 }
 .carousel-custom-container .carousel-custom-item img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
+}
+.carousel-custom-container .project-info {
+    width: 100%;
+    padding: 20px;
 }
 #item-0:checked ~ .carousel-custom-items #project-2,
 #item-1:checked ~ .carousel-custom-items #project-0,
@@ -122,18 +116,6 @@ i {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
-  img {
-    box-shadow: 0px 0px 10px 0px rgba(81, 81, 81, 0.47);
-  }
-}
-.carousel-custom-container {
-    border-radius: 8px;
-    width: 90%;
-    padding: 16px 10px;
-}
-.carousel-custom-container .project-info {
-    width: 100%;
-    padding: 20px;
 }
 
 /* Cards */
@@ -147,33 +129,33 @@ i {
     height: 160px;
     color: var(--primary-color);
 }
-    .card-entete div {
-        position: absolute;
-        bottom: 0;
-        z-index: 3;
-    }
-    .card-entete .black-cover {
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-        z-index: 2;
-    }
-    .card-entete img {
-        height: 100%;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        object-fit: cover;
-        z-index: 1;
-    }
+.card-entete div {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+.card-entete .black-cover {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    z-index: 2;
+}
+.card-entete img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
 
 /* Custom scrollbar */
 .custom-scrollbar-css {
     overflow-y: scroll;
 }
-    .custom-scrollbar-css::-webkit-scrollbar {
-        width: 5px;
-    }
+.custom-scrollbar-css::-webkit-scrollbar {
+    width: 5px;
+}
 
 /* Header */
 .header-menu {

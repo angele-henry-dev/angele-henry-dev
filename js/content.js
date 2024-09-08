@@ -86,7 +86,7 @@ function generateProjects(projects) {
         carouselContainer.appendChild(input);
 
         const cardItem = utils.createElement("label", "carousel-custom-item", {"for": `item-${i}`, "id": `project-${i}`});
-        cardItem.appendChild(utils.createElement("img", null, {"src": projects[i].imagePath, "title": projects[i].title, "alt": projects[i].title, "height": "300px"}));
+        cardItem.appendChild(utils.createElement("img", null, {"src": projects[i].imagePath, "title": projects[i].title, "alt": projects[i].title}));
 
         const summaryItem = utils.createElement("div", "project-info", {"id": `project-info-${i}`});
         summaryItem.appendChild(utils.createTextElement("h2", "h5", `<i class="fa-solid ${projects[i].icon}"></i> ${projects[i].title}`));
