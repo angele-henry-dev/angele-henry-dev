@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link type="text/css" rel="stylesheet" href="./stylesheets/main.css" media="screen"/>
         <link type="text/css" rel="stylesheet" href="./stylesheets/dark.css" media="screen"/>
+        <link type="text/css" rel="stylesheet" href="./stylesheets/lights.css" media="screen"/>
         <link rel="icon" href="../images/icon.png"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
         <script src="https://kit.fontawesome.com/58515bd467.js" type="text/javascript" crossorigin="anonymous"></script>
@@ -18,53 +19,48 @@
         <title>Lady Raccoon | Angele Henry Fullstack developer</title>
     </head>
     <body class="custom-scrollbar-css d-flex flex-column">
+        <div>
+            <div class='light x1'></div>
+            <div class='light x2'></div>
+            <div class='light x3'></div>
+            <div class='light x4'></div>
+            <div class='light x5'></div>
+            <div class='light x6'></div>
+            <div class='light x7'></div>
+            <div class='light x8'></div>
+            <div class='light x9'></div>
+        </div>
+
         <div id="header"></div>
         <div id="contact"></div>
 
-        <nav class="d-flex flex-column" id="lateral-right">
-            <a id="description-link" class="btn btn-link p-0 mt-4 me-3" href="#description" title="Description">.Description</a>
-            <a id="skills-link" class="btn btn-link p-0 me-3" href="#skills" title="Skills">.Skills</a>
-            <a id="projects-link" class="btn btn-link p-0 me-3" href="#projects" title="Projects">.Projects</a>
-            <a id="experience-link" class="btn btn-link p-0 me-3" href="#experience" title="Professional experiences">.Experience</a>
-            <div>
-                <a class="go-top" href="#" title="Go on top"></a>
-            </div>
-        </nav>
-
         <div id="main-content" class="main-content">
             <div id="description">
-                <blockquote class="blockquote-custom shadow rounded p-5">
-                    <div class="blockquote-custom-icon shadow-sm">
-                        <i class="fa fa-quote-left"></i>
-                    </div>
+                <blockquote class="blockquote-custom p-5">
                     <div class="mb-0 mt-2 font-italic">
-                        <h1>Fullstack developer && Technical leader</h1>
-                        <q><cite>Coding is a game I have the chance to play every day of my life!</cite></q>
+                        <h1 class="main-title"><span class="gradient">Fullstack</span> developer && Technical leader</h1>
                         <div class="my-3">
-                            <h2>Hello world! I am Angele :&#41;</h2>
+                            <h2>Hello world! I am Angele!</h2>
                         </div>
-                        <p>
-                            I am a fullstack developer passionate about her work
-                            <a class="animated-heart ms-2"><i class="fa-solid fa-heart fa-xs"></i></a>
-                        </p>
-                        <p>I am always learning new skills! Self-starter, self-taught and resourceful, if you are looking for advice and support, I can help!</p>
+                        <p><q><cite>Coding is a game I have the chance to play every day of my life!</cite></q></p>
+                        <p class="animated-heart ms-2"><i class="fa-solid fa-heart fa-xs"></i></p>
                     </div>
                 </blockquote>
             </div>
 
-            <div class="row justify-content-center" id="skills">
+            <div id="skills" class="row justify-content-center">
                 <div class="mb-3">
                     <h2 href="#skills" title="Skills"><i class="fa-solid fa-hat-wizard"></i> Skills</h2>
                 </div>
             </div>
 
-            <div class="row justify-content-center" id="projects">
+            <div id="projects" class="row justify-content-center">
                 <div class="mb-3">
                     <h2 href="#projects" title="Projects"><i class="fa-solid fa-dragon"></i> Projects</h2>
                 </div>
             </div>
 
-            <div class="row justify-content-center" id="experience">
+            <div id="experience" class="row justify-content-center">
                 <div class="mb-3">
                     <h2 href="#experience" title="Professional experiences"><i class="fa-solid fa-book"></i> Professional experiences</h2>
                 </div>

@@ -22,39 +22,73 @@
     font-weight: bold;
     font-style: italic;
 }
-  
-html, body {
-    height: 100%;
-}
-body {
-    font-family: 'OpenDyslexic', Helvetica, sans-serif !important;
-    font-size: 12pt !important;
-    min-height: 100vh;
-}
-h1 {
-    font-size: 1.5em !important;
-}
-h2 {
-    font-size: 1.3em !important;
+
+.mobile-hidden {
+    display: none !important;
 }
 
-/* Main page */
-.header-menu a.title {
-    font-size: 24px !important;
+html {
+    width: 100% !important;
 }
-@media screen and (min-width: 576px) {
-    .header-menu a.title {
-        font-size: 38px !important;
-    }
+
+body {
+    font-family: 'OpenDyslexic', Helvetica, sans-serif !important;
+    font-size: 12pt;
+    width: 100%;
+    height: 100vh;
+    margin: auto !important;
+    -webkit-animation: fadeIn 1 1s ease-out;
+    -moz-animation: fadeIn 1 1s ease-out;
+    -o-animation: fadeIn 1 1s ease-out;
+    animation: fadeIn 1 1s ease-out;
 }
 a {
-    text-decoration: none !important;
+    text-decoration: none;
+}
+a.btn {
+    text-decoration: none;
+    text-align: left;
 }
 i {
     vertical-align: baseline !important;
 }
-.subtitle {
-    font-size: 1rem;
+
+/* Main content */
+.main-content {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 5px;
+    margin: auto;
+}
+#description, #skills, #projects, #experience {
+    margin-bottom: 50px;
+}
+
+/* Header */
+#header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+#header header {
+    border-radius: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+header nav a:first-child {
+    margin-right: auto;
+    font-size: 1.5em;
+}
+/* Footer */
+footer .row {
+    width: 95%;
+    margin: auto;
+}
+footer .row div {
+    margin-top: auto;
 }
 
 /* Carousel */
@@ -80,11 +114,6 @@ i {
     transition: transform .4s ease;
     cursor: pointer;
     min-height: 100%;
-}
-@media screen and (min-width: 576px) {
-    .carousel-custom-container .carousel-custom-item {
-        width: 40%;
-    }
 }
 .carousel-custom-container .carousel-custom-item img {
     border-radius: 10px;
@@ -162,61 +191,34 @@ i {
     width: 5px;
 }
 
-/* Header */
-.header-menu {
-    width: 100%;
-}
-
-a.btn {
-    text-decoration: none;
-    text-align: left;
-}
-
-/* Main content */
-.main-content {
-    display: block;
-    margin-top: 50px !important;
-    width: 95%;
-    max-width: 900px;
-    margin: auto;
-}
-@media screen and (min-width: 576px) {
-    .main-content {
-        width: 65%;
-    }
-}
-footer .row {
-    width: 95%;
-    margin: auto;
-}
-footer .row div {
-    margin-top: auto;
-}
-#description, #skills, #projects, #experience {
-    margin-bottom: 50px;
-}
-
 /* Description */
+#description {
+    min-height: 80vh;
+}
+#description h1.main-title {
+    font-size: 2.5em;
+}
+#description span.gradient {
+    background: -webkit-linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
 .blockquote-custom {
     position: relative;
     background-repeat: no-repeat;
     background-position: 93% 50%;
     background-size: 30%;
+    text-align: center;
+}
+.blockquote-custom h1 {
+    margin-bottom: 50px;
 }
 .blockquote-custom .avatar {
     text-align: center;
     margin-bottom: 20px;
-}
-.blockquote-custom-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: -25px;
-    left: 50px;
 }
 
 /* Skills */
@@ -283,32 +285,6 @@ footer .row div {
     }
 }
 
-/* Go on top button */
-.go-top {
-    position: absolute;
-    bottom: 30px;
-    right: 35%;
-    width: 3vmin;
-    height: 3vmin;
-    background: transparent;
-    border-radius: 15%;
-    box-shadow: 0 0 0 lightgray;
-    transition: all 200ms ease;
-    transform: translate3d(0,-50%,0) rotate(-45deg);
-    -webkit-transform: translate3d(0,-50%,0) rotate(-45deg);
-    -moz-transform: translate3d(0,-50%,0) rotate(-45deg);
-}
-    .go-top:before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-40%,-60%) rotate(45deg);
-        -webkit-transform: translate(-40%,-60%) rotate(45deg);
-        -moz-transform: translate(-40%,-60%) rotate(45deg);
-        width: 200%;
-        height: 200%;
-    }
-
 /* Experiences */
 #experience {
     margin-top: 48px;
@@ -319,7 +295,32 @@ footer .row div {
     .flip-card .flip-card-back .card-entete {
         display: none;
     }
+
+/* Web version */
+
 @media screen and (min-width: 576px) {
+    body {
+        width: 80%;
+    }
+
+    #header .mobile-hidden {
+        display: block !important;
+    }
+    #header {
+        top: 15px;
+    }
+    header {
+        border-radius: 10px;
+    }
+
+    #description h1.main-title {
+        font-size: 4.5em;
+    }
+
+    .carousel-custom-container .carousel-custom-item {
+        width: 40%;
+    }
+
     .flip-card {
         height: 520px;
         background-color: transparent;
@@ -373,40 +374,34 @@ footer .row div {
         -webkit-transform: rotateY(180deg);
         -moz-transform: rotateY(180deg);
     }
-}
 
-/* Sidebars */
-#lateral-left, #lateral-right {
-    display: none !important;
-}
-@media screen and (min-width: 576px) {
-    #lateral-left, #lateral-right {
+    #lateral-left {
         display: flex !important;
         position: fixed;
         width: 120px;
-    }
-    #lateral-right {
+        height: 100%;
         top: 0;
-        height: 100vh;
-    }
-    #lateral-left {
-        bottom: 0;
-        left: 20px;
+        left: 0px;
+        z-index: 1;
     }
         #lateral-left .vl {
             border-right: 2px solid var(--secondary-color);
-            width: 50px;
+            width: 2px;
             height: 100%;
         }
         #lateral-left .box-vl {
             height: 200px;
+            margin-bottom: 20px;
         }
-    #lateral-left a.btn {
-        text-align: center;
-    }
-
-    #lateral-right {
-        right: 20px;
-    }
+        #lateral-left a.btn {
+            text-align: center;
+        }
+        #lateral-left .go-top {
+            width: 3vmin;
+            height: 3vmin;
+            border-radius: 15%;
+            transform: translate3d(0,-50%,0) rotate(-45deg);
+            -webkit-transform: translate3d(0,-50%,0) rotate(-45deg);
+            -moz-transform: translate3d(0,-50%,0) rotate(-45deg);
+        }
 }
-
