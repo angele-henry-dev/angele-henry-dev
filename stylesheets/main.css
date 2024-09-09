@@ -93,6 +93,7 @@ footer .row div {
 
 /* Carousel */
 .carousel-custom-container {
+    overflow: hidden;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
