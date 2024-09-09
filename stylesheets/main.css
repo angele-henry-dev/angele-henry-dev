@@ -52,6 +52,14 @@ a.btn {
 i {
     vertical-align: baseline !important;
 }
+span.gradient {
+    background: -webkit-linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Main content */
 .main-content {
@@ -61,7 +69,7 @@ i {
     padding: 0 5px;
     margin: auto;
 }
-#description, #skills, #projects, #experience {
+#skills, #projects, #experience {
     margin-bottom: 50px;
 }
 
@@ -89,6 +97,18 @@ footer .row {
 }
 footer .row div {
     margin-top: auto;
+}
+
+/* Description */
+#description {
+    min-height: 85vh;
+}
+#description h1.main-title {
+    font-size: 2.5em;
+}
+.blockquote-custom {
+    margin-top: 15%;
+    text-align: center;
 }
 
 /* Carousel */
@@ -190,36 +210,6 @@ footer .row div {
 }
 .custom-scrollbar-css::-moz-scrollbar {
     width: 5px;
-}
-
-/* Description */
-#description {
-    min-height: 80vh;
-}
-#description h1.main-title {
-    font-size: 2.5em;
-}
-#description span.gradient {
-    background: -webkit-linear-gradient(45deg, var(--secondary-color), var(--primary-color));
-    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-}
-.blockquote-custom {
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: 93% 50%;
-    background-size: 30%;
-    text-align: center;
-}
-.blockquote-custom h1 {
-    margin-bottom: 50px;
-}
-.blockquote-custom .avatar {
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 /* Skills */
