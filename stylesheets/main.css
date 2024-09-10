@@ -55,14 +55,6 @@ a.btn {
 i {
     vertical-align: baseline !important;
 }
-span.gradient {
-    background: -webkit-linear-gradient(45deg, var(--secondary-color), var(--primary-color));
-    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-}
 
 /* Main content */
 .main-content {

@@ -28,14 +28,23 @@ h1 {
 }
 
 a.link {
-    color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
 }
 a.link:hover {
-    color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
 }
 
 header {
     border: 1px solid var(--grey-color);
+}
+
+span.gradient {
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-color: var(--black-color) !important;
 }
 
 .card-custom {
