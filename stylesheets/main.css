@@ -298,9 +298,6 @@ footer {
     header .mobile-hidden {
         display: block !important;
     }
-    header nav {
-        border-radius: 5px;
-    }
 
     #description h1.main-title {
         font-size: 4.5em;

@@ -7,9 +7,10 @@ export function createElement(type, classNames, attributes = {}) {
     return element;
 }
 
-export function createTextElement(tag, classList, text) {
+export function createTextElement(tag, classList, text, attributes = {}) {
     const element = createElement(tag, classList);
     element.innerHTML = text;
+    Object.keys(attributes).forEach(attr => element.setAttribute(attr, attributes[attr]));
     return element;
 }
 
