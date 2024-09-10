@@ -1,5 +1,14 @@
-#ground {
+.isometric {
     position: relative;
+    margin-bottom: 50px;
+    width: 480px;
+    height: 370px;
+}
+
+#ground {
+    position: absolute;
+    top: 0;
+    left: 80px;
     width: 20em;
     height: 20em;
     background: rgb(101, 101, 101) !important;
@@ -38,7 +47,7 @@
 
 .road {
     position: relative;
-    background: rgb(101, 101, 101) !important;
+    background: rgb(137, 137, 137) !important;
     text-align: center;
 }
 .road .vl,
@@ -128,8 +137,8 @@
 
 .paperplane {
     position: absolute;
-    left: 320px;
-    top: 200px;
+    left: 55%;
+    top: 25%;
 }
 .plane {
     position: absolute;
