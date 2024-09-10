@@ -22,7 +22,6 @@ function generateSkills(skills) {
         cardEntete.appendChild(titleDiv);
 
         const cardContent = utils.createElement("div", "card-content p-3");
-        cardContent.appendChild(utils.createTextElement("h6", null, skill.technologiesTitle));
         cardContent.appendChild(utils.createList(skill.technologies));
 
         cardItem.appendChild(cardEntete);

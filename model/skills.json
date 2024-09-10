@@ -3,7 +3,6 @@
       "imagePath": "/images/frontend.webp",
       "title": "Frontend developer",
       "subtitle": "I love bringing design to life",
-      "technologiesTitle": "My languages",
       "technologies": [
           "HTML5 / CSS3",
           "Javascript",
@@ -15,7 +14,6 @@
       "imagePath": "/images/backend.webp",
       "title": "Backend developer",
       "subtitle": "I have fun solving puzzles",
-      "technologiesTitle": "My languages",
       "technologies": [
           "Python",
           "Java SE",
@@ -25,14 +23,13 @@
   },
   {
       "imagePath": "/images/adobe.webp",
-      "title": "New skills researcher",
+      "title": "Skills in progress",
       "subtitle": "I always want to know more",
-      "technologiesTitle": "My knowledge",
       "technologies": [
-          "Adobe Illustrator",
-          "Adobe Photoshop",
-          "Adobe InDesign",
-          "Adobe XD"
+          "Unity 3D",
+          "C#",
+          "Game design",
+          "Adobe Illustrator"
       ]
   }
 ]
