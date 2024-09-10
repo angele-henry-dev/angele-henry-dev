@@ -11,11 +11,11 @@
     left: 80px;
     width: 20em;
     height: 20em;
-    background: rgb(101, 101, 101) !important;
+    background: rgb(101, 101, 101);
     transform: rotateX(45deg) rotateZ(45deg) translateZ(-2em);
     transform-style: preserve-3d;
 }
-#ground div, .tall:before, .tall:after {
+#ground div, .building:before, .building:after {
     width: 2em;
     height: 2em;
 }
@@ -27,27 +27,46 @@
     background: #11D619;
 }
 
-.tall {
-    background: white !important;
+.building {
+    background: var(--secondary-light-color);
     transform: translateZ(2em);
     transform-style: preserve-3d;
+    cursor: pointer;
 }
-.tall:before, .tall:after {
+.building:before, .building:after {
     content: "";
-    background: rgb(189, 189, 189);
+    background: var(--secondary-color);
     position: absolute;
     transform-origin: 100% 100%;
 }
-.tall:before {
+.building:before {
     transform: rotateX(-90deg) translateY(2em);
 }
-.tall:after {
+.building:not(.door):after {
     transform: rotateY(90deg) translateX(2em);
+}
+.building .door.right {
+    position: absolute !important;
+    transform: rotateY(90deg);
+    top: 100%;
+    left: calc(100% + 0.5em);
+    width: 1em !important;
+    height: 0.5em !important;
+    background: var(--secondary-light-color);
+}
+.building .door.left {
+    position: absolute !important;
+    transform: rotateX(90deg);
+    left: 100%;
+    top: calc(100% + 0.5em);
+    width: 0.5em !important;
+    height: 1em !important;
+    background: var(--secondary-light-color);
 }
 
 .road {
     position: relative;
-    background: rgb(137, 137, 137) !important;
+    background: rgb(137, 137, 137);
     text-align: center;
 }
 .road .vl,
@@ -137,26 +156,28 @@
 
 .paperplane {
     position: absolute;
-    left: 55%;
-    top: 25%;
+    left: 68%;
+    top: 38%;
 }
-.plane {
-    position: absolute;
-    left: 66.67px;
-    top: 50px;
-    animation: move 3s linear infinite;
-}
-.plane:before {
+.paperplane:before {
     content: '';
     position: absolute;
-    top: 27px;
-    left: -8px;
+    top: 28px;
+    left: -12px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 1);
     opacity: 0.9;
+    border-style: solid;
+    border-width: 10px 0 10px 35px;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.2);
+    transform: rotate(-30deg);
+    animation: slidein 3s linear infinite;
+}
+.plane {
+    animation: move 3s linear infinite;
 }
 .wingRight {
     position: absolute;
@@ -222,3 +243,10 @@
     75% { transform: translateY(10px); }
     100% { transform: translateY(0); }
 }
+@keyframes slidein {
+    0%   { border-width: 10px 0 10px 25px; }
+    25%  { border-width: 10px 0 10px 18px; }
+    50%  { border-width: 10px 0 10px 25px; }
+    75%  { border-width: 10px 0 10px 35px; }
+    100% { border-width: 10px 0 10px 25px; }
+  }
