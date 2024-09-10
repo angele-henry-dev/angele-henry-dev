@@ -111,7 +111,8 @@ footer .row div {
 /* Description */
 #description {
     width: 100%;
-    min-height: 85vh;
+    height: 85vh;
+    max-height: 842px;
     font-size: 1.2em;
 }
 .blockquote-custom {
