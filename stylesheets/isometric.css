@@ -14,7 +14,9 @@
     background: rgb(101, 101, 101);
     transform: rotateX(45deg) rotateZ(45deg) translateZ(-2em);
     transform-style: preserve-3d;
+    box-shadow: rgba(101, 101, 101, 0.4) 5px 5px, rgba(101, 101, 101, 0.3) 10px 10px, rgba(101, 101, 101, 0.2) 15px 15px, rgba(101, 101, 101, 0.1) 20px 20px, rgba(101, 101, 101, 0.05) 25px 25px;
 }
+
 #ground div, .building:before, .building:after {
     width: 2em;
     height: 2em;
