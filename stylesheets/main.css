@@ -85,16 +85,7 @@ header nav {
 /* slightly transparent fallback */
 header nav {
     background-color: rgba(0, 0, 0, .9);
-  }
-  
-  /* if backdrop support: very transparent and blurred */
-  @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    header nav {
-      background-color: rgba(0, 0, 0, .5);
-      -webkit-backdrop-filter: blur(2em);
-      backdrop-filter: blur(2em);
-    }
-  }
+}
 header nav a:first-child {
     margin-right: auto;
     font-size: 22px;
