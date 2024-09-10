@@ -300,8 +300,8 @@ footer .row div {
     #header {
         top: 15px;
     }
-    header {
-        border-radius: 10px;
+    #header header {
+        border-radius: 5px;
     }
 
     #description h1.main-title {
