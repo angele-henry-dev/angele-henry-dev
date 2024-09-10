@@ -42,7 +42,7 @@ body {
     -o-animation: fadeIn 1 1s ease-out;
     animation: fadeIn 1 1s ease-out;
 }
-#header, h2 {
+header, h2 {
     font-family: 'OpenDyslexic', Helvetica, sans-serif !important;
 }
 a {
@@ -79,13 +79,13 @@ span.gradient {
 }
 
 /* Header */
-#header {
+header {
     font-family: 'OpenDyslexic', Helvetica, sans-serif !important;
     position: sticky;
     top: 0px;
     z-index: 100;
 }
-#header header {
+header nav {
     border-radius: 0px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -99,13 +99,8 @@ header nav a:first-child {
 /* Footer */
 footer {
     border-top: 1px solid var(--grey-color);
-}
-footer .row {
     width: 95%;
     margin: auto;
-}
-footer .row div {
-    margin-top: auto;
 }
 
 /* Description */
@@ -303,13 +298,13 @@ footer .row div {
         width: 80%;
     }
 
-    #header .mobile-hidden {
-        display: block !important;
-    }
-    #header {
+    header {
         top: 15px;
     }
-    #header header {
+    header .mobile-hidden {
+        display: block !important;
+    }
+    header nav {
         border-radius: 5px;
     }
 
