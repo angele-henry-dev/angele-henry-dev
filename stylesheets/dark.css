@@ -44,7 +44,6 @@ span.gradient {
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    background-color: var(--black-color) !important;
 }
 
 .card-custom {
