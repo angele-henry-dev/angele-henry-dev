@@ -1,6 +1,7 @@
 :root {
     --primary-color: #DDDDDD;
     --secondary-color: #d51067;
+    --secondary-light-color: #f8a0c6;
     --black-color: #000000;
     --black-light-color: #1A1A1A;
     --grey-color: #303030;
@@ -39,7 +40,7 @@ header {
 }
 
 span.gradient {
-    color: #f8a0c6;
+    color: var(--secondary-light-color);
 }
 
 .card-custom {
