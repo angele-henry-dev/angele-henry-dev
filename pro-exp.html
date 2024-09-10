@@ -14,6 +14,7 @@
         <script src="https://kit.fontawesome.com/58515bd467.js" type="text/javascript" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/58515bd467.js" type="text/javascript" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="module" src="./js/exp_pro.js"></script>
         <title>Lady Raccoon | CSS Tricks</title>
     </head>
     <body class="custom-scrollbar-css d-flex flex-column">
@@ -27,7 +28,10 @@
                     <div class="grass"></div>
                     <div class="grass"></div>
                     <div class="grass"></div>
-                    <div class="building dentist"><span>2015<br><i class="fa-solid fa-tooth"></i></span><div class="door left"></div></div>
+                    <div class="building dentist" onclick="selectExp(2)">
+                        <span>2015<br><i class="fa-solid fa-tooth"></i></span>
+                        <div class="door left"></div>
+                    </div>
                     <div class="grass"></div>
                     <div class="grass"><div class="tree"></div></div>
                     <div class="grass"></div>
@@ -35,7 +39,10 @@
                     <div class="road"><span class="vl"></span></div>
                     <div class="grass"><div class="tree"></div></div>
                     <!-- Line 2 -->
-                    <div class="building school"><span>2014<br><i class="fa-solid fa-graduation-cap"></i></span><div class="door right"></div></div>
+                    <div class="building school" onclick="selectExp(1)">
+                        <span>2014<br><i class="fa-solid fa-graduation-cap"></i></span>
+                        <div class="door right"></div>
+                    </div>
                     <div class="road"><span class="vhl1"></span></div>
                     <div class="road"><span class="hl"></span></div>
                     <div class="road"><span class="vhl2"></span></div>
@@ -46,7 +53,7 @@
                     <div class="road"><span class="vl"></span></div>
                     <div class="grass"></div>
                     <!-- Line 3 -->
-                    <div class="building school"></div>
+                    <div class="building school" onclick="selectExp(1)"></div>
                     <div class="road"><span class="vl"></span></div>
                     <div class="grass"></div>
                     <div class="road"><span class="vl"></span></div>
@@ -61,7 +68,9 @@
                     <div class="road"><span class="vl"></span></div>
                     <div class="grass"></div>
                     <div class="road"><span class="vl"></span></div>
-                    <div class="building liferay"><span>2015<br><i class="fa-solid fa-plane"></i></span></div>
+                    <div class="building liferay" onclick="selectExp(3)">
+                        <span>2015<br><i class="fa-solid fa-plane"></i></span>
+                    </div>
                     <div class="grass"></div>
                     <div class="grass"></div>
                     <div class="grass"></div>
@@ -86,7 +95,10 @@
                     <div class="grass"></div>
                     <div class="grass"></div>
                     <div class="grass"></div>
-                    <div class="building alten"><span>2023<br><i class="fa-solid fa-plane"></i></span><div class="door right"></div></div>
+                    <div class="building alten" onclick="selectExp(6)">
+                        <span>2023<br><i class="fa-solid fa-plane"></i></span>
+                        <div class="door right"></div>
+                    </div>
                     <div class="road"><span class="vl"></span></div>
                     <div class="grass"><div class="tree"></div></div>
                     <!-- Line 7 -->
@@ -94,14 +106,19 @@
                     <div class="road"><span class="vl"></span></div>
                     <div class="grass"></div>
                     <div class="road"><span class="vl"></span></div>
-                    <div class="building servicenow"><span>2017<br><i class="fa-solid fa-plane"></i></span></div>
+                    <div class="building servicenow" onclick="selectExp(4)">
+                        <span>2017<br><i class="fa-solid fa-plane"></i></span>
+                    </div>
                     <div class="grass"></div>
                     <div class="grass"><div class="tree"></div></div>
                     <div class="grass"></div>
                     <div class="road"><span class="vl"></span></div>
                     <div class="grass"></div>
                     <!-- Line 8 -->
-                    <div class="building radio"><span>2011<br><i class="fa-solid fa-radio"></i></span><div class="door right"></div></div>
+                    <div class="building radio" onclick="selectExp(0)">
+                        <span>2011<br><i class="fa-solid fa-radio"></i></span>
+                        <div class="door right"></div>
+                    </div>
                     <div class="road"><span class="vl"></span></div>
                     <div class="grass"></div>
                     <div class="road"><span class="vl"></span></div>
@@ -129,7 +146,9 @@
                     <div class="grass"><div class="tree"></div></div>
                     <div class="grass"></div>
                     <div class="grass"></div>
-                    <div class="building iot"><span>2018<br><i class="fa-solid fa-plane"></i></span></div>
+                    <div class="building iot" onclick="selectExp(5)">
+                        <span>2018<br><i class="fa-solid fa-plane"></i></span>
+                    </div>
                     <div class="grass"></div>
                     <div class="grass"></div>
                     <div class="grass"></div>
@@ -144,16 +163,31 @@
                     </div>
                 </div>
             </div>
+
+            <div class="iso-description card-custom p-5">
+                <div class="card-content">
+                    plopiplop
+                </div>
+            </div>
         </main>
 
         <footer id="footer"></footer>
 
+        <script type="module">
+            import experience from '/model/experience.json' with { type: 'json' };
+        </script>
         <script>
             $(document).ready(function(){
                 $("#header").load("header.html");
                 $("#contact").load("contact.html");
                 $("#footer").load("footer.html");
             });
+
+            function selectExp(selected) {
+                //generateExp(selected);
+                console.log(selected);
+                console.log(experience);
+            }
         </script>
     </body>
 </html>

@@ -1,54 +1,48 @@
 [
-    {
-        "imagePath": "/images/plane.webp",
-        "what": "Fullstack developer as a Freelance",
-        "when": "2023 - 2024, Alten",
-        "descriptions": [
-            "Design and development of applications on Skywise using Slate and Workshop.",
-            "Development of the backend using datasets with PySpark."
-        ],
-        "technologiesTitle": "Technologies I used",
-        "technologies": [
-            "Skywise Palantir",
-            "Python",
-            "PySpark",
-            "PostgreSQL",
-            "Javascript",
-            "HTML5 / CSS3"
-        ]
-    },
   {
-      "imagePath": "/images/iot.webp",
-      "what": "IoT Developer",
-      "when": "2018 - 2023, Airbus",
+      "imagePath": "/images/radio.webp",
+      "what": "Sound technician",
+      "when": "2011 - 2014, Radio Occitania",
       "descriptions": [
-          "Design and development of a platform in Python and VueJS using AWS services to allow the management of many connected objects.",
-          "Management of the frontend part (reviews of code, migrations, upgrades, ui/ux)."
+          "Implementation of a website with live broadcast of radio programs.",
+          "Installation and management of a radio automation software.",
+          "Realization of radio broadcasts as a radio animator and as a sound technician."
       ],
       "technologiesTitle": "Technologies I used",
       "technologies": [
-        "Python",
-        "Flask",
-        "VueJS / Vuetify",
-        "JavaScript / Typescript",
-        "Amazon AWS",
-        "Tailwind CSS"
+        "HTML5 / CSS3",
+        "Javascript / JQuery",
+        "PHP"
       ]
   },
   {
-      "imagePath": "/images/servicedesk.webp",
-      "what": "Software Engineer",
-      "when": "2017 - 2018, Activus Services",
+      "imagePath": "/images/study.webp",
+      "what": "Software developer training",
+      "when": "2014 - 2015, LDNR",
       "descriptions": [
-          "Develop and manage a platform for airplane companies to follow the evolution of multiple systems to detect dangerous or alerting trends.",
-          "Development of a ServiceNow portal for the management of the various ITSM processes."
+          "I realized five development projects with the different languages C, C++ and Java SE/2EE on a distant collaborative work."
+      ],
+      "technologiesTitle": "Learnings",
+      "technologies": [
+        "C",
+        "C++",
+        "Java"
+      ]
+  },
+  {
+      "imagePath": "/images/dentist.webp",
+      "what": "Software developer",
+      "when": "2015, Libre-Services",
+      "descriptions": [
+          "Design and development of patients files management and 3D image manipulation software for medical sector."
       ],
       "technologiesTitle": "Technologies I used",
       "technologies": [
-        "Java",
-        "HTML5 / CSS3",
-        "Javascript",
-        "ServiceNow"
+        "C++",
+        "QT5",
+        "MySQL",
+        "PHPMyAdmin",
+        "PHP"
       ]
   },
   {
@@ -72,49 +66,55 @@
       ]
   },
   {
-      "imagePath": "/images/dentist.webp",
-      "what": "Software developer",
-      "when": "2015, Libre-Services",
+      "imagePath": "/images/servicedesk.webp",
+      "what": "Software Engineer",
+      "when": "2017 - 2018, Activus Services",
       "descriptions": [
-          "Design and development of patients files management and 3D image manipulation software for medical sector."
+          "Develop and manage a platform for airplane companies to follow the evolution of multiple systems to detect dangerous or alerting trends.",
+          "Development of a ServiceNow portal for the management of the various ITSM processes."
       ],
       "technologiesTitle": "Technologies I used",
       "technologies": [
-        "C++",
-        "QT5",
-        "MySQL",
-        "PHPMyAdmin",
-        "PHP"
-      ]
-  },
-  {
-      "imagePath": "/images/study.webp",
-      "what": "Software developer training",
-      "when": "2014 - 2015, LDNR",
-      "descriptions": [
-          "I realized five development projects with the different languages C, C++ and Java SE/2EE on a distant collaborative work."
-      ],
-      "technologiesTitle": "Learnings",
-      "technologies": [
-        "C",
-        "C++",
-        "Java"
-      ]
-  },
-  {
-      "imagePath": "/images/radio.webp",
-      "what": "Sound technician",
-      "when": "2011 - 2014, Radio Occitania",
-      "descriptions": [
-          "Implementation of a website with live broadcast of radio programs.",
-          "Installation and management of a radio automation software.",
-          "Realization of radio broadcasts as a radio animator and as a sound technician."
-      ],
-      "technologiesTitle": "Technologies I used",
-      "technologies": [
+        "Java",
         "HTML5 / CSS3",
-        "Javascript / JQuery",
-        "PHP"
+        "Javascript",
+        "ServiceNow"
       ]
-  }
+  },
+  {
+      "imagePath": "/images/iot.webp",
+      "what": "IoT Developer",
+      "when": "2018 - 2023, Airbus",
+      "descriptions": [
+          "Design and development of a platform in Python and VueJS using AWS services to allow the management of many connected objects.",
+          "Management of the frontend part (reviews of code, migrations, upgrades, ui/ux)."
+      ],
+      "technologiesTitle": "Technologies I used",
+      "technologies": [
+        "Python",
+        "Flask",
+        "VueJS / Vuetify",
+        "JavaScript / Typescript",
+        "Amazon AWS",
+        "Tailwind CSS"
+      ]
+  },
+  {
+    "imagePath": "/images/plane.webp",
+    "what": "Fullstack developer as a Freelance",
+    "when": "2023 - 2024, Alten",
+    "descriptions": [
+        "Design and development of applications on Skywise using Slate and Workshop.",
+        "Development of the backend using datasets with PySpark."
+    ],
+    "technologiesTitle": "Technologies I used",
+    "technologies": [
+        "Skywise Palantir",
+        "Python",
+        "PySpark",
+        "PostgreSQL",
+        "Javascript",
+        "HTML5 / CSS3"
+    ]
+   }
 ]

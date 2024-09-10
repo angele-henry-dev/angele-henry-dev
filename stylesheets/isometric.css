@@ -1,7 +1,9 @@
+.isometric, .iso-description {
+    width: 480px;
+}
 .isometric {
     position: relative;
     margin-bottom: 50px;
-    width: 480px;
     height: 370px;
 }
 
