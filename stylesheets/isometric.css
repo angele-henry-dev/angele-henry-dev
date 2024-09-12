@@ -13,6 +13,8 @@
     --building-2-dark: hsl(207, 34%, 52%);
     --building-3: hsl(283, 34%, 62%);
     --building-3-dark: hsl(283, 34%, 52%);
+    --car-1: hsl(355, 67%, 46%);
+    --car-2: hsl(241, 67%, 46%);
 }
 
 .iso-description {
@@ -383,10 +385,9 @@ div.one .water-drops div:nth-child(4) {
 .car div.one {
     top: 79px;
     left: 0px;
-}
-.car div.one {
-    background-color: #c52735;
+    background-color: var(--car-1);
     animation: car-one 9s linear infinite;
+    animation-delay: .25s;
 }
 @keyframes car-one {
     0% {
@@ -401,17 +402,87 @@ div.one .water-drops div:nth-child(4) {
     }
     25% {
       top: 79px;
-      left: 79px;
+      left: 76px;
       transform: rotate(90deg);
       box-shadow: 2px -2px 0 0 #333;
     }
     100% {
       top: calc(100% - 10px);
-      left: 79px;
+      left: 76px;
       transform: rotate(90deg);
       box-shadow: 2px -2px 0 0 #333;
     }
-  }
+}
+.car div.two {
+    top: 0px;
+    right: 0px;
+    background-color: var(--car-2);
+    animation: car-two 14s linear infinite;
+    animation-delay: 5s;
+    visibility: hidden;
+}
+@keyframes car-two {
+    0% {
+        visibility: visible;
+        top: 0px;
+        right: 14px;
+        transform: rotate(90deg);
+        box-shadow: 2px -2px 0 0 #333;
+    }
+    19% {
+        transform: rotate(90deg);
+        box-shadow: 2px -2px 0 0 #333;
+    }
+    20% {
+        top: 112px;
+        right: 14px;
+        transform: rotate(180deg);
+        box-shadow: -2px -2px 0 0 #333;
+    }
+    30% {
+        top: 112px;
+        right: 39px;
+        transform: rotate(180deg);
+        box-shadow: -2px -2px 0 0 #333;
+    }
+    50% {
+        top: 112px;
+        right: 39px;
+        transform: rotate(180deg);
+        box-shadow: -2px -2px 0 0 #333;
+    }
+    60% {
+        top: 112px;
+        right: 0px;
+        transform: rotate(180deg);
+        box-shadow: -2px -2px 0 0 #333;
+    }
+    61% {
+        top: 112px;
+        right: 0px;
+        transform: rotate(270deg);
+        box-shadow: -2px 2px 0 0 #333;
+    }
+    66% {
+        top: 130px;
+        right: 0px;
+        transform: rotate(270deg);
+        box-shadow: -2px 2px 0 0 #333;
+    }
+    80% {
+        top: 0px;
+        right: 0px;
+        transform: rotate(270deg);
+        box-shadow: -2px 2px 0 0 #333;
+    }
+    81% {
+        transform: rotate(270deg);
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
 
 /* Buildings */
 
