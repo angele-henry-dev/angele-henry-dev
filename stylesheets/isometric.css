@@ -1,12 +1,20 @@
 :root {
-    --ground: hsl(25, 13%, 16%);
-    --ground-dark: hsl(25, 13%, 6%);
-    --grass: hsl(184, 100%, 6%);
+    --ground--night: hsl(0, 0%, 20%);
+    --ground-dark--night: hsl(0, 0%, 10%);
+    --road--night: hsl(0, 0%, 26%);
+    --grass--night: hsl(0, 0%, 11%);
+    --tree-trunc--night: hsl(0, 0%, 7%);
+    --parking--night: hsl(0, 0%, 40%);
+    --ground: hsl(0, 0%, 50%);
+    --ground-dark: hsl(0, 0%, 40%);
+    --road: hsl(0, 0%, 56%);
+    --grass: hsl(0, 0%, 41%);
+    --tree-trunc: hsl(25, 100%, 17%);
+    --parking: hsl(0, 0%, 100%);
+
     --water: hsl(186, 100%, 38%);
     --water-drop: hsl(186, 100%, 7%);
-    --road: hsl(25, 13%, 26%);
-    --tree: hsl(184, 100%, 15%);
-    --tree-trunc: hsl(22, 59%, 17%);
+    --tree: hsl(122, 100%, 35%);
     --building-1: hsl(283, 34%, 32%);
     --building-1-dark: hsl(283, 34%, 12%);
     --building-1-window: hsl(334, 86%, 45%);
@@ -14,31 +22,176 @@
     --roof-light: hsl(283, 34%, 52%);
     --car-1: hsl(60, 100%, 50%);
     --car-2: hsl(33, 100%, 50%);
-    --parking: hsl(0, 0%, 40%);
-}
-/*
-:root {
-    --ground: hsl(25, 13%, 46%);
-    --ground-dark: hsl(25, 13%, 36%);
-    --grass: hsl(184, 100%, 36%);
-    --water: hsl(186, 100%, 58%);
-    --water-drop: hsl(186, 100%, 7%);
-    --road: hsl(25, 13%, 66%);
-    --tree: hsl(184, 100%, 50%);
-    --tree-trunc: hsl(22, 59%, 17%);
-    --building-1: hsl(283, 34%, 32%);
-    --building-1-dark: hsl(283, 34%, 12%);
-    --building-1-window: hsl(334, 86%, 45%);
-    --roof: hsl(283, 34%, 32%);
-    --roof-light: hsl(283, 34%, 52%);
-    --car-1: hsl(60, 100%, 50%);
-    --car-2: hsl(33, 100%, 50%);
-    --parking: hsl(0, 0%, 100%);
-}
-*/
 
+}
+
+.night-mode i {
+    cursor: pointer;
+}
 .iso-description {
     margin-top: 200px;
+}
+
+/* Colors */
+.ground {
+    background-color: var(--ground);
+}
+.ground div.shadow-right {
+    background-color: var(--ground-dark);
+}
+.ground div.shadow-left {
+    background-color: var(--ground);
+}
+.grass div {
+    background-color: var(--grass);
+}
+.road div {
+    background-color: var(--road);
+}
+.parking div {
+    background-color: var(--road);
+    border: 1px solid var(--parking);
+}
+.parking div::after {
+    color: var(--parking);
+}
+.water div {
+    background-color: var(--water);
+    box-shadow: 0 0 8px 3px hsl(186, 100%, 88%);
+}
+.water-drops div {
+    background-color: var(--water-drop);
+}
+.water div.one {
+    box-shadow: 0 0 8px 3px hsl(186, 100%, 88%);
+}
+.tree div {
+    background: var(--tree);
+    box-shadow: 0 0 12px 2px var(--tree);
+}
+.tree div:before {
+    background: var(--tree-trunc);
+}
+.car div.one {
+    background-color: var(--car-1);
+    box-shadow: 0 0 18px 7px var(--car-1);
+}
+.car div.one::after {
+    box-shadow: 0 0 18px 5px var(--car-1);
+}
+.car div.two {
+    background-color: var(--car-2);
+}
+.car div.two::after {
+    box-shadow: 0 0 18px 5px var(--car-2);
+}
+.brickhouse .wall-one, .brickbuilding .wall-one {
+    background-color: var(--building-1);
+}
+.brickhouse .wall-two, .brickbuilding .wall-two {
+    background-color: var(--building-1-dark);
+}
+.brickhouse .roof, .brickbuilding .roof {
+    background-color: var(--roof);
+    box-shadow: inset 0 0 0 3px #313131;
+}
+.brickhouse .wall-one div, .brickhouse .wall-two div,
+.brickbuilding .wall-one div, .brickbuilding .wall-two div {
+    background-color: var(--building-1-window);
+}
+.brickhouse .wall-one div {
+    box-shadow: 0 10px 0 0 var(--building-1-window),
+                10px 0px 0 0 var(--building-1-window),
+                10px 10px 0 0 var(--building-1-window),
+                20px 0px 0 0 var(--building-1-window),
+                20px 10px 0 0 var(--building-1-window),
+                30px 0px 0 0 var(--building-1-window),
+                30px 10px 0 0 var(--building-1-window);
+}
+.brickbuilding .wall-one div {
+    box-shadow: 0 10px 0 0 var(--building-1-window),
+                0 20px 0 0 var(--building-1-window),
+                0 30px 0 0 var(--building-1-window),
+                10px 0px 0 0 var(--building-1-window),
+                10px 10px 0 0 var(--building-1-window),
+                10px 20px 0 0 var(--building-1-window),
+                10px 30px 0 0 var(--building-1-window),
+                20px 0px 0 0 var(--building-1-window),
+                20px 10px 0 0 var(--building-1-window),
+                20px 20px 0 0 var(--building-1-window),
+                20px 30px 0 0 var(--building-1-window),
+                30px 0px 0 0 var(--building-1-window),
+                30px 10px 0 0 var(--building-1-window),
+                30px 20px 0 0 var(--building-1-window),
+                30px 30px 0 0 var(--building-1-window);
+}
+.brickhouse .wall-two div {
+    box-shadow: 0 10px 0 0 var(--building-1-window),
+                0 20px 0 0 var(--building-1-window),
+                0 30px 0 0 var(--building-1-window),
+                10px 0 0 0 var(--building-1-window),
+                10px 10px 0 0 var(--building-1-window),
+                10px 20px 0 0 var(--building-1-window),
+                10px 30px 0 0 var(--building-1-window);
+}
+.brickbuilding .wall-two div {
+    box-shadow: 10px 0 0 0 var(--building-1-window),
+                20px 0 0 0 var(--building-1-window),
+                30px 0 0 0 var(--building-1-window),
+                0px 10px 0 0 var(--building-1-window),
+                10px 10px 0 0 var(--building-1-window),
+                20px 10px 0 0 var(--building-1-window),
+                30px 10px 0 0 var(--building-1-window),
+                0px 20px 0 0 var(--building-1-window),
+                10px 20px 0 0 var(--building-1-window),
+                20px 20px 0 0 var(--building-1-window),
+                30px 20px 0 0 var(--building-1-window),
+                0px 30px 0 0 var(--building-1-window),
+                10px 30px 0 0 var(--building-1-window),
+                20px 30px 0 0 var(--building-1-window),
+                30px 30px 0 0 var(--building-1-window);
+}
+.roof .checkmark::after {
+    box-shadow: inset 0 0 8px 3px var(--building-1-window);
+}
+.roof:hover input ~ .checkmark,
+.roof input:checked ~ .checkmark {
+    background: linear-gradient(#e66465, var(--roof-light));
+    box-shadow: 0 0 18px 7px var(--building-1-window);
+}
+@keyframes glowing {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      filter: drop-shadow(0 0 0 #ffffff) drop-shadow(0 0 0.5px #ffffff)
+              drop-shadow(0 0 1px var(--building-1-window)) drop-shadow(0 0 1.5px var(--building-1-window))
+              drop-shadow(0 0 2px var(--building-1-window)) drop-shadow(0 0 2.5px var(--building-1-window));
+    }
+}
+/* Night Mode */
+.ground.night {
+    background-color: var(--ground--night);
+}
+.ground.night div.shadow-right {
+    background-color: var(--ground-dark--night);
+}
+.ground.night div.shadow-left {
+    background-color: var(--ground--night);
+}
+.ground.night .grass div {
+    background-color: var(--grass--night);
+}
+.ground.night .road div {
+    background-color: var(--road--night);
+}
+.ground.night .parking div {
+    background-color: var(--road--night);
+    border: 1px solid var(--parking--night);
+}
+.ground.night .parking div::after {
+    color: var(--parking--night);
 }
 
 /* Ground */
@@ -48,7 +201,6 @@
     top: 5em;
     left: 5em;
     display: block;
-    background-color: var(--ground);
     width: 360px;
     height: 360px;
     transform: rotateZ(45deg);
@@ -57,7 +209,6 @@
 .ground div.shadow-right {
     position: absolute;
     display: block;
-    background-color: var(--ground-dark);
     width: 10px;
     height: 100%;
     top: 5px;
@@ -68,7 +219,6 @@
 .ground div.shadow-left {
     position: absolute;
     display: block;
-    background-color: var(--ground);
     width: 100%;
     height: 10px;
     bottom: -10px;
@@ -82,7 +232,6 @@
 .grass div {
     position: absolute;
     display: block;
-    background-color: var(--grass);
     z-index: 2;
 }
 .grass div.one {
@@ -121,8 +270,6 @@
 .parking div {
     position: absolute;
     display: block;
-    background-color: var(--road);
-    border: 1px solid var(--parking);
     transform: rotate(-90deg);
     width: 15px;
     height: 23px;
@@ -131,7 +278,6 @@
 }
 .parking div::after {
     content: 'P';
-    color: var(--parking);
     margin-top: 20px;
     margin-left: 3px;
 }
@@ -153,13 +299,11 @@
 .water div {
     position: absolute;
     display: block;
-    background-color: var(--water);
     z-index: 3;
 }
 .water-drops div {
     position: absolute;
     display: block;
-    background-color: var(--water-drop);
     width: 4px;
     height: 0px;
     border-radius: 4px;
@@ -205,7 +349,6 @@ div.one .water-drops div:nth-child(4) {
     height: 30px;
     bottom: 135px;
     right: 55px;
-    box-shadow: 0px 0px 0px 5px var(--ground);
     border-radius: 2px;
 }
 .water div.one::after {
@@ -213,7 +356,6 @@ div.one .water-drops div:nth-child(4) {
     content: '';
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 8px 3px hsl(186, 100%, 88%);
     border-radius: 2px;
 }
 
@@ -222,7 +364,6 @@ div.one .water-drops div:nth-child(4) {
 .road div {
     position: absolute;
     display: block;
-    background-color: var(--road);
     width: 25px;
     z-index: 5;
 }
@@ -258,7 +399,6 @@ div.one .water-drops div:nth-child(4) {
 
 .tree div {
     position: absolute;
-    background: var(--tree);
     border-radius: 10% 50% 50% 50%;
     height: 30px;
     width: 30px;
@@ -271,7 +411,6 @@ div.one .water-drops div:nth-child(4) {
 .tree div:before {
     content:'';
     position:absolute;
-    background: var(--tree-trunc);
     bottom: -2px;
     left: calc(50% + 9px);
     height: 20%;
@@ -328,83 +467,6 @@ div.one .water-drops div:nth-child(4) {
     right: 85px;
 }
 
-/* Plane */
-
-.paperplane {
-    position: absolute;
-    left: 120px;
-    bottom: 60px;
-    transform: rotateZ(-45deg);
-    z-index: 9;
-}
-.paperplane .plane {
-    animation: move 3s linear infinite;
-}
-.paperplane .wingRight {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 7.5px solid transparent;
-    border-right: 4.17px solid transparent;
-    border-bottom: 38.33px solid white;
-    transform: rotate(61deg);
-    z-index: 40;
-}
-.paperplane .bottom {
-    position: relative;
-    width: 0;
-    height: 0;
-    border-left: 4.17px solid transparent;
-    border-right: 4.17px solid transparent;
-    border-bottom: 8.5px solid #676d70;
-    top: 23.67px;
-    transform: rotate(-5deg);
-    left: -17.5px;
-    z-index: 30;
-}
-.paperplane .top {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 3.33px solid transparent;
-    border-right: 3.33px solid transparent;
-    border-top: 10px solid #c1c7c9;
-    top: 21.67px;
-    transform: rotate(5deg);
-    left: -20px;
-    z-index: 10;
-}
-.paperplane .middle {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 45px solid #c1c7c9;
-    top: -4.5px;
-    transform: rotate(72deg);
-    left: -2.5px;
-    z-index: 20;
-}
-.paperplane .wingLeft {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 8.33px solid transparent;
-    border-bottom: 45px solid white;
-    transform: rotate(78deg) skewY(-35deg);
-    left: -6.17px;
-    top: -10px;
-    z-index: 30;
-}
-@keyframes move {
-    0% { transform: translateY(0); }
-    25% { transform: translateY(-10px); }
-    50% { transform: translateY(0); }
-    75% { transform: translateY(10px); }
-    100% { transform: translateY(0); }
-}
-
 /* Cars */
 
 .car div {
@@ -417,15 +479,12 @@ div.one .water-drops div:nth-child(4) {
 .car div.one {
     top: 79px;
     left: 0px;
-    background-color: var(--car-1);
-    box-shadow: 0 0 18px 7px var(--car-1);
     animation: car-one 9s linear infinite;
     animation-delay: .25s;
 }
 .car div.one::after {
     display: block;
     content: '';
-    box-shadow: 0 0 18px 5px var(--car-1);
 }
 @keyframes car-one {
     0% {
@@ -454,7 +513,6 @@ div.one .water-drops div:nth-child(4) {
 .car div.two {
     top: 0px;
     right: 0px;
-    background-color: var(--car-2);
     animation: car-two 14s linear infinite;
     animation-delay: 5s;
     visibility: hidden;
@@ -462,7 +520,6 @@ div.one .water-drops div:nth-child(4) {
 .car div.two::after {
     display: block;
     content: '';
-    box-shadow: 0 0 18px 5px var(--car-2);
 }
 @keyframes car-two {
     0% {
@@ -545,7 +602,6 @@ div.one .water-drops div:nth-child(4) {
 .brickhouse .wall-one, .brickbuilding .wall-one {
     position: absolute;
     display: block;
-    background-color: var(--building-1);
     transform: skewX(45deg);
     top: 0px;
     width: 50px;
@@ -561,7 +617,6 @@ div.one .water-drops div:nth-child(4) {
 .brickhouse .wall-two, .brickbuilding .wall-two {
     position: absolute;
     display: block;
-    background-color: var(--building-1-dark);
     transform: skewY(45deg);
     left: 0px;
     height: 50px;
@@ -577,8 +632,6 @@ div.one .water-drops div:nth-child(4) {
 .brickhouse .roof, .brickbuilding .roof {
     position: absolute;
     display: block;
-    background-color: var(--roof);
-    box-shadow: inset 0 0 0 3px #313131;
     border-radius: 2px;
     width: 50px;
     height: 50px;
@@ -589,7 +642,6 @@ div.one .water-drops div:nth-child(4) {
 .brickbuilding .wall-one div, .brickbuilding .wall-two div {
     position: absolute;
     display: block;
-    background-color: var(--building-1-window);
     opacity: 1;
 }
 .brickhouse .wall-one div, .brickbuilding .wall-one div {
@@ -598,63 +650,11 @@ div.one .water-drops div:nth-child(4) {
     top: 3px;
     left: 8px;
 }
-.brickhouse .wall-one div {
-    box-shadow: 0 10px 0 0 var(--building-1-window),
-                10px 0px 0 0 var(--building-1-window),
-                10px 10px 0 0 var(--building-1-window),
-                20px 0px 0 0 var(--building-1-window),
-                20px 10px 0 0 var(--building-1-window),
-                30px 0px 0 0 var(--building-1-window),
-                30px 10px 0 0 var(--building-1-window);
-}
-.brickbuilding .wall-one div {
-    box-shadow: 0 10px 0 0 var(--building-1-window),
-                0 20px 0 0 var(--building-1-window),
-                0 30px 0 0 var(--building-1-window),
-                10px 0px 0 0 var(--building-1-window),
-                10px 10px 0 0 var(--building-1-window),
-                10px 20px 0 0 var(--building-1-window),
-                10px 30px 0 0 var(--building-1-window),
-                20px 0px 0 0 var(--building-1-window),
-                20px 10px 0 0 var(--building-1-window),
-                20px 20px 0 0 var(--building-1-window),
-                20px 30px 0 0 var(--building-1-window),
-                30px 0px 0 0 var(--building-1-window),
-                30px 10px 0 0 var(--building-1-window),
-                30px 20px 0 0 var(--building-1-window),
-                30px 30px 0 0 var(--building-1-window);
-}
 .brickhouse .wall-two div, .brickbuilding .wall-two div {
     width: 7px;
     height: 5px;
     top: 8px;
     left: 3px;
-}
-.brickhouse .wall-two div {
-    box-shadow: 0 10px 0 0 var(--building-1-window),
-                0 20px 0 0 var(--building-1-window),
-                0 30px 0 0 var(--building-1-window),
-                10px 0 0 0 var(--building-1-window),
-                10px 10px 0 0 var(--building-1-window),
-                10px 20px 0 0 var(--building-1-window),
-                10px 30px 0 0 var(--building-1-window);
-}
-.brickbuilding .wall-two div {
-    box-shadow: 10px 0 0 0 var(--building-1-window),
-                20px 0 0 0 var(--building-1-window),
-                30px 0 0 0 var(--building-1-window),
-                0px 10px 0 0 var(--building-1-window),
-                10px 10px 0 0 var(--building-1-window),
-                20px 10px 0 0 var(--building-1-window),
-                30px 10px 0 0 var(--building-1-window),
-                0px 20px 0 0 var(--building-1-window),
-                10px 20px 0 0 var(--building-1-window),
-                20px 20px 0 0 var(--building-1-window),
-                30px 20px 0 0 var(--building-1-window),
-                0px 30px 0 0 var(--building-1-window),
-                10px 30px 0 0 var(--building-1-window),
-                20px 30px 0 0 var(--building-1-window),
-                30px 30px 0 0 var(--building-1-window);
 }
 
 /* Buildings position */
@@ -707,13 +707,7 @@ div.one .water-drops div:nth-child(4) {
     content: '';
     width: 100%;
     height: 100%;
-    box-shadow: inset 0 0 8px 3px var(--building-1-window);
     border-radius: 2px;
-}
-.roof:hover input ~ .checkmark,
-.roof input:checked ~ .checkmark {
-    background: linear-gradient(#e66465, var(--roof-light));
-    box-shadow: 0 0 18px 7px var(--building-1-window);
 }
 .roof .sign {
     position: absolute;
@@ -742,15 +736,4 @@ div.one .water-drops div:nth-child(4) {
 }
 .roof input:checked ~ .sign {
     visibility: visible;
-}
-@keyframes glowing {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      filter: drop-shadow(0 0 0 #ffffff) drop-shadow(0 0 0.5px #ffffff)
-              drop-shadow(0 0 1px var(--building-1-window)) drop-shadow(0 0 1.5px var(--building-1-window))
-              drop-shadow(0 0 2px var(--building-1-window)) drop-shadow(0 0 2.5px var(--building-1-window));
-    }
 }

@@ -22,7 +22,10 @@
         <aside id="contact"></aside>
 
         <main class="main-content">
-          <div class="ground">
+          <div class="night-mode px-5">
+            <i id="night-icon" class="fa-regular fa-xl fa-moon" onclick="turnNightMode()"></i>
+          </div>
+          <div id="ground" class="ground">
             <div class="shadow-right"></div>
             <div class="shadow-left"></div>
             <div class="grass">
@@ -190,15 +193,6 @@
                   </div>
               </div>
             </div>
-            <div class="paperplane">
-              <div class="plane">
-                  <div class="wingRight"></div>
-                  <div class="wingLeft"></div>
-                  <div class="bottom"></div>
-                  <div class="top"></div>
-                  <div class="middle"></div>
-              </div>
-            </div>
           </div>
 
           <div class="iso-description card-custom p-5 mb-3">
@@ -219,6 +213,19 @@
                 $("#contact").load("contact.html");
                 $("#footer").load("footer.html");
             });
+
+            function turnNightMode() {
+              const el = $("#ground");
+              if (el.hasClass("night")) {
+                el.removeClass("night");
+                $("#night-icon").addClass("fa-moon");
+                $("#night-icon").removeClass("fa-sun");
+              } else {
+                el.addClass("night");
+                $("#night-icon").removeClass("fa-moon");
+                $("#night-icon").addClass("fa-sun");
+              }
+            }
 
             function selectExp(selected) {
                 //generateExp(selected);
