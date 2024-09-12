@@ -1,4 +1,23 @@
 :root {
+    --ground: hsl(25, 13%, 16%);
+    --ground-dark: hsl(25, 13%, 6%);
+    --grass: hsl(184, 100%, 6%);
+    --water: hsl(186, 100%, 38%);
+    --water-drop: hsl(186, 100%, 7%);
+    --road: hsl(25, 13%, 26%);
+    --tree: hsl(184, 100%, 15%);
+    --tree-trunc: hsl(22, 59%, 17%);
+    --building-1: hsl(283, 34%, 32%);
+    --building-1-dark: hsl(283, 34%, 12%);
+    --building-1-window: hsl(334, 86%, 45%);
+    --roof: hsl(283, 34%, 32%);
+    --roof-light: hsl(283, 34%, 52%);
+    --car-1: hsl(60, 100%, 50%);
+    --car-2: hsl(33, 100%, 50%);
+    --parking: hsl(0, 0%, 40%);
+}
+/*
+:root {
     --ground: hsl(25, 13%, 46%);
     --ground-dark: hsl(25, 13%, 36%);
     --grass: hsl(184, 100%, 36%);
@@ -14,7 +33,9 @@
     --roof-light: hsl(283, 34%, 52%);
     --car-1: hsl(60, 100%, 50%);
     --car-2: hsl(33, 100%, 50%);
+    --parking: hsl(0, 0%, 100%);
 }
+*/
 
 .iso-description {
     margin-top: 200px;
@@ -101,7 +122,7 @@
     position: absolute;
     display: block;
     background-color: var(--road);
-    border: 1px solid #fff;
+    border: 1px solid var(--parking);
     transform: rotate(-90deg);
     width: 15px;
     height: 23px;
@@ -110,6 +131,7 @@
 }
 .parking div::after {
     content: 'P';
+    color: var(--parking);
     margin-top: 20px;
     margin-left: 3px;
 }
