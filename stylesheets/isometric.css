@@ -13,6 +13,8 @@
     --building-2-dark: hsl(207, 34%, 52%);
     --building-3: hsl(283, 34%, 62%);
     --building-3-dark: hsl(283, 34%, 52%);
+    --roof: hsl(0, 0%, 27%);
+    --roof-light: hsl(0, 0%, 47%);
     --car-1: hsl(355, 67%, 46%);
     --car-2: hsl(241, 67%, 46%);
 }
@@ -536,7 +538,7 @@ div.one .water-drops div:nth-child(4) {
 .brickhouse .roof, .brickbuilding .roof {
     position: absolute;
     display: block;
-    background-color: #444;
+    background-color: var(--roof);
     box-shadow: inset 0 0 0 3px #313131;
     width: 50px;
     height: 50px;
@@ -689,7 +691,7 @@ div.one .water-drops div:nth-child(4) {
 }
 .roof:hover input ~ .checkmark,
 .roof input:checked ~ .checkmark {
-    background-color: #ffff00;
+    background-color: var(--roof-light);
 }
 .roof .sign {
     position: absolute;
