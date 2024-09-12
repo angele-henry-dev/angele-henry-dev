@@ -466,29 +466,29 @@
 }
 div.one .water-drops div:nth-child(1) {
     bottom: -20px;
-    left: 8px;
+    left: 10px;
     animation-delay: .25s;
 }
 div.one .water-drops div:nth-child(2) {
     bottom: -20px;
-    left: 13px;
+    left: 15px;
     animation-delay: .5s;
 }
 div.one .water-drops div:nth-child(3) {
     bottom: -20px;
-    left: 18px;
+    left: 20px;
     animation-delay: .75s;
 }
 div.one .water-drops div:nth-child(4) {
     bottom: -20px;
-    left: 23px;
+    left: 25px;
     animation-delay: 1s;
 }
 .water div.one {
-    width: 40px;
+    width: 42px;
     height: 30px;
     bottom: 135px;
-    right: 45px;
+    right: 40px;
     box-shadow: 0px 0px 0px 5px hsla(47, 21%, 54%,0.75);
     -webkit-box-shadow: 0px 0px 0px 5px hsla(47, 21%, 54%,0.75);
     -moz-box-shadow: 0px 0px 0px 5px hsla(47, 21%, 54%,0.75);
@@ -529,6 +529,79 @@ div.one .water-drops div:nth-child(4) {
     height: 180px;
     bottom: 2px;
     right: 91px;
+}
+
+/* Trees */
+
+.tree div {
+    position: absolute;
+    background: #48773c;
+    border-radius: 10% 50% 50% 50%;
+    height: 30px;
+    width: 30px;
+    animation: sway 2s ease-in-out infinite;
+    animation-direction: alternate;
+    transform-origin: bottom;
+    animation-delay: 1s;
+}
+.tree div:before {
+    content:'';
+    position:absolute;
+    background: #462512;
+    bottom: -2px;
+    left: calc(50% + 9px);
+    height: 20%;
+    width: 33%;
+    transform: rotate(45deg);
+}
+@keyframes sway {
+    0% {transform: skewX(12deg);}
+    60% {transform: skewX(0deg);}
+    100% {transform: skewX(12deg);}
+}
+.tree div.one {
+    top: 10px;
+    left: 10px;
+}
+.tree div.two {
+    top: 10px;
+    left: 45px;
+}
+.tree div.three {
+    bottom: 14px;
+    left: 10px;
+}
+.tree div.four {
+    bottom: 140px;
+    left: 10px;
+}
+.tree div.five {
+    bottom: 175px;
+    left: 10px;
+}
+.tree div.six {
+    top: 10px;
+    left: 185px;
+}
+.tree div.seven {
+    bottom: 140px;
+    left: 100px;
+}
+.tree div.eight {
+    bottom: 230px;
+    left: 100px;
+}
+.tree div.nine {
+    bottom: 14px;
+    right: 150px;
+}
+.tree div.ten {
+    bottom: 14px;
+    right: 10px;
+}
+.tree div.eleven {
+    top: 100px;
+    right: 70px;
 }
 
 /* Buildings */
