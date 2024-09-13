@@ -306,8 +306,8 @@
     100% {
       opacity: 1;
       filter: drop-shadow(0 0 0 #ffffff) drop-shadow(0 0 0.5px #ffffff)
-              drop-shadow(0 0 1px var(--building-1-window)) drop-shadow(0 0 1.5px var(--building-1-window))
-              drop-shadow(0 0 2px var(--building-1-window)) drop-shadow(0 0 2.5px var(--building-1-window));
+              drop-shadow(0 0 1px var(--car-2)) drop-shadow(0 0 1.5px var(--car-2))
+              drop-shadow(0 0 2px var(--car-2)) drop-shadow(0 0 2.5px var(--car-2));
     }
 }
 /* Night Mode */
@@ -827,13 +827,6 @@ div.one .water-drops div:nth-child(4) {
 
 /* Neon signs */
 
-.roof input[type="radio"] {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
-}
 .roof {
     box-shadow: inset 0 0 0 3px #313131;
     width: 100%;
@@ -853,7 +846,6 @@ div.one .water-drops div:nth-child(4) {
     width: 0;
     height: 0;
     transform: rotateZ(-45deg);
-    visibility: hidden;
     z-index: 11;
 }
 .roof .sign i::before {
@@ -871,6 +863,9 @@ div.one .water-drops div:nth-child(4) {
 .roof .sign i:nth-child(3)::before {
     animation-delay: 0.21s;
 }
-.roof input:checked ~ .sign {
+.roof:not(.selected) .sign {
+    visibility: hidden;
+}
+.roof.selected ~ .sign {
     visibility: visible;
 }
