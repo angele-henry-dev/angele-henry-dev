@@ -21,192 +21,213 @@
         <header id="header"></header>
         <aside id="contact"></aside>
 
-        <main class="main-content">
-          <div class="night-mode px-5">
+        <main class="main-content d-flex flex-row flex-wrap">
+          <div class="night-mode">
             <i id="night-icon" class="fa-regular fa-xl fa-moon" onclick="turnNightMode()"></i>
           </div>
-          <div id="ground" class="ground">
-            <div class="shadow-right"></div>
-            <div class="shadow-left"></div>
-            <div class="grass">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-              <div class="four"></div>
-              <div class="five"></div>
-            </div>
-            <div class="parking">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-            </div>
-            <div class="water">
-              <div class="one">
-                <div class='water-drops'>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+          <div class="iso-container">
+            <div id="ground" class="ground">
+              <div class="shadow-right"></div>
+              <div class="shadow-left"></div>
+              <div class="grass">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+              </div>
+              <div class="parking">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+              </div>
+              <div class="water">
+                <div class="one">
+                  <div class='water-drops'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="road">
-              <div class="four"></div>
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-              <div class="five"></div>
-            </div>
-            <div class="car">
-              <div class="one"></div>
-              <div class="two"></div>
-            </div>
-            <div class="tree">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-              <div class="four"></div>
-              <div class="five"></div>
-              <div class="six"></div>
-              <div class="seven"></div>
-              <div class="eight"></div>
-              <div class="nine"></div>
-              <div class="ten"></div>
-              <div class="eleven"></div>
-            </div>
-            <div class='brickhouse radio'>
-              <div class='wall-one'>
-                <div></div>
+              <div class="road">
+                <div class="four"></div>
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="five"></div>
               </div>
-              <div class='wall-two'>
-                <div></div>
+              <div class="car">
+                <div class="one"></div>
+                <div class="two"></div>
               </div>
-              <div class='roof' onclick="selectExp(0)">
-                  <input type="radio" name="selectedExp" checked>
-                  <div class="checkmark"></div>
+              <div class="tree">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+                <div class="six"></div>
+                <div class="seven"></div>
+                <div class="eight"></div>
+                <div class="nine"></div>
+                <div class="ten"></div>
+                <div class="eleven"></div>
+              </div>
+              <div class='brickhouse radio'>
+                <div class='wall-one'>
+                  <div></div>
+                </div>
+                <div class='wall-two'>
+                  <div></div>
+                </div>
+                <div id="roofA" class='roof' onclick="selectExp('A')">
+                    <div class="sign d-flex row">
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+              </div>
+              <div class='brickhouse school'>
+                <div class='wall-one'>
+                  <div></div>
+                </div>
+                <div class='wall-two'>
+                  <div></div>
+                </div>
+                <div id="roofB" class='roof' onclick="selectExp('B')">
+                    <div class="sign d-flex row">
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+              </div>
+              <div class='brickhouse dentist'>
+                <div class='wall-one'>
+                  <div></div>
+                </div>
+                <div class='wall-two'>
+                  <div></div>
+                </div>
+                <div id="roofC" class='roof' onclick="selectExp('C')">
+                    <div class="sign d-flex row">
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+              </div>
+              <div class='brickbuilding liferay'>
+                <div class='wall-one'>
+                  <div></div>
+                </div>
+                <div class='wall-two'>
+                  <div></div>
+                </div>
+                <div id="roofD" class='roof' onclick="selectExp('D')">
+                    <div class="sign d-flex row">
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+              </div>
+              <div class='brickbuilding servicenow'>
+                <div class='wall-one'>
+                  <div></div>
+                </div>
+                <div class='wall-two'>
+                  <div></div>
+                </div>
+                <div id="roofE" class='roof' onclick="selectExp('E')">
+                    <div class="sign d-flex row">
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+              </div>
+              <div class='brickbuilding iot'>
+                <div class='wall-one'>
+                  <div></div>
+                </div>
+                <div class='wall-two'>
+                  <div></div>
+                </div>
+                <div id="roofF" class='roof' onclick="selectExp('F')">
+                    <div class="sign d-flex row">
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+              </div>
+              <div class='brickbuilding alten'>
+                <div class='wall-one'>
+                  <div></div>
+                </div>
+                <div class='wall-two'>
+                  <div></div>
+                </div>
+                <div id="roofG" class='roof' onclick="selectExp('G')">
                   <div class="sign d-flex row">
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
+                      <i class="fa-solid fa-chevron-down"></i>
                   </div>
-              </div>
-            </div>
-            <div class='brickhouse school'>
-              <div class='wall-one'>
-                <div></div>
-              </div>
-              <div class='wall-two'>
-                <div></div>
-              </div>
-              <div class='roof' onclick="selectExp(0)">
-                  <input type="radio" name="selectedExp">
-                  <div class="checkmark"></div>
-                  <div class="sign d-flex row">
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
-              </div>
-            </div>
-            <div class='brickhouse dentist'>
-              <div class='wall-one'>
-                <div></div>
-              </div>
-              <div class='wall-two'>
-                <div></div>
-              </div>
-              <div class='roof' onclick="selectExp(0)">
-                  <input type="radio" name="selectedExp">
-                  <div class="checkmark"></div>
-                  <div class="sign d-flex row">
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
-              </div>
-            </div>
-            <div class='brickbuilding liferay'>
-              <div class='wall-one'>
-                <div></div>
-              </div>
-              <div class='wall-two'>
-                <div></div>
-              </div>
-              <div class='roof' onclick="selectExp(0)">
-                  <input type="radio" name="selectedExp">
-                  <div class="checkmark"></div>
-                  <div class="sign d-flex row">
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
-              </div>
-            </div>
-            <div class='brickbuilding servicenow'>
-              <div class='wall-one'>
-                <div></div>
-              </div>
-              <div class='wall-two'>
-                <div></div>
-              </div>
-              <div class='roof' onclick="selectExp(0)">
-                  <input type="radio" name="selectedExp">
-                  <div class="checkmark"></div>
-                  <div class="sign d-flex row">
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
-              </div>
-            </div>
-            <div class='brickbuilding iot'>
-              <div class='wall-one'>
-                <div></div>
-              </div>
-              <div class='wall-two'>
-                <div></div>
-              </div>
-              <div class='roof' onclick="selectExp(0)">
-                  <input type="radio" name="selectedExp">
-                  <div class="checkmark"></div>
-                  <div class="sign d-flex row">
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
-              </div>
-            </div>
-            <div class='brickbuilding alten'>
-              <div class='wall-one'>
-                <div></div>
-              </div>
-              <div class='wall-two'>
-                <div></div>
-              </div>
-              <div class='roof' onclick="selectExp(0)">
-                  <input type="radio" name="selectedExp">
-                  <div class="checkmark"></div>
-                  <div class="sign d-flex row">
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="iso-description card-custom p-5 mb-3">
-                <div class="card-content">
-                    plopiplop
-                </div>
-            </div>
+          <div class="iso-description">
+            <ul>
+              <input class="carousel__activator" type="radio" id="A" name="activator" checked="checked"/>
+              <input class="carousel__activator" type="radio" id="B" name="activator"/>
+              <input class="carousel__activator" type="radio" id="C" name="activator"/>
+              <input class="carousel__activator" type="radio" id="D" name="activator"/>
+              <input class="carousel__activator" type="radio" id="E" name="activator"/>
+              <input class="carousel__activator" type="radio" id="F" name="activator"/>
+              <input class="carousel__activator" type="radio" id="G" name="activator"/>
+              <li class="radio">
+                  Radio
+              </li>
+              <li class="school">
+                  School
+              </li>
+              <li class="dentist">
+                  Dentist
+              </li>
+              <li class="liferay">
+                  Liferay
+              </li>
+              <li class="servicenow">
+                  Service Now
+              </li>
+              <li class="iot">
+                  IoT
+              </li>
+              <li class="alten">
+                  Alten
+              </li>
+              <div class="carousel__indicators">
+                <label class="carousel__indicator" for="A"></label>
+                <label class="carousel__indicator" for="B"></label>
+                <label class="carousel__indicator" for="C"></label>
+                <label class="carousel__indicator" for="D"></label>
+                <label class="carousel__indicator" for="E"></label>
+                <label class="carousel__indicator" for="F"></label>
+                <label class="carousel__indicator" for="G"></label>
+              </div>
+            </ul>
+          </div>
         </main>
 
         <footer id="footer"></footer>
 
-        <script type="module">
-            import experience from '/model/experience.json' with { type: 'json' };
-        </script>
         <script>
             $(document).ready(function(){
                 $("#header").load("header.html");
@@ -228,9 +249,9 @@
             }
 
             function selectExp(selected) {
-                //generateExp(selected);
-                console.log(selected);
-                console.log(experience);
+                $('[id^=roof].selected').removeClass("selected");
+                $(`#roof${selected}`).addClass("selected");
+                $(`#${selected}`).prop("checked", true);
             }
         </script>
     </body>
