@@ -26,6 +26,7 @@ function generateExp() {
             "carousel__activator",
             parameters
         ));
+
         const liEl = utils.createElement("li");
         const div = utils.createElement("div", "px-5 py-3");
         div.appendChild(utils.createTextElement("h2", null, arrayItem.what));
@@ -45,7 +46,8 @@ function generateExp() {
 
         liEl.appendChild(div);
         liList.push(liEl);
-        labelList.push("label", "carousel__indicator", { "for": letter });
+        
+        labelList.push(utils.createElement("label", "carousel__indicator", { "for": letter }));
     });
 
     inputList.forEach((element) => experienceElement.appendChild(element));
