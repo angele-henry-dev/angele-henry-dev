@@ -277,12 +277,18 @@ footer {
 #experience {
     margin-top: 48px;
 }
+.pins {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux spans de revenir à la ligne si nécessaire */
+    gap: 10px; /* Espace entre les éléments */
+}
 .pins span {
-    margin: 5px;
-    padding: 5px 10px;
+    display: inline-block; /* Empêche les spans de se casser en deux lignes */
+    padding: 2px 10px;
     background-color: var(--secondary-light-color);
     color: var(--black-color);
     border-radius: 15px;
+    white-space: nowrap; /* Empêche le contenu du span de se casser */
 }
 .job-description {
     text-align: left;

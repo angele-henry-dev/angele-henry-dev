@@ -26,22 +26,24 @@ function generateExp() {
             "carousel__activator",
             parameters
         ));
-        const liEl = utils.createElement("li", "px-5 py-3");
-        liEl.appendChild(utils.createTextElement("h2", null, arrayItem.what));
-        liEl.appendChild(utils.createTextElement("p", null, arrayItem.when));
+        const liEl = utils.createElement("li");
+        const div = utils.createElement("div", "px-5 py-3");
+        div.appendChild(utils.createTextElement("h2", null, arrayItem.what));
+        div.appendChild(utils.createTextElement("p", null, arrayItem.when));
 
         const technologies = utils.createElement("div", "pins mb-3");
         arrayItem.technologies.forEach(element => {
             technologies.appendChild(utils.createTextElement("span", null, element));
         });
-        liEl.appendChild(technologies);
+        div.appendChild(technologies);
 
         const description = utils.createElement("div", "job-description");
         arrayItem.descriptions.forEach(element => {
             description.appendChild(utils.createTextElement("p", null, element));
         });
-        liEl.appendChild(description);
+        div.appendChild(description);
 
+        liEl.appendChild(div);
         liList.push(liEl);
         labelList.push("label", "carousel__indicator", { "for": letter });
     });
