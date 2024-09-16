@@ -31,15 +31,45 @@
 .night-mode {
     width: 24px;
 }
+
+/* Sizes */
+
 .iso-container {
     width: 560px;
     height: 560px;
 }
+.ground {
+    width: 360px;
+    height: 360px;
+}
+@media (width <= 1217px) {
+    .iso-container {
+        width: 100%;
+        transform: scale(0.75);
+    }
+}
+@media (width <= 495px) {
+    .iso-container {
+        width: 100%;
+        transform: scale(0.5);
+    }
+}
+.iso-description {
+    min-width: 400px;
+    max-width: 560px;
+    height: 560px;
+}
+@media (width <= 1217px) {
+    .iso-description {
+        width: 100%;
+        min-width: 365px;
+    }
+}
+
+/* Carousel */
+
 .iso-description {
     display: inline-block;
-    width: 560px;
-    height: 560px;
-    margin-left: 24px;
     margin-bottom: 20px;
     background-color: var(--black-light-color);
 }
@@ -149,6 +179,7 @@
 }
 
 /* Colors */
+
 .ground {
     background-color: var(--ground);
 }
@@ -313,8 +344,6 @@
 
 .ground {
     display: block;
-    width: 360px;
-    height: 360px;
     transform: rotateZ(45deg) translateX(140px);
     z-index: 0;
 }
@@ -816,11 +845,15 @@ div.one .water-drops div:nth-child(4) {
 }
 .roof .sign {
     position: absolute;
-    top: -31px;
-    left: -50px;
-    width: 0;
-    height: 0;
+    cursor: default;
+    top: -60px;
+    left: -28px;
+    width: 46px;
+    height: 85px;
+    padding: 10px 0;
     transform: rotateZ(-45deg);
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 15px;
     z-index: 11;
 }
 .roof .sign i::before {
