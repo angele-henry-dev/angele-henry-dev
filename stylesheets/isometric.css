@@ -40,8 +40,6 @@
     width: 560px;
     height: 560px;
     margin-left: 24px;
-    padding: 0 10px;
-    padding-top: 20px;
     margin-bottom: 20px;
     background-color: var(--black-light-color);
 }
@@ -569,14 +567,14 @@ div.one .water-drops div:nth-child(4) {
 }
 .tree div.three {
     bottom: 14px;
-    left: 10px;
+    left: 95px;
 }
 .tree div.four {
-    bottom: 140px;
+    bottom: 110px;
     left: 10px;
 }
 .tree div.five {
-    bottom: 175px;
+    bottom: 150px;
     left: 10px;
 }
 .tree div.six {
@@ -796,31 +794,31 @@ div.one .water-drops div:nth-child(4) {
 
 /* Buildings position */
 
-.ground .radio {
+.ground .A {
     bottom: 30px;
-    left: 45px;
+    left: 20px;
 }
-.ground .school {
+.ground .B {
     top: 125px;
-    left: 45px;
+    left: 20px;
 }
-.ground .dentist {
-    top: 30px;
-    left: 130px;
+.ground .C {
+    top: 5px;
+    left: 120px;
 }
-.ground .liferay {
+.ground .D {
     top: 95px;
     right: 125px;
 }
-.ground .servicenow {
-    top: 195px;
+.ground .E {
+    top: 220px;
     right: 125px;
 }
-.ground .iot {
-    bottom: 20px;
+.ground .F {
+    bottom: -5px;
     right: 60px;
 }
-.ground .alten {
+.ground .G {
     top: 30px;
     right: 35px;
 }

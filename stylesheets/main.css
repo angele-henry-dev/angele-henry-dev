@@ -277,12 +277,16 @@ footer {
 #experience {
     margin-top: 48px;
 }
-.flip-card {
-    width: 18rem !important;
+.pins span {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: var(--secondary-light-color);
+    color: var(--black-color);
+    border-radius: 15px;
 }
-    .flip-card .flip-card-back .card-entete {
-        display: none;
-    }
+.job-description {
+    text-align: left;
+}
 
 /* Web version */
 
