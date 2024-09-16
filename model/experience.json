@@ -12,7 +12,7 @@
         "PySpark",
         "PostgreSQL",
         "Javascript",
-        "HTML5 / CSS3"
+        "CSS"
     ]
    },
    {
@@ -25,10 +25,12 @@
        "technologies": [
          "Python",
          "Flask",
-         "VueJS / Vuetify",
-         "JavaScript / Typescript",
-         "Amazon AWS",
-         "Tailwind CSS"
+         "VueJS",
+         "Vuetify",
+         "JavaScript",
+         "Typescript",
+         "AWS",
+         "Tailwind"
        ]
    },
    {
@@ -40,7 +42,7 @@
        ],
        "technologies": [
          "Java",
-         "HTML5 / CSS3",
+         "CSS",
          "Javascript",
          "ServiceNow"
        ]
@@ -54,12 +56,16 @@
            "Many POCs."
        ],
        "technologies": [
-         "Liferay / Java / Hibernate",
-         "HTML5 / CSS3",
-         "Javascript / JQuery",
+         "Liferay",
+         "Java",
+         "Hibernate",
+         "CSS",
+         "Javascript",
+         "JQuery",
          "BRMS RedHat",
          "BMC Remedy",
-         "C++ / Arduino",
+         "C++",
+         "Arduino",
          "Google Dialogflow"
        ]
    },
@@ -98,8 +104,9 @@
         "Realization of radio broadcasts as a radio animator and as a sound technician."
     ],
     "technologies": [
-      "HTML5 / CSS3",
-      "Javascript / JQuery",
+      "CSS",
+      "Javascript",
+      "JQuery",
       "PHP"
     ]
 }
