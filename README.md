@@ -20,19 +20,18 @@ const angele = {
     "HTML5 / CSS3",
     "Javascript",
     "Typescript",
-    "VueJS",
+    "VueJS"
   ],
   backend: [
     "Python",
-    "Java SE",
-    "Java EE",
-    "CPlusPlus",
+    "Flask",
+    "Pyspark",
+    "AWS"
   ],
   otherSoftwares: [
     "Adobe Illustrator",
     "Adobe Photoshop",
-    "Adobe InDesign",
-    "Adobe XD",
+    "Adobe InDesign"
   ]
 };
 ```
