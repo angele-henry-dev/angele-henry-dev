@@ -1,4 +1,5 @@
-![linkedin_banniere](https://github.com/angele-henry-dev/angele-henry-dev/assets/122747317/f8891746-b8d0-4540-b45a-6cfd6e04c42d)
+![linkedin_banniere](https://github.com/user-attachments/assets/4d5caf43-2607-4b23-9242-af2b56d88e41)
+
 
 <p align="center">
   <a href="https://www.linkedin.com/in/angele-henry/">
