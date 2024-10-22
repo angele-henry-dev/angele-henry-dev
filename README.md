@@ -18,21 +18,36 @@
 ``` javascript
 const angele = {
   frontend: [
-    "HTML5 / CSS3",
     "Javascript",
+    "VueJS",
+    "React",
+    "Ionic framework",
     "Typescript",
-    "VueJS"
+    "CSS",
+    "UI/UX"
   ],
   backend: [
     "Python",
     "Flask",
     "Pyspark",
-    "AWS"
+    "Java",
+    "Hibernate",
+    "C++",
+    "QT"
   ],
-  otherSoftwares: [
-    "Adobe Illustrator",
-    "Adobe Photoshop",
-    "Adobe InDesign"
+  Databases: [
+    "MySQL",
+    "PostgreSQL",
+    "MariaDB",
+    "AWS DynamoDB"
+  ],
+  AWS: [
+    "Lambda",
+    "Simple Storage Serv (S3)",
+    "IoT Core",
+    "Lightsail",
+    "API Gateway",
+    "Identity and Access Man"
   ]
 };
 ```
