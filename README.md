@@ -1,4 +1,5 @@
-![linkedin_banniere](https://github.com/user-attachments/assets/4d5caf43-2607-4b23-9242-af2b56d88e41)
+![linkedin_banniere](https://github.com/user-attachments/assets/c2b97ced-d726-4c63-a339-cac155bf1373)
+
 
 
 <p align="center">
