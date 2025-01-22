@@ -8,7 +8,7 @@
   </a>
 </p>
 
-# Technical leader / Javascript Python developer from Toulouse, France
+# Technical leader / Fullstack developer from Toulouse, France
 
 ### Looking for a JavaScript/Python Technical Lead to manage your development team?
 <p>I am a freelance full-stack developer with over 8 years of experience in sectors such as aerospace, web, and data.
