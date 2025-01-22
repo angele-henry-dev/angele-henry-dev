@@ -8,66 +8,40 @@
   </a>
 </p>
 
-# Technical leader / Fullstack developer from Toulouse, France
+# Technical leader / Développeuse fullstack
 
-### Looking for a JavaScript/Python Technical Lead to manage your development team?
-<p>I am a freelance full-stack developer with over 8 years of experience in sectors such as aerospace, web, and data.
-</br>I have notably collaborated for many years with Airbus.</p>
-<p>As a senior developer, I am committed to using my leadership skills to produce quality code so that your users do not end up with an application full of bugs.</p>
+## 𝐁𝐞𝐬𝐨𝐢𝐧 𝐝’𝐮𝐧 𝐬𝐢𝐭𝐞 𝐫𝐚𝐩𝐢𝐝𝐞, 𝐯𝐢𝐬𝐢𝐛𝐥𝐞 𝐞𝐭 𝐚𝐜𝐜𝐞𝐬𝐬𝐢𝐛𝐥𝐞 ?
 
-## 🔥 Skills
-``` javascript
-const angele = {
-  frontend: [
-    "Javascript",
-    "VueJS",
-    "React",
-    "Ionic framework",
-    "Typescript",
-    "CSS",
-    "UI/UX"
-  ],
-  backend: [
-    "Python",
-    "Flask",
-    "Pyspark",
-    "Java",
-    "Hibernate",
-    "C++",
-    "QT"
-  ],
-  Databases: [
-    "MySQL",
-    "PostgreSQL",
-    "MariaDB",
-    "AWS DynamoDB"
-  ],
-  AWS: [
-    "Lambda",
-    "Simple Storage Serv (S3)",
-    "IoT Core",
-    "Lightsail",
-    "API Gateway",
-    "Identity and Access Man"
-  ]
-};
-```
+<p>Je suis 𝐬𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐞𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐟𝐫𝐞𝐞𝐥𝐚𝐧𝐜𝐞 𝐚𝐯𝐞𝐜 𝐩𝐥𝐮𝐬 𝐝𝐞 𝟏𝟎 𝐚𝐧𝐬 𝐝’𝐞𝐱𝐩𝐞́𝐫𝐢𝐞𝐧𝐜𝐞 dans des missions variées – de l’aéronautique aux données, en passant par le web.</p>
+<p>Aujourd’hui, je me spécialise dans l’optimisation web pour des projets 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐭𝐬 𝐞𝐭 𝐢𝐧𝐜𝐥𝐮𝐬𝐢𝐟𝐬.</p>
 
-## 🫶 Current personal project
-<p>I am currently working on a video game for iOS and Android: <b>Raqyx</b>.</p>
-<p>Players navigate a dynamic space, strategically creating territories while avoiding ennemies. The game features immersive visuals, progressive levels, and an engaging 8-bit soundtrack, offering a unique and enjoyable gaming adventure.</p>
 
-### The technologies I am using for this project:
-![Skills](https://skillicons.dev/icons?i=js,typescript,vuejs,css)
+## 💻 Développement web
 
-### Game in progress visuals:
-<p>
-  <img width="378" alt="Homepage of Raqyx" src="https://github.com/angele-henry-dev/angele-henry-dev/assets/122747317/0d9f551a-8466-4990-a344-d659c486fbe1">
-  <img width="378" alt="Capture d’écran 2024-01-17 à 18 34 51" src="https://github.com/angele-henry-dev/angele-henry-dev/assets/122747317/0215a54b-1bc7-439e-8999-500d2c1086e6">
-</p>
+- 𝐉𝐚𝐯𝐚𝐒𝐜𝐫𝐢𝐩𝐭 et 𝐀𝐏𝐈𝐬 : une expérience de plus de 10 ans.
+- Sites 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐭𝐬 𝐞𝐭 𝐨𝐩𝐭𝐢𝐦𝐢𝐬𝐞́𝐬 𝐒𝐄𝐎 𝐚𝐯𝐞𝐜 𝐍𝐞𝐱𝐭.𝐣𝐬 et les frameworks modernes.
+- Interfaces 𝐫𝐞́𝐚𝐜𝐭𝐢𝐯𝐞𝐬 𝐞𝐭 𝐚𝐜𝐜𝐞𝐬𝐬𝐢𝐛𝐥𝐞𝐬 avec une performance irréprochable.
 
-## 🕹️ When I am not working
-![Playstation 5](https://img.shields.io/badge/Playstation%205-003791?style=for-the-badge&logo=playstation-5&logoColor=white)
-![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white)
-![Netflix](https://img.shields.io/badge/Netflix-E50914?style=for-the-badge&logo=netflix&logoColor=white)
-![Crunchyroll](https://img.shields.io/badge/Crunchyroll-F47521?style=for-the-badge&logo=crunchyroll&logoColor=white)
+
+## 🌐 Accessibilité web (a11y)
+
+- 𝐀𝐮𝐝𝐢𝐭𝐬 𝐝’𝐚𝐜𝐜𝐞𝐬𝐬𝐢𝐛𝐢𝐥𝐢𝐭𝐞́ pour garantir la conformité (RGAA, WCAG, Section 508).
+- 𝐎𝐩𝐭𝐢𝐦𝐢𝐬𝐚𝐭𝐢𝐨𝐧 𝐔𝐗/𝐔𝐈 pour la navigation au clavier et les lecteurs d’écran.
+- 𝐅𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧𝐬 pour accompagner vos équipes sur les bonnes pratiques accessibles.
+
+
+## 🚀 Web performance & SEO
+
+- 𝐀𝐧𝐚𝐥𝐲𝐬𝐞 𝐞𝐭 𝐚𝐮𝐝𝐢𝐭 pour booster la vitesse et l'expérience utilisateur.
+- Optimisation des 𝐂𝐨𝐫𝐞 𝐖𝐞𝐛 𝐕𝐢𝐭𝐚𝐥𝐬 (LCP, FID, CLS).
+- 𝐒𝐭𝐫𝐚𝐭𝐞́𝐠𝐢𝐞𝐬 𝐂𝐒𝐒/𝐉𝐒 (lazy loading, compression, CDN) pour un chargement instantané.
+
+
+## 𝐏𝐨𝐮𝐫𝐪𝐮𝐨𝐢 𝐜’𝐞𝐬𝐭 𝐞𝐬𝐬𝐞𝐧𝐭𝐢𝐞𝐥 ?
+
+<p>👉 𝐀𝐜𝐜𝐞𝐬𝐬𝐢𝐛𝐢𝐥𝐢𝐭𝐞́ : Une obligation légale pour de nombreuses entreprises (secteurs publics et internationaux).</p>
+<p>👉 𝐒𝐄𝐎 𝐞𝐭 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞 : Google privilégie les sites rapides et optimisés dans son algorithme.</p>
+<p>👉 𝐑𝐎𝐈 : Un site performant réduit le taux de rebond et augmente les conversions.</p>
+
+<br>
+<p>Envie de donner un coup de boost à votre site web ? 𝐏𝐚𝐫𝐥𝐨𝐧𝐬-𝐞𝐧 ! 💬</p>
