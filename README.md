@@ -1,4 +1,4 @@
-![linkedin_banniere](https://github.com/user-attachments/assets/c2b97ced-d726-4c63-a339-cac155bf1373)
+![linkedin_banniere](https://github.com/user-attachments/assets/05203cf0-c1bd-481b-bf76-d0f6a52cf2c8)
 
 
 
