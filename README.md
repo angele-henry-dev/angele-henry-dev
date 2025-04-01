@@ -1,9 +1,8 @@
-
-![banniere_linkedin](https://github.com/user-attachments/assets/29e0a87b-b2ef-424e-9d95-5df548f7a990)
+<img width="1496" alt="Capture d’écran 2025-03-31 à 23 40 26" src="https://github.com/user-attachments/assets/579a2caf-fdd6-46c4-b69b-75039eb217e1" />
 
 # forabetter.tech
 
-Bienvenue sur le dépôt du site [forabetter.tech](https://forabetter.tech), une communauté chaleureuse dédiée aux devs, UX/UI, DevOps, architectes et tous les passionnés de technologie.
+Bienvenue sur le dépôt du site [forabetter.tech](https://forabetter.tech), une communauté chaleureuse dédiée aux devs, UX/UI, DevOps, architectes et tou·te·s les passionné·e·s de technologie.
 
 ---
 
@@ -11,7 +10,7 @@ Bienvenue sur le dépôt du site [forabetter.tech](https://forabetter.tech), une
 
 Ici, pas de jugement, pas de pression, pas de course à la productivité. Juste des gens passionnés, curieux, parfois un peu perdus (et c’est ok), qui aiment apprendre et s’entraider.
 
-Que tu sois développeur·se, UX/UI designer, DevOps, architecte, infra, ou juste passionné·e de technologie, tu es le ou la bienvenue.
+Que tu sois développeur·se, UX/UI designer, DevOps, architecte, infra, ou juste passionné·e de technologie, je te souhaite la bienvenue.
 
 ## Notre mission
 
