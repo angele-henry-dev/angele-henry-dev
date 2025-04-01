@@ -43,12 +43,6 @@ Bienvenue chez toi.
 - **Framework** : [SvelteKit](https://kit.svelte.dev/)
 - **CSS** : [TailwindCSS](https://tailwindcss.com/)
 
-## Déploiement
-
-- **Nom de domaine** : [`forabetter.tech`](https://forabetter.tech)
-- **Hébergeur** : [Vercel](https://vercel.com/)
-- **Déploiement** : CI/CD depuis GitHub
-
 ---
 
 **forabetter.tech** — Le cocon tech pour se motiver, s’entraider, progresser. Ensemble.
