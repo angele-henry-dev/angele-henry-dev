@@ -2,7 +2,7 @@
 
 # forabetter.tech
 
-Bienvenue sur le dépôt du site [forabetter.tech](https://forabetter.tech), une communauté chaleureuse dédiée aux devs, UX/UI, DevOps, architectes et tou·te·s les passionné·e·s de technologie.
+Bienvenue sur le dépôt de [forabetter.tech](https://forabetter.tech), une communauté chaleureuse dédiée aux devs, UX/UI, DevOps, architectes et tou·te·s les passionné·e·s de technologie.
 
 ---
 
