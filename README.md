@@ -46,3 +46,5 @@ Bienvenue chez toi.
 ---
 
 **forabetter.tech** — Le cocon tech pour se motiver, s’entraider, progresser. Ensemble.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J41BUFRU)
